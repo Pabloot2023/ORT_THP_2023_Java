@@ -20,6 +20,7 @@ public class Ejercicio_6 {
 	ventasTot = miTeclado.nextInt();
 	System.out.println("El monto a cobrar por el vendedor es de: $" + ((double)sueldoFijo+(ventasTot*0.16)));
 	
+	miTeclado.close();
 	
 	
 	}
