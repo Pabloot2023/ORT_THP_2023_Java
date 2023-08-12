@@ -10,7 +10,7 @@ package trabajo_practico_1;
 
 import java.util.Scanner;
 
-public class Ejercicio_10 {
+public class Ejercicio_9a {
 
 	public static void main(String[] args) {
 		
