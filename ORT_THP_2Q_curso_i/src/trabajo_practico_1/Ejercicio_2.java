@@ -31,7 +31,7 @@ public class Ejercicio_2 {
 		// variable para el nombre del alumno
 		boolean x = true;
 		// variable para loopear
-		
+		x = x;
 		
 		System.out.println("Ingrese el Nombre del Alumno: ");
 		nombre = miTeclado.nextLine();
