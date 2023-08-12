@@ -1,4 +1,4 @@
-package tp1_actividad1;
+package trabajo_practico_1;
 
 /*Enunciado
  Realizá un programa que permita que el usuario ingrese su nombre.
