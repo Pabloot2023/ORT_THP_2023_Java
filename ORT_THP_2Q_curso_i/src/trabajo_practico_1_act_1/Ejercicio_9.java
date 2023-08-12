@@ -1,4 +1,4 @@
-package trabajo_practico_1;
+package trabajo_practico_1_act_1;
 
 /*Realizá un programa que permita ingresar dos números 
  * que representan las medidas en grados de dos ángulos interiores de cierto triángulo.

@@ -1,4 +1,4 @@
-package trabajo_practico_1;
+package trabajo_practico_1_act_1;
 
 /*Enunciado
 Realizá un programa que permita ingresar 3 notas pertenecientes a tres trimestres distintos

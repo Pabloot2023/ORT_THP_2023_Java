@@ -1,4 +1,4 @@
-package trabajo_practico_1;
+package trabajo_practico_1_act_1;
 
 /*Realizá un programa que permita ingresar el ancho y el largo de un terreno en metros 
  * y el valor del metro cuadrado de tierra. Debe mostrarse el valor total del terreno 

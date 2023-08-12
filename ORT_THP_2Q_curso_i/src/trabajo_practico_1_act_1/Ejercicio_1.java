@@ -1,4 +1,4 @@
-package trabajo_practico_1;
+package trabajo_practico_1_act_1;
 
 import java.util.Scanner;
 
