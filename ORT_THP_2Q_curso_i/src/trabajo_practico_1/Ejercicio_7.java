@@ -32,6 +32,7 @@ public class Ejercicio_7 {
 		System.out.println("Se precisan " + (ancho*largo*2) + " metros de alambre para cercar por completo en dos alturas");
 		System.out.println("Se precisan " + (ancho*largo*3) + " metros de alambre para cercar por completo en tres alturas");
 		
+		miTeclado.close();
 		
 	}
 
