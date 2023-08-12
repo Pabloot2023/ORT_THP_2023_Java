@@ -10,7 +10,7 @@ public class Ejercicio_1 {
 	
 	public static void main(String[] args) {
 		System.out.println("Bienvenidos a THP!!!!!!");
-		System.out.println("aprenderemos a programar muchas cosas!!!!!!");
+		System.out.println("Aprenderemos a programar muchas cosas!!!!!!");
 	}
 
 }

@@ -1,4 +1,4 @@
-package practica_cero_curso_i;
+package curso_i;
 
 public class HolaThp {
 
