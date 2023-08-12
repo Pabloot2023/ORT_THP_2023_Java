@@ -22,7 +22,7 @@ public class Ejercicio_11 {
             System.out.println(num + " es un número impar");
         }
 
-
+		  miTeclado.close();
 	}
 
 }
