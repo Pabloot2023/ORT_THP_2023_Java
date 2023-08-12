@@ -19,28 +19,19 @@ public class Ejercicio_2 {
 		// se inicia scanner SIN private static  por estar dentro  del metodo main
 
 		
-		int notaparcial1;
+		int notaparcial1 = 6;
 		// variable para la nota 1
-		int notaparcial2;
+		int notaparcial2 = 6;
 		// variable para la nota 2
-		int sumatoriaDeNotas;
+		int sumatoriaDeNotas = 0;
 		// sumatoria de las notas
-		double promedio;
+		double promedio = 0;
 		// variable para el promedio
-		String nombre;
+		String nombre = "Juan";
 		// variable para el nombre del alumno
-		boolean x;
+		boolean x = true;
 		// variable para loopear
 		
-		
-		// inicializamos siempre todas las variables
-		notaparcial1 = 6;
-		notaparcial2 = 6;
-		sumatoriaDeNotas = 0;
-		promedio =	0;
-		nombre = "Juan";
-		// inicializamos siempre todas las variables
-		x=true;
 		
 		System.out.println("Ingrese el Nombre del Alumno: ");
 		nombre = miTeclado.nextLine();

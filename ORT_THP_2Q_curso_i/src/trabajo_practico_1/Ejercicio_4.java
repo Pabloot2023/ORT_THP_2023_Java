@@ -15,21 +15,28 @@ public class Ejercicio_4 {
 		
 		Scanner miTeclado = new Scanner(System.in);
 		
-        double valorHora = 0;
-        double cantHora = 0;
-        double pagoDia = valorHora*cantHora;
-        double pagoSem = pagoDia*7;
-        double horaSab = ((cantHora/2)*valorHora);
+        int valorHora = 2;
+        int cantHora = 3;
+        int pagoDia = valorHora*cantHora;
+        int pagoSem = pagoDia*5;
+        int horaSab = ((cantHora/2)*valorHora);
         
         
         System.out.println("Ingrese un numero el valor monetario de una hora de trabajo: ");
-        valorHora = miTeclado.nextDouble();
+        valorHora = miTeclado.nextInt();
         	
         System.out.println("Ingrese la cantidad de horas trabajadas por dia del trabajador: ");
-        cantHora = miTeclado.nextDouble();
+        cantHora = miTeclado.nextInt();
+        pagoDia = valorHora*cantHora;
+        pagoSem = pagoDia*7;
+        horaSab = ((cantHora/2)*valorHora);
         
         System.out.println("\n" + "El valor del salario semanal es de:");
         System.out.println("$ " + (pagoSem)) ;
+        
+        System.out.println("\n" + "El valor del salario semanal incluyendo media jornada del sabado es de:");
+        System.out.println("$ " + (pagoSem+horaSab)) ;
+        
         
         miTeclado.close();
 		
