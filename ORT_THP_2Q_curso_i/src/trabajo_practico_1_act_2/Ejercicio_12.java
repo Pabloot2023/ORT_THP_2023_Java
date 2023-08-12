@@ -14,6 +14,7 @@ public class Ejercicio_12 {
 		
 		int num1 = 0;
 		int num2 = 0;
+		int num = 0;
 		
 		System.out.println("Ingrese un numero entero");
 		num1 =miTeclado.nextInt();
