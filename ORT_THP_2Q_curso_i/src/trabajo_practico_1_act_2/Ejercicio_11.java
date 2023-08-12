@@ -10,11 +10,11 @@ public class Ejercicio_11 {
 
 	public static void main(String[] args) {
 	
-		Scanner miTeclado = new Scanner(System.in);
+		Scanner miTeclado1 = new Scanner(System.in);
 		int num = 0;
 		
 		System.out.println("Ingrese un numero entero, le dire si es par o impar");
-		num =miTeclado.nextInt();
+		num =miTeclado1.nextInt();
 		
 		if (num % 2 == 0) {
             System.out.println(num + " es un número par");
@@ -22,7 +22,7 @@ public class Ejercicio_11 {
             System.out.println(num + " es un número impar");
         }
 
-		  miTeclado.close();
+		  miTeclado1.close();
 	}
 
 }
