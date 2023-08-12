@@ -31,7 +31,8 @@ public class Ejercicio_5 {
 		
 		System.out.println("El primer numero actualizado es " + num1 + " y el segundo numero actualizado es " + num2);
 		
-
+		miTeclado.close();
+		
 	}
 
 }
