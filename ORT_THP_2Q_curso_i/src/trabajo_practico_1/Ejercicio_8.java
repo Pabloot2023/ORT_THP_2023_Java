@@ -19,13 +19,13 @@ public class Ejercicio_8 {
 		double division = 0;
 		
 		// Pedir al usuario que ingrese dos números naturales.
-        System.out.println("Ingrese el primer número:");
+        System.out.println("Ingrese el primer numero:");
         
-        num1 = input.nextInt();
+        num1 = miTeclado.nextInt();
 
 
-        System.out.println("Ingrese el segundo número:");
-        num2 =input.nextInt();
+        System.out.println("Ingrese el segundo numero:");
+        num2 =miTeclado.nextInt();
 
         // Realizar las operaciones matemáticas básicas.
         suma = num1 + num2;
@@ -36,8 +36,8 @@ public class Ejercicio_8 {
         // Mostrar los resultados de cada operación matemática.
         System.out.println("Suma: " + suma);
         System.out.println("Resta: " + resta);
-        System.out.println("Multiplicación: " + multiplicacion);
-        System.out.println("División: " + division);
+        System.out.println("Multiplicacion: " + multiplicacion);
+        System.out.println("Division: " + division);
 
         miTeclado.close();
 		
