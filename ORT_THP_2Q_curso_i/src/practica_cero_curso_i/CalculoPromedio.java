@@ -61,7 +61,7 @@ public class CalculoPromedio {
 		System.out.println("\n" + "Hola " + nombre + "!!");
         System.out.println("La nota del primer parcial es: " + notaparcial1);
         System.out.println("La nota del segundo parcial es: " + notaparcial2 + "\n");
-        System.out.println("El Promedio es: " + promedio + "\n" + x);
+        System.out.println("El Promedio es: " + promedio + "\n");
         
         
         //toma decision en base a condicion
