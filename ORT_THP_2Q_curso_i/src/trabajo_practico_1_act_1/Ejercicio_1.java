@@ -21,7 +21,7 @@ public class Ejercicio_1 {
 		System.out.println("Por favor, ingrese su nombre:" + "\n");
 		x =miTeclado.nextLine();
 		
-		System.out.println("Bienvenido " + x + "!");
+		System.out.println( "\n" + "Bienvenido " + x + "!");
 		
 		
 		miTeclado.close();
