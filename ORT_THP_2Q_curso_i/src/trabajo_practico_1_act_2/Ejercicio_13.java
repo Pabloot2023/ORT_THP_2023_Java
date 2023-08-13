@@ -10,9 +10,10 @@ import java.util.Scanner;
 public class Ejercicio_13 {
 
 	public static void main(String[] args) {
+		int x=0;
 		Scanner miTeclado = new Scanner(System.in);
 		
-
+ x = x;
 	}
 
 }
