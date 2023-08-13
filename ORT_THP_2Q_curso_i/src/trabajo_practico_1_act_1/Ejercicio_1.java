@@ -11,11 +11,19 @@ import java.util.Scanner;
 public class Ejercicio_1 {
 	
 	public static void main(String[] args) {
+		String x = "X";
 		
-		System.out.println("Bienvenidos a THP!!!!!!");
-		System.out.println("Aprenderemos a programar muchas cosas!!!!!");
+		System.out.println("Bienvenidos a THP!!!!!!" + "\n");
+		System.out.println("Aprenderemos a programar muchas cosas!!!!!" + "\n");
 		
 		Scanner miTeclado = new Scanner(System.in);
+		
+		System.out.println("Por favor, ingrese su nombre:" + "\n");
+		x =miTeclado.nextLine();
+		
+		System.out.println("Bienvenido " + x + "!");
+		
+		
 		miTeclado.close();
 	}
 
