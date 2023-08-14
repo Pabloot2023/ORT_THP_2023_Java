@@ -16,10 +16,11 @@ public class Ejercicio_6 {
 	
 	int ventasTot = 0;
 	int sueldoFijo = 44000;
+	double comision = 0.16;
 	
 	System.out.println("Ingrese el monto total de las ventas realizadas");
 	ventasTot = miTeclado.nextInt();
-	System.out.println("El monto a cobrar por el vendedor es de: $" + ((double)sueldoFijo+(ventasTot*0.16)));
+	System.out.println("\n" + "El monto a cobrar por el vendedor es de: $" + ((double)sueldoFijo+(ventasTot*comision)));
 	
 	miTeclado.close();
 	
