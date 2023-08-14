@@ -14,7 +14,7 @@ public class Ejercicio_11 {
 		int num = 0;
 		
 		System.out.println("Ingrese un numero entero, le dire si es par o impar");
-		num =Integer.parseInt(miTeclado.nextLine());
+		num = Integer.parseInt(miTeclado.nextLine());
 		
 		if (num % 2 == 0) {
             System.out.println("\n" + num + " es un numero par");

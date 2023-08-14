@@ -16,10 +16,10 @@ public class Ejercicio_12 {
 		int num2 = 0;
 		
 		System.out.println("Ingrese un numero entero");
-		num1 =miTeclado.nextInt();
+		num1 = Integer.parseInt(miTeclado.nextLine());
 		
 		System.out.println("Ingrese otro numero entero");
-		num2 =miTeclado.nextInt();
+		num2 = Integer.parseInt(miTeclado.nextLine());
 		
 		if (num1 > num2) {
 			System.out.println("El mayor es " + num1 );

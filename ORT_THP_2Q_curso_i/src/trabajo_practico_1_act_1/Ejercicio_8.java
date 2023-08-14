@@ -22,11 +22,11 @@ public class Ejercicio_8 {
 		// Pedir al usuario que ingrese dos números naturales.
         System.out.println("Ingrese el primer numero:");
         
-        num1 = miTeclado.nextInt();
+        num1 = Integer.parseInt(miTeclado.nextLine());
 
 
         System.out.println("Ingrese el segundo numero:");
-        num2 =miTeclado.nextInt();
+        num2 = Integer.parseInt(miTeclado.nextLine());;
 
         // Realizar las operaciones matemáticas básicas.
         suma = num1 + num2;
