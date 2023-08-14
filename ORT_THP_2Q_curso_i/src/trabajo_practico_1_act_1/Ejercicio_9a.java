@@ -16,9 +16,9 @@ public class Ejercicio_9a {
 	public static void main(String[] args) {
 		
 		Scanner miTeclado1 = new Scanner(System.in);
-		Scanner miTeclado2 = new Scanner(System.in);
-		Scanner miTeclado3 = new Scanner(System.in);
 		
+		final String CARTEL_NOMBRE = "Estimado Socio, por favor ingrese su nombre";
+		final String CARTEL_APORTE = "Indique su capital aportado";
 		String user1 = "x";
 		int user11 = 0;
 		String user2 = "y";
@@ -31,22 +31,24 @@ public class Ejercicio_9a {
 		double p2 = 0;
 		double p3 = 0;
 		
-		 System.out.println("\n" + "Estimado primer Socio, por favor ingrese su nombre");
+		 System.out.println("\n" + CARTEL_NOMBRE);
 		 user1 =miTeclado1.nextLine();
-		 System.out.println("Indique su capital aportado");
-		 user11 =miTeclado1.nextInt();
+		 System.out.println(CARTEL_APORTE);
+		 user11 = Integer.parseInt(miTeclado1.nextLine());
 		 
 		 
-		 System.out.println("\n" + "Estimado segundo Socio, por favor ingrese su nombre");
-		 user2 =miTeclado2.nextLine();
-		 System.out.println("Indique su capital aportado");
-		 user22 =miTeclado2.nextInt();
+		 System.out.println("\n" + CARTEL_NOMBRE);
+		 user2 =miTeclado1.nextLine();
+		 System.out.println(CARTEL_APORTE);
+		 user22 = Integer.parseInt(miTeclado1.nextLine());
+		 
 		 
 		
-		 System.out.println("\n" + "Estimado tercer Socio, por favor ingrese su nombre");
-		 user3 =miTeclado3.nextLine();
-		 System.out.println("Indique su capital aportado");
-		 user33 =miTeclado3.nextInt();
+		 System.out.println("\n" + CARTEL_NOMBRE);
+		 user3 =miTeclado1.nextLine();
+		 System.out.println(CARTEL_APORTE);
+		 user33 = Integer.parseInt(miTeclado1.nextLine());
+		 
 		 
 		 totalFondo = user11+user22+user33;
 		 p1 = (user11*totalFondo)/100;
@@ -64,8 +66,7 @@ public class Ejercicio_9a {
 		 System.out.println( user3 + " aporto: " + user33 + " pesos representando el " + p3 + "% del Total de la Sociedad" + "\n");
 		 
 		  miTeclado1.close();
-		  miTeclado2.close();
-		  miTeclado3.close();
+	
 	}
 
 }
