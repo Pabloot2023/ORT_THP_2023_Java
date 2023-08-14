@@ -21,7 +21,7 @@ public class Ejercicio_6 {
 	
 	System.out.println(CARTEL);
 	System.out.println("Ingrese el monto total de las ventas realizadas");
-	ventasTot = Integer.parseInt(miTeclado.nextLine());
+	ventasTot = miTeclado.nextInt();
 	System.out.println("\n" + "El monto a cobrar por el vendedor es de: $" + ((double)SUELDOFIJO+(ventasTot*COMISION/100)));
 	
 	miTeclado.close();

@@ -18,10 +18,10 @@ public class Ejercicio_9 {
 		int angulo2 = 0;
 		
 		 System.out.println("Ingrese el valor del primer angulo");
-		 angulo1 = Integer.parseInt(miTeclado.nextLine());
+		 angulo1 = miTeclado.nextInt();
 		
 		 System.out.println("Ingrese el valor del segundo angulo");
-		 angulo2 = Integer.parseInt(miTeclado.nextLine());
+		 angulo2 = miTeclado.nextInt();
 		 
 		 System.out.println("\n" + "El valor del tercer angulo es de " + (180-angulo1-angulo2) + " grados");
 		 
