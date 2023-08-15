@@ -40,7 +40,7 @@ public class Ejercicio_15 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Juan: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 || ALTURA > 1.5;
+	        podriaEntrar = EDAD > 6 || ALTURA > 1.5;
 	        Juan = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
 
 	        // Maria
@@ -49,7 +49,7 @@ public class Ejercicio_15 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Maria: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 || ALTURA > 1.5;
+	        podriaEntrar = EDAD > 6 || ALTURA > 1.5;
 	        Maria = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
 
 	        // Luis
@@ -58,7 +58,7 @@ public class Ejercicio_15 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Luis: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 || ALTURA > 1.5;
+	        podriaEntrar = EDAD > 6 || ALTURA > 1.5;
 	        Luis = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
 
 	        // Ana
@@ -67,7 +67,7 @@ public class Ejercicio_15 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Ana: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 || ALTURA > 1.5;
+	        podriaEntrar = EDAD > 6 || ALTURA > 1.5;
 	        Ana = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
 
 	        System.out.print("\n" +  Juan + "\n");
