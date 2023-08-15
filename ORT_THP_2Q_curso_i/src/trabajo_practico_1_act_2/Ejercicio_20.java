@@ -19,13 +19,13 @@ public class Ejercicio_20 {
 		 int resultado;
 	     char operacion;
 
-	    System.out.print("Ingrese el primer número: ");
+	    System.out.print("Ingrese el primer numero: ");
 	    num1 = miTeclado.nextInt();
 
-	    System.out.print("Ingrese el segundo número: ");
+	    System.out.print("Ingrese el segundo numero: ");
 	    num2 = miTeclado.nextInt();
 
-	    System.out.print("Ingrese la operación a realizar (+, -, *, /): ");
+	    System.out.print("Ingrese la operacion a realizar (+, -, *, /): ");
 	    operacion = miTeclado.next().charAt(0);
 
 	        switch (operacion) {
@@ -39,20 +39,23 @@ public class Ejercicio_20 {
 	                break;
 	            case '*':
 	                resultado = num1 * num2;
-	                System.out.println("\n" + "El resultado de la multiplicación es: " + resultado);
+	                System.out.println("\n" + "El resultado de la multiplicacion es: " + resultado);
 	                break;
 	            case '/':
 	                if (num2 == 0) {
 	                    System.out.println("\n" + "ERROR: No se puede dividir por cero.");
 	                } else {
 	                    resultado = num1 / num2;
-	                    System.out.println("\n" + "El resultado de la división es: " + resultado);
+	                    System.out.println("\n" + "El resultado de la division es: " + resultado);
 	                }
 	                break;
 	            default:
 	                System.out.println("ERROR: Operación inválida.");
 	                break;
 	        }
+	        
+	        
+	        
 
 	        miTeclado.close();
 		
