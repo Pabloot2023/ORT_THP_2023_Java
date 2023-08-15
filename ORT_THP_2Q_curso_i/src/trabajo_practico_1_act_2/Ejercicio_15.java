@@ -1,7 +1,9 @@
 package trabajo_practico_1_act_2;
 
+import java.util.Scanner;
+
 /*Para entrar a la montaña rusa interno en las alturas se requiere
- *  tener al menos 7 años Y medir más de 1,50 metros. 
+ *  tener al menos 7 años O medir más de 1,50 metros. 
  *  Completá el siguiente cuadro a mano según los requisitos 
  *  y luego escribí el programa que permita, ejecutándolo cada vez para cada niño 
  *  y según las edades y estaturas ingresadas por el usuario, 
@@ -17,13 +19,10 @@ package trabajo_practico_1_act_2;
  * 1.45   1.23    1.51  1.39
  */
 
-import java.util.Scanner;
-
-public class Ejercicio_14 {
-
+public class Ejercicio_15 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner miTeclado = new Scanner(System.in);
 		
 		 String nombre;
@@ -41,7 +40,7 @@ public class Ejercicio_14 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Juan: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 && ALTURA > 1.5;
+	        podriaEntrar = EDAD >= 7 || ALTURA > 1.5;
 	        Juan = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
 
 	        // Maria
@@ -50,7 +49,7 @@ public class Ejercicio_14 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Maria: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 && ALTURA > 1.5;
+	        podriaEntrar = EDAD >= 7 || ALTURA > 1.5;
 	        Maria = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
 
 	        // Luis
@@ -59,7 +58,7 @@ public class Ejercicio_14 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Luis: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 && ALTURA > 1.5;
+	        podriaEntrar = EDAD >= 7 || ALTURA > 1.5;
 	        Luis = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
 
 	        // Ana
@@ -68,7 +67,7 @@ public class Ejercicio_14 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Ana: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 && ALTURA > 1.5;
+	        podriaEntrar = EDAD >= 7 || ALTURA > 1.5;
 	        Ana = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
 
 	        System.out.print("\n" +  Juan + "\n");
@@ -77,7 +76,6 @@ public class Ejercicio_14 {
 	        System.out.print( Ana + "\n");
 	        
 	        miTeclado.close();
-		
 
 	}
 
