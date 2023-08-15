@@ -1,7 +1,8 @@
 package trabajo_practico_1_act_2;
 
 /*Enunciado
- * Realizó un programa que permita ingresar dos números enteros e indique cuál de ellos es el mayor. [EC] 
+ * Realizó un programa que permita ingresar dos números enteros e 
+ * indique cuál de ellos es el mayor. [EC] 
  */
 
 import java.util.Scanner;
@@ -27,7 +28,7 @@ public class Ejercicio_12 {
 		}
 		else { 
 				if (num1 >= num2) {
-					System.out.println("El primer valor es mayor al segundo ");
+					System.out.println("El primer valor es mayor al segundo");
 					} else {
 						System.out.println("El segundo valor es mayor");
 						}

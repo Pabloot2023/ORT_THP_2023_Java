@@ -15,7 +15,7 @@ public class Ejercicio_11 {
 		boolean esPar = false;
 		
 		System.out.println("Ingrese un numero entero, le dire si es par o impar");
-		num = Integer.parseInt(miTeclado.nextLine());
+		num =  miTeclado.nextInt();
 		
 		if (num % 2 == 0) {
             System.out.println("\n" + num + " es un numero par");
