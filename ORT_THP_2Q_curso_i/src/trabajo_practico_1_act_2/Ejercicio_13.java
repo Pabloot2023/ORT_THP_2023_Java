@@ -1,7 +1,8 @@
 package trabajo_practico_1_act_2;
 
 /* Enunciado
- Realizó un programa para ingresar tres números enteros e indique cuál de ellos es el mayor y su valor. [EC]
+ Realizó un programa para ingresar tres números enteros e indique 
+ cuál de ellos es el mayor y su valor. [EC]
  */
 
 import java.util.Scanner;
