@@ -21,15 +21,20 @@ public class Ejercicio_12 {
 		System.out.println("Ingrese otro numero entero");
 		num2 = miTeclado.nextInt();
 		
-		if (num1 > num2) {
-			System.out.println("El mayor es " + num1 );
-		} else {
-			System.out.println("El mayor es " + num2 );
+		
+		if (num1 == num2) {
+			System.out.println("Ambos numeros son iguales");
 		}
+		else { 
+				if (num1 >= num2) {
+					System.out.println("El primer valor es mayor al segundo ");
+					} else {
+						System.out.println("El segundo valor es mayor");
+						}
 		
 		  miTeclado.close();
 		
 
 	}
-
+	}
 }
