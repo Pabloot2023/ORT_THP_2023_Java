@@ -29,7 +29,7 @@ public class Ejercicio_2 {
 		// variable para el promedio
 		String nombre = "Juan";
 		// variable para el nombre del alumno
-		boolean x = true;
+		boolean x = false;
 		// variable para loopear
 	
 		
@@ -56,6 +56,7 @@ public class Ejercicio_2 {
         System.out.println("La nota del primer parcial es: " + notaparcial1);
         System.out.println("La nota del segundo parcial es: " + notaparcial2 + "\n");
         System.out.println("El Promedio es: " + promedio + "\n");
+       
         
         
         //toma decision en base a condicion
@@ -71,7 +72,9 @@ public class Ejercicio_2 {
         }
   
         
-      } while( x=true);
+      } 
+			
+		while( x=true);
 		// loop infinito
 			
 		miTeclado.close();
