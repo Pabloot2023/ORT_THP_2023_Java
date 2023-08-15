@@ -27,11 +27,20 @@ public class Ejercicio_13 {
 	    
 	    mayor = numero1;  
 	    
-	    if (numero2 > mayor) {
+	    if (numero2 > numero1) {
 	        mayor = numero2;  
-	    } else if (numero3 > mayor) {
-	        mayor = numero3;  
 	    }
+	    
+	    if (numero3 > numero2) {
+	        mayor = numero2;  
+	    }
+	    if (numero1 > numero3) {
+	        mayor = numero1;  
+	    }
+	   
+//	    else if (numero3 > mayor) {
+//	        mayor = numero3;  
+//	    }
 	    
 	    System.out.println("El numero mayor es: " + mayor);  // imprimir el número mayor
 	    
