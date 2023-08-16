@@ -37,9 +37,9 @@ public class Ejercicio_14 {
 
 	        // Juan
 	        nombre = "Juan";
-	        System.out.print("Ingrese la edad de Juan: ");
+	        System.out.print("Ingrese la edad de: " + nombre);
 	        EDAD = miTeclado.nextInt();
-	        System.out.print("Ingrese la altura de Juan: ");
+	        System.out.print("Ingrese la altura de: "  + nombre);
 	        ALTURA = miTeclado.nextDouble();
 	        podriaEntrar = EDAD >= 7 && ALTURA > 1.5;
 	        Juan = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");

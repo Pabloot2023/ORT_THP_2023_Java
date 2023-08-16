@@ -50,16 +50,11 @@ public class Ejercicio_20 {
 	                }
 	                break;
 	            default:
-	                System.out.println("ERROR: Operación inválida.");
+	                System.out.println("ERROR: Operacion invalida.");
 	                break;
-	        }
-	        
-	        
-	        
+	        }    
 
 	        miTeclado.close();
-		
-		
 
 	}
 
