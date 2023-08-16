@@ -34,12 +34,36 @@ public class Ejercicio_19 {
         esImpar = (num % 2 != 0);
         estaEnAmbosGrupos = (esDeUnSoloDigito && esImpar);
         noEstaEnNingunGrupo = (!esDeUnSoloDigito && !esImpar);
+        
+        if (esDeUnSoloDigito) {
+        		System.out.println("\n" + "Es de un solo digito: " + "Verdadero");	
+        } else {
+    			System.out.println("\n" + "Es de un solo digito: " + "Falso");	
+        }
+        
+        if (esImpar) {
+    			System.out.println("\n" + "Es impar: " + "Verdadero" );	
+        } else {
+        		System.out.println("\n" + "Es impar: " + "Falso" );	
+        }
+        
+        if (estaEnAmbosGrupos) {
+        		System.out.println("\n" + "Esta en ambos grupos: " + "Verdadero" );	
+        } else {
+        		System.out.println("\n" + "Esta en ambos grupos: " + "Falso" );		
+        }
+        
+        if (noEstaEnNingunGrupo) {
+				System.out.println("\n" + "No esta en ningun grupo: " + "Verdadero" );	
+        } else {
+        		System.out.println("\n" + "No esta en ningun grupo: " + "Falso" );	
+        }
 
-        System.out.println("\n" + "El numero ingresado es: " + num);
-        System.out.println("Es de un solo digito: " + (esDeUnSoloDigito ? "Verdadero" : "Falso"));
-        System.out.println("Es impar: " + (esImpar ? "Verdadero" : "Falso"));
-        System.out.println("Esta en ambos grupos: " + (estaEnAmbosGrupos ? "Verdadero" : "Falso"));
-        System.out.println("No esta en ningun grupo: " + (noEstaEnNingunGrupo ? "Verdadero" : "Falso"));
+        
+//        System.out.println("Es de un solo digito: " + (esDeUnSoloDigito ? "Verdadero" : "Falso"));
+//        System.out.println("Es impar: " + (esImpar ? "Verdadero" : "Falso"));
+//        System.out.println("Esta en ambos grupos: " + (estaEnAmbosGrupos ? "Verdadero" : "Falso"));
+//        System.out.println("No esta en ningun grupo: " + (noEstaEnNingunGrupo ? "Verdadero" : "Falso"));
 
         miTeclado.close();
 		
