@@ -42,9 +42,13 @@ public class Ejercicio_21 {
             case 7:
                 nombreDia = "Sábado";
                 break;
+            case 8:
+                nombreDia = "asd";
+                break;    
             default:
                 nombreDia = "Error";
                 break;
+                
         }
 
         if (nombreDia.equals("Error")) {
