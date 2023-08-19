@@ -14,17 +14,16 @@ public class Ejercicio_7 {
 		int ancho;
 		int largo;
 		int valorM2;
-		int altura;
 		
 		Scanner miTeclado = new Scanner(System.in);
 		
-		System.out.println("Ingrese el ancho del terreno");
+		System.out.println("Ingrese el ancho del terreno: ");
 		ancho =  miTeclado.nextInt();
 		
-		System.out.println("Ingrese el largo del terreno");
+		System.out.println("Ingrese el largo del terreno: ");
 		largo =  miTeclado.nextInt();
 		
-		System.out.println("Ingrese el valor del metro cuadrado de tierra");
+		System.out.println("Ingrese el valor del metro cuadrado de tierra: ");
 		valorM2 =  miTeclado.nextInt();
 
 		
