@@ -1,5 +1,4 @@
 /*Enunciado
-
 	Realizá un programa que permita ingresar un número entero. Debe mostrarse el número ingresado:
 	Multiplicado por 5.
 	Dividido por 2.

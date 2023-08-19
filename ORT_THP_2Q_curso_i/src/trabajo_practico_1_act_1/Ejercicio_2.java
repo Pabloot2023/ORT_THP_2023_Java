@@ -1,9 +1,9 @@
-package trabajo_practico_1_act_1;
-
 /*Enunciado
-Realizá un programa que permita ingresar 3 notas pertenecientes a tres trimestres distintos
- para cierto alumno de nivel secundario. Debe calcularse y mostrarse la nota promedio. [EC]
+	Realizá un programa que permita ingresar 3 notas pertenecientes a tres trimestres distintos
+	 para cierto alumno de nivel secundario. Debe calcularse y mostrarse la nota promedio. [EC]
 */
+
+package trabajo_practico_1_act_1;
 
 import java.util.Scanner;
 //se importa el scanner
