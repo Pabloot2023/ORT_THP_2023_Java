@@ -1,11 +1,11 @@
-package trabajo_practico_1_act_2;
+/*Enunciado
+    Realizá un programa que permita ingresar la cantidad de inscriptos a una conferencia
+    y la cantidad de asientos disponibles en el auditorio. 
+    Debes indicar si alcanzan los asientos, Si los asientos no alcanzaran 
+    indicar cuántos faltan para que todos los inscriptos puedan sentarse.
+*/
 
-/*  Enunciado
- *  Realizá un programa que permita ingresar la cantidad de inscriptos a una conferencia
- *  y la cantidad de asientos disponibles en el auditorio. 
- *  Debes indicar si alcanzan los asientos, Si los asientos no alcanzaran 
- *  indicar cuántos faltan para que todos los inscriptos puedan sentarse.
- */
+package trabajo_practico_1_act_2;
 
 import java.util.Scanner;
 
