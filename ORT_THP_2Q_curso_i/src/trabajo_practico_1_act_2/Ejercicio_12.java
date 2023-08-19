@@ -1,9 +1,9 @@
-package trabajo_practico_1_act_2;
-
 /*Enunciado
- * Realizó un programa que permita ingresar dos números enteros e 
- * indique cuál de ellos es el mayor. [EC] 
- */
+ 	Realizó un programa que permita ingresar dos números enteros e 
+ 	indique cuál de ellos es el mayor. [EC] 
+*/
+
+package trabajo_practico_1_act_2;
 
 import java.util.Scanner;
 

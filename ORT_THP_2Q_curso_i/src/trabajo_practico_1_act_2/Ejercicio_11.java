@@ -1,8 +1,8 @@
-package trabajo_practico_1_act_2;
-
 /*Enunciado
-Realizá un programa que permita ingresar un número entero e indique si se trata de un número par o impar. [EC]
+ 	Realizá un programa que permita ingresar un número entero e indique si se trata de un número par o impar. [EC]
 */
+
+package trabajo_practico_1_act_2;
 
 import java.util.Scanner;
 
