@@ -1,9 +1,9 @@
-package trabajo_practico_1_act_1;
-
 /*Enunciado
 	Realizá un programa que permita ingresar dos números naturales.
 	Debes mostrar los resultados para las 4 operaciones matemáticas básicas con los números ingresados. [EC] 
 */
+
+package trabajo_practico_1_act_1;
 
 import java.util.Scanner;
 

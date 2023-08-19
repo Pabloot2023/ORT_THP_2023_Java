@@ -1,5 +1,3 @@
-package trabajo_practico_1_act_1;
-
 /*Enunciado
  	Realizá un programa que permita resolver el siguiente problema: 
  	Tres personas aportan diferente capital a una sociedad y desean saber el valor total aportado
@@ -8,6 +6,7 @@ package trabajo_practico_1_act_1;
  	y a partir de esto calcular e informar lo requerido previamente.
 */
 
+package trabajo_practico_1_act_1;
 
 import java.util.Scanner;
 
