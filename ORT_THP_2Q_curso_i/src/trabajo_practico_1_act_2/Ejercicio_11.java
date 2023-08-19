@@ -25,7 +25,12 @@ public class Ejercicio_11 {
 
 		  miTeclado.close();
 
-// otra forma de hacer lo mismo
+
+		}
+
+	}
+	
+/* otra forma de hacer lo mismo
 		  
 		  if (num % 2 == 0) {
 	            esPar = true;
@@ -38,8 +43,10 @@ public class Ejercicio_11 {
 	        } else {
 	          System.out.println("\n" + num + " es un numero impar");
 	        }
+*/			
 		  
- // otra forma de hacer lo mismo.MAS OPTIMO	  
+
+/* otra forma de hacer lo mismo.MAS OPTIMO	  
 		  esPar = num % 2 == 0;
 		  
 		  if (esPar == true) {
@@ -47,6 +54,6 @@ public class Ejercicio_11 {
 	        } else {
 	          System.out.println("\n" + num + " es un numero impar");
 	        }
-	}
 
-	}
+*/	
+
