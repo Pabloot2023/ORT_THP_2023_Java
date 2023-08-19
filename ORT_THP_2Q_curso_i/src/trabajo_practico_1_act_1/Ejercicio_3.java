@@ -1,10 +1,12 @@
-package trabajo_practico_1_act_1;
-
 /*Enunciado
-Realizá un programa que permita ingresar un número entero. Debe mostrarse el número ingresado:
-Multiplicado por 5.
-Dividido por 2.
+
+	Realizá un programa que permita ingresar un número entero. Debe mostrarse el número ingresado:
+	Multiplicado por 5.
+	Dividido por 2.
 */
+
+
+package trabajo_practico_1_act_1;
 
 import java.util.Scanner;
 

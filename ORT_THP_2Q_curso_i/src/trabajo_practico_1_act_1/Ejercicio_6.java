@@ -1,10 +1,10 @@
 package trabajo_practico_1_act_1;
 
 /*Enunciado
- Realizá un programa que permita ingresar el monto total de las ventas realizadas por un vendedor durante el mes,
- *  de quien se sabe que gana un sueldo fijo de 44000 pesos más el 16 por ciento del monto total vendido. 
- *  Con tales datos debes calcular y mostrar el importe a cobrar por el vendedor.
- */
+	Realizá un programa que permita ingresar el monto total de las ventas realizadas por un vendedor durante el mes,
+	de quien se sabe que gana un sueldo fijo de 44000 pesos más el 16 por ciento del monto total vendido. 
+	Con tales datos debes calcular y mostrar el importe a cobrar por el vendedor.
+*/
 
 import java.util.Scanner;
 

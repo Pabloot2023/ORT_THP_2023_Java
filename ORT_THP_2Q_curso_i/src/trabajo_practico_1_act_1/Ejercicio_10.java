@@ -1,17 +1,17 @@
 package trabajo_practico_1_act_1;
 
 /*Enunciado
- * Realizá un programa que permita resolver el siguiente problema: 
- * Tres personas aportan diferente capital a una sociedad y desean saber el valor total aportado
- *  y qué porcentaje aportó cada una (indicando nombre y porcentaje). 
- *  Solicitar la carga por teclado del nombre de cada socio, su capital aportado 
- *  y a partir de esto calcular e informar lo requerido previamente.
- */
+ 	Realizá un programa que permita resolver el siguiente problema: 
+ 	Tres personas aportan diferente capital a una sociedad y desean saber el valor total aportado
+ 	y qué porcentaje aportó cada una (indicando nombre y porcentaje). 
+ 	Solicitar la carga por teclado del nombre de cada socio, su capital aportado 
+ 	y a partir de esto calcular e informar lo requerido previamente.
+*/
 
 
 import java.util.Scanner;
 
-public class Ejercicio_9a {
+public class Ejercicio_10 {
 
 	public static void main(String[] args) {
 		
