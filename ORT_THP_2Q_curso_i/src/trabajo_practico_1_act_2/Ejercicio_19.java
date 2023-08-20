@@ -61,11 +61,6 @@ public class Ejercicio_19 {
         }
 
         
-//        System.out.println("Es de un solo digito: " + (esDeUnSoloDigito ? "Verdadero" : "Falso"));
-//        System.out.println("Es impar: " + (esImpar ? "Verdadero" : "Falso"));
-//        System.out.println("Esta en ambos grupos: " + (estaEnAmbosGrupos ? "Verdadero" : "Falso"));
-//        System.out.println("No esta en ningun grupo: " + (noEstaEnNingunGrupo ? "Verdadero" : "Falso"));
-
         miTeclado.close();
 		
 
