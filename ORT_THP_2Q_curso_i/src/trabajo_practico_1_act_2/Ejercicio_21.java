@@ -17,7 +17,7 @@ public class Ejercicio_21 {
 		int diaSemana;
         String nombreDia;
 
-        System.out.println("Ingrese un número entre 1 y 7:");
+        System.out.println("Ingrese un numero entre 1 y 7: ");
         diaSemana = miTeclado.nextInt();
 
         switch(diaSemana) {
@@ -41,10 +41,7 @@ public class Ejercicio_21 {
                 break;
             case 7:
                 nombreDia = "Sábado";
-                break;
-            case 8:
-                nombreDia = "asd";
-                break;    
+                break;   
             default:
                 nombreDia = "Error";
                 break;
