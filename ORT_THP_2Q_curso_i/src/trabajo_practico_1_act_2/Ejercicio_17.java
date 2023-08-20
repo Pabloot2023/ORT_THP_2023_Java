@@ -42,16 +42,16 @@ public class Ejercicio_17 {
         	} else {
         	generoFlag = false;	
         	}
-     // FIN BANDERAS
+        // FIN BANDERAS
         
-      //INICIO PROGRAMA 3 ESCENARIOS
-      //ESCENARIO 1 ERROR - CIERRA
-      //ESCENARIO 2 OK - SE PUEDE JUBILAR - CIERRA 
-      //ESCENARIO 3 OK - NO SE PUEDE JUBILAR - CIERRA 
+        			//INICIO PROGRAMA 3 ESCENARIOS
+        			//ESCENARIO 1 ERROR - CIERRA
+        			//ESCENARIO 2 DATOS OK - SE PUEDE JUBILAR - CIERRA 
+        			//ESCENARIO 3 DATOS OK - NO SE PUEDE JUBILAR - CIERRA 
         
       //INICIO BLOQUE PROGRAMA 
         if ( edadFlag == false || generoFlag == false ) {
-        	//ESCENARIO 3 OK - NO SE PUEDE JUBILAR - CIERRA 
+        	//ESCENARIO 1 ERROR - CIERRA
         	System.out.println("--------------------------------------");
         	System.out.println("Los valores ingresados son invalidos.");
         	System.out.println("Programa terminado");
@@ -59,7 +59,7 @@ public class Ejercicio_17 {
         }
         	else  if ( edadFlag == true && generoFlag == true ) {
         	
-        		//INICIO CASO OK
+        		//INICIO BLOQUE PROGRAMA DATOS OK
 				if ((genero.equals("F") && edadNum >= 60) || (genero.equals("M") && edadNum >= 65)) {
 					//ESCENARIO 2 OK - SE PUEDE JUBILAR - CIERRA 
 					System.out.println("--------------------------------------");
@@ -73,8 +73,7 @@ public class Ejercicio_17 {
 					System.out.println("Programa terminado");
 		        	System.out.println("--------------------------------------");
 					}
-				
-				//FIN BLOQUE PROGRAMA       	
+				//FIN BLOQUE PROGRAMA DATOS OK       	
         		}
         miTeclado.close();
 	}
