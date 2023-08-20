@@ -18,41 +18,65 @@ public class Ejercicio_17 {
 	public static void main(String[] args) {
 		Scanner miTeclado = new Scanner(System.in);
 		
-		int edad;
-        char genero;
-
-        // Repetir hasta que se ingrese una edad válida
-        do {
-            System.out.print("Ingrese la edad: ");
-            if (miTeclado.hasNextInt()) {
-                edad = miTeclado.nextInt();
-                miTeclado.nextLine(); // Para limpiar el buffer del scanner
-                break;
-            } else {
-                System.out.println("Los valores ingresados son inválidos.");
-                miTeclado.nextLine(); // Para limpiar el buffer del scanner
-            }
-        } while (true);
-
-        // Repetir hasta que se ingrese un género válido
-        do {
-            System.out.print("Ingrese el género (F/M): ");
-            genero = miTeclado.nextLine().toUpperCase().charAt(0);
-            if (genero == 'F' || genero == 'M') {
-                break;
-            } else {
-                System.out.println("El género ingresado es inválido.");
-            }
-        } while (true);
-
-        if ((genero == 'F' && edad >= 60) || (genero == 'M' && edad >= 65)) {
-            System.out.println("Esta en edad de jubilarse.");
-        } else {
-            System.out.println("No esta en edad de jubilarse.");
+		int edadNum;
+		boolean edadFlag;
+        String genero;
+        boolean generoFlag;
+        
+        System.out.print("Ingrese la edad: ");
+        edadNum = miTeclado.nextInt();
+        miTeclado.nextLine(); // limpiar buffer del teclado 
+        
+        System.out.print("Ingrese el genero (F/M): ");
+        genero = miTeclado.nextLine().toUpperCase();
+        
+        // INICIO BANDERAS
+        if ( edadNum >= 1 && edadNum <= 120)  {
+        	edadFlag = true;
+        	} else {
+        	edadFlag = false;	
+        	}
+        
+        if (genero.equals("M") || genero.equals("F")){
+        	generoFlag = true;
+        	} else {
+        	generoFlag = false;	
+        	}
+     // FIN BANDERAS
+        
+      //INICIO PROGRAMA 3 ESCENARIOS
+      //ESCENARIO 1 ERROR - CIERRA
+      //ESCENARIO 2 OK - SE PUEDE JUBILAR - CIERRA 
+      //ESCENARIO 3 OK - NO SE PUEDE JUBILAR - CIERRA 
+        
+      //INICIO BLOQUE PROGRAMA 
+        if ( edadFlag == false || generoFlag == false ) {
+        	//ESCENARIO 3 OK - NO SE PUEDE JUBILAR - CIERRA 
+        	System.out.println("--------------------------------------");
+        	System.out.println("Los valores ingresados son invalidos.");
+        	System.out.println("Programa terminado");
+        	System.out.println("--------------------------------------");
         }
-
+        	else  if ( edadFlag == true && generoFlag == true ) {
+        	
+        		//INICIO CASO OK
+				if ((genero.equals("F") && edadNum >= 60) || (genero.equals("M") && edadNum >= 65)) {
+					//ESCENARIO 2 OK - SE PUEDE JUBILAR - CIERRA 
+					System.out.println("--------------------------------------");
+					System.out.println("Esta en edad de jubilarse.");
+					System.out.println("Programa terminado");
+		        	System.out.println("--------------------------------------");
+				} else {
+				    //ESCENARIO 3 OK - NO SE PUEDE JUBILAR - CIERRA 
+					System.out.println("--------------------------------------");
+					System.out.println("No esta en edad de jubilarse.");
+					System.out.println("Programa terminado");
+		        	System.out.println("--------------------------------------");
+					}
+				
+				//FIN BLOQUE PROGRAMA       	
+        		}
         miTeclado.close();
-
 	}
-
-}
+	
+  }
