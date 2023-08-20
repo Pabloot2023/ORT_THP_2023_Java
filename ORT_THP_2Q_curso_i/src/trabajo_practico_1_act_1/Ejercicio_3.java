@@ -23,12 +23,18 @@ public class Ejercicio_3 {
         System.out.println("El numero ingresado es: " + numero + "\n");
     	
         System.out.println("El numero multiplicado por 5 es: " + (numero * 5) + "\n");
-    
+        
         //System.out.println("El número dividido por 2 es: " + (numero / 2) + "\n");
         System.out.printf("El numero dividido por 2 es: %.2f", ((double) numero / 2));
 		
         //%.2f para que exhiba los dos decimales
         //(double) para que cambie el int de la variable numero a double
+        
+        /*otra forma para elegir cuantos decimales mostrar
+         	double division = (double) numero / 2;
+        	DecimalFormat decimalFormat = new DecimalFormat("#.##");
+        	System.out.println("El número dividido por 2 es: " + decimalFormat.format(division));
+        */
         
         miTeclado.close();
 		
