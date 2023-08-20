@@ -12,7 +12,7 @@ public class Ejercicio_11 {
 	
 		Scanner miTeclado = new Scanner(System.in);
 		int num = 0;
-		boolean esPar = false;
+//		boolean esPar = false;
 		
 		System.out.println("Ingrese un numero entero, le dire si es par o impar");
 		num =  miTeclado.nextInt();
