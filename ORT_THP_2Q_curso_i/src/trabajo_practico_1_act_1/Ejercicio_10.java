@@ -59,7 +59,6 @@ public class Ejercicio_10 {
 		 System.out.println("------------DETALLES CONTABLES DE LA SOCIEDAD------------");
 		 System.out.println("---------------------------------------------------------" + "\n");
 		 
-//		 System.out.println("El monto total en pesos del fondo de la sociedad es: " + totalFondo);
 		 System.out.println( user1 + " aporto: " + user11 + " pesos representando el " + p1 + "% del Total de la Sociedad" + "\n");
 		 System.out.println( user2 + " aporto: " + user22 + " pesos representando el " + p2 + "% del Total de la Sociedad" + "\n");
 		 System.out.println( user3 + " aporto: " + user33 + " pesos representando el " + p3 + "% del Total de la Sociedad" + "\n");

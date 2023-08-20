@@ -29,15 +29,12 @@ public class Ejercicio_2 {
 		// variable para el promedio
 		String nombre = "Juan";
 		// variable para el nombre del alumno
-		boolean x = false;
-		// variable para loopear
 	
 		
 		System.out.println("Ingrese el Nombre del Alumno: ");
 		nombre = miTeclado.nextLine();
 		// se pregunta el nombre y pisa lo inicializado
-		
-			do {	
+			
 	
 		System.out.println("Ingrese la primer nota: ");
 		// se pregunta la primer nota y pisa lo inicializado
@@ -71,11 +68,7 @@ public class Ejercicio_2 {
         // caso negativo
         }
   
-        
-      } 
-			
-		while( x=true);
-		// loop infinito
+
 			
 		miTeclado.close();
 	    // por buena practica siempre cerrar el scanner que se abre
