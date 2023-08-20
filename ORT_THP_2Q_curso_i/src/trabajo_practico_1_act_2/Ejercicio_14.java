@@ -35,15 +35,24 @@ public class Ejercicio_14 {
 	        String Maria;
 	        String Luis;
 	        String Ana;
+	        String flag;
 
 	        // Juan
 	        nombre = "Juan";
-	        System.out.print("Ingrese la edad de: " + nombre);
+	        System.out.print("Ingrese la edad de Juan: ");
 	        EDAD = miTeclado.nextInt();
-	        System.out.print("Ingrese la altura de: "  + nombre);
+	        System.out.print("Ingrese la altura de Juan: " );
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 && ALTURA > 1.5;
-	        Juan = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
+	        
+	        if (podriaEntrar = EDAD >= 7 && ALTURA > 1.5 ) {
+	        	podriaEntrar = true;
+	        	flag = "puede";
+	        } else {
+	        	podriaEntrar = false;
+	        	flag = "no puede";
+	        }
+	        
+	        Juan = (nombre + " tiene " + EDAD + " anios, mide " + ALTURA + " metros y " + flag + " entrar al juego.");
 
 	        // Maria
 	        nombre = "Maria";
@@ -51,8 +60,16 @@ public class Ejercicio_14 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Maria: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 && ALTURA > 1.5;
-	        Maria = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
+	        
+	        if (podriaEntrar = EDAD >= 7 && ALTURA > 1.5 ) {
+	        	podriaEntrar = true;
+	        	flag = "puede";
+	        } else {
+	        	podriaEntrar = false;
+	        	flag = "no puede";
+	        } 	        
+	        
+	        Maria = (nombre + " tiene " + EDAD + " anios, mide " + ALTURA + " metros y " + flag + " entrar al juego.");
 
 	        // Luis
 	        nombre = "Luis";
@@ -60,8 +77,16 @@ public class Ejercicio_14 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Luis: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 && ALTURA > 1.5;
-	        Luis = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
+
+	        if (podriaEntrar = EDAD >= 7 && ALTURA > 1.5 ) {
+	        	podriaEntrar = true;
+	        	flag = "puede";
+	        } else {
+	        	podriaEntrar = false;
+	        	flag = "no puede";
+	        }  	        
+	        
+	        Luis = (nombre + " tiene " + EDAD + " anios, mide " + ALTURA + " metros y " + flag + " entrar al juego.");
 
 	        // Ana
 	        nombre = "Ana";
@@ -69,8 +94,16 @@ public class Ejercicio_14 {
 	        EDAD = miTeclado.nextInt();
 	        System.out.print("Ingrese la altura de Ana: ");
 	        ALTURA = miTeclado.nextDouble();
-	        podriaEntrar = EDAD >= 7 && ALTURA > 1.5;
-	        Ana = (nombre + " tiene " + EDAD + " años, mide " + ALTURA + " metros y " + (podriaEntrar ? "puede" : "no puede") + " entrar al juego.");
+
+	        if (podriaEntrar = EDAD >= 7 && ALTURA > 1.5 ) {
+	        	podriaEntrar = true;
+	        	flag = "puede";
+	        } else {
+	        	podriaEntrar = false;
+	        	flag = "no puede";
+	        }      	       	        
+	        
+	        Ana = (nombre + " tiene " + EDAD + " anios, mide " + ALTURA + " metros y " + flag + " entrar al juego.");
 
 	        System.out.print("\n" +  Juan + "\n");
 	        System.out.print( Maria + "\n");
