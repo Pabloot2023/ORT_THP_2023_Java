@@ -32,7 +32,7 @@ public class Ejercicio_13 {
 	    }
 	    
 	    if (numero3 > numero2) {
-	        mayor = numero2;  
+	        mayor = numero3;  
 	    }
 	    if (numero1 > numero3) {
 	        mayor = numero1;  
