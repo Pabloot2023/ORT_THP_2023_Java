@@ -23,10 +23,11 @@ public class Ejercicio_4 {
         
         
         System.out.println("Ingrese un numero el valor monetario de una hora de trabajo: ");
-       
+        valorHora = miTeclado.nextInt();
         	
         System.out.println("Ingrese la cantidad de horas trabajadas por dia del trabajador: ");
         cantHora = miTeclado.nextInt();
+        
         pagoDia = valorHora*cantHora;
         pagoSem = pagoDia*7;
         horaSab = ((cantHora/2)*valorHora);
