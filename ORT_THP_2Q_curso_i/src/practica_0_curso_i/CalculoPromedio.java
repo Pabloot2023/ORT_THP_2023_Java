@@ -83,6 +83,9 @@ public class CalculoPromedio {
 			
 		miTeclado.close();
 	    // por buena practica siempre cerrar el scanner que se abre
+		
+		
+		
 	
 	}
 
