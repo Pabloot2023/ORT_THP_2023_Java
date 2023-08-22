@@ -1,4 +1,4 @@
-package curso_i;
+package practica_0_curso_i;
 //se declara el paquete
 
 import java.util.Scanner;
