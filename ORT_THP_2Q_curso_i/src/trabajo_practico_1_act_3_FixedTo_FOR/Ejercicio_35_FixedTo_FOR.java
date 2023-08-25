@@ -1,6 +1,6 @@
 package trabajo_practico_1_act_3_FixedTo_FOR;
 
-public class Ejercicio_31 {
+public class Ejercicio_35_FixedTo_FOR {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
