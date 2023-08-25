@@ -9,7 +9,7 @@ package trabajo_practico_1_act_1_FixedTo_FOR;
 
 import java.util.Scanner;
 
-public class Ejercicio_4 {
+public class Ejercicio_4_FixedTo_FOR {
 
 	public static void main(String[] args) {
 		
