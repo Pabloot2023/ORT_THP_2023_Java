@@ -9,7 +9,7 @@ package trabajo_practico_1_act_2_FixedTo_FOR;
 
 import java.util.Scanner;
 
-public class Ejercicio_21 {
+public class Ejercicio_21_FixedTo_For {
 
 	public static void main(String[] args) {
 		Scanner miTeclado = new Scanner(System.in);

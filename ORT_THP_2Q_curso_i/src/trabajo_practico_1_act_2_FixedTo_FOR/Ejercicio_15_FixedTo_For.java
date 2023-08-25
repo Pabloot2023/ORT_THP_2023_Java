@@ -20,7 +20,7 @@ package trabajo_practico_1_act_2_FixedTo_FOR;
 
 import java.util.Scanner;
 
-public class Ejercicio_15 {
+public class Ejercicio_15_FixedTo_For {
 
 	public static void main(String[] args) {
 
