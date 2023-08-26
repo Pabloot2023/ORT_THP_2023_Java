@@ -32,6 +32,7 @@ public class Ejercicio_24 {
          * ver que forma de ciclo usar para validar que num 2 siempre sea menor a num 1
          * 
          */
+        
         System.out.println("--------------------------------------");
         System.out.println("\n" + "La secuencia de numeros entre " + num1 + " y " + num2 + " incluyendolos, es:" );
         
