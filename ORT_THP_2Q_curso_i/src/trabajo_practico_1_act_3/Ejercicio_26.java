@@ -6,10 +6,16 @@
 
 package trabajo_practico_1_act_3;
 
+import java.util.Scanner;
+
 public class Ejercicio_26 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		  Scanner miTeclado = new Scanner(System.in);
+		  int n;
+
+	        System.out.print("Ingrese un numero natural: ");
+	        n = miTeclado.nextInt();
 
 	}
 

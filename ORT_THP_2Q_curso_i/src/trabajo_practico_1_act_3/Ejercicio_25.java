@@ -20,8 +20,6 @@ public class Ejercicio_25 {
         int alto = miTeclado.nextInt();
         
         
-
-        // Dibujo optimizado de la matriz de cruces
         for (int i = 0; i < alto; i++) {
 
             for (int j = 0; j < ancho; j++) {
