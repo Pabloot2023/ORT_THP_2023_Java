@@ -10,7 +10,7 @@ package trabajo_practico_1_act_2_FixedTo_2WHILE;
 
 import java.util.Scanner;
 
-public class Ejercicio_20 {
+public class Ejercicio_20_FixedTo_WHILE {
 
 	public static void main(String[] args) {
 		Scanner miTeclado = new Scanner(System.in);

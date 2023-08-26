@@ -7,7 +7,7 @@ package trabajo_practico_1_act_2_FixedTo_2WHILE;
 
 import java.util.Scanner;
 
-public class Ejercicio_12 {
+public class Ejercicio_12_FixedTo_WHILE {
 
 	public static void main(String[] args) {
 		
