@@ -17,7 +17,7 @@ package trabajo_practico_1_act_2_FixedTo_3DoWHILE;
 
 import java.util.Scanner;
 
-public class Ejercicio_19 {
+public class Ejercicio_19_FixedTo_DoWhile {
 
 	public static void main(String[] args) {
 		Scanner miTeclado = new Scanner(System.in);
