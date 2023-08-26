@@ -3,7 +3,7 @@
 	Debes mostrar los resultados para las 4 operaciones matemáticas básicas con los números ingresados. [EC] 
 */
 
-package trabajo_practico_1_act_1_FixedTo_FOR;
+package trabajo_practico_1_act_1_FixedTo_1FOR;
 
 import java.util.Scanner;
 

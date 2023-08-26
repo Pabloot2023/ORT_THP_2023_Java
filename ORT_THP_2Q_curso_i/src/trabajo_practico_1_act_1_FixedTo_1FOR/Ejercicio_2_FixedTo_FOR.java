@@ -3,7 +3,7 @@
 	 para cierto alumno de nivel secundario. Debe calcularse y mostrarse la nota promedio. [EC]
 */
 
-package trabajo_practico_1_act_1_FixedTo_FOR;
+package trabajo_practico_1_act_1_FixedTo_1FOR;
 
 import java.util.Scanner;
 //se importa el scanner

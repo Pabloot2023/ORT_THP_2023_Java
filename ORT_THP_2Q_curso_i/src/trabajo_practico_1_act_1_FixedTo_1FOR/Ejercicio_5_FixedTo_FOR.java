@@ -4,7 +4,7 @@
 	(que lo cargado en num1 quede en num2, y viceversa) y volvé a mostrarlas actualizadas. [EC]
 */
 
-package trabajo_practico_1_act_1_FixedTo_FOR;
+package trabajo_practico_1_act_1_FixedTo_1FOR;
 
 import java.util.Scanner;
 

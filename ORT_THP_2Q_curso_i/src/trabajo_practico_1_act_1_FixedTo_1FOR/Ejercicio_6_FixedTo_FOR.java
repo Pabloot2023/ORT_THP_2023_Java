@@ -4,7 +4,7 @@
 	Con tales datos debes calcular y mostrar el importe a cobrar por el vendedor.
 */
 
-package trabajo_practico_1_act_1_FixedTo_FOR;
+package trabajo_practico_1_act_1_FixedTo_1FOR;
 
 import java.util.Scanner;
 

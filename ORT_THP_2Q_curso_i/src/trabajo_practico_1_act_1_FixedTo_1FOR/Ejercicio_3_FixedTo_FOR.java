@@ -4,7 +4,7 @@
 	Dividido por 2.
 */
 
-package trabajo_practico_1_act_1_FixedTo_FOR;
+package trabajo_practico_1_act_1_FixedTo_1FOR;
 
 import java.util.Scanner;
 

@@ -3,7 +3,7 @@
 	El programa debe emitir una salida con un mensaje de bienvenida que incluya el nombre ingresado. [EC]
 */
 
-package trabajo_practico_1_act_1_FixedTo_FOR;
+package trabajo_practico_1_act_1_FixedTo_1FOR;
 
 import java.util.Scanner;
 
