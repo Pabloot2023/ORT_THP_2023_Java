@@ -6,10 +6,24 @@ La computadora debe mostrar cuál fue el mayor número y en qué posición apare
 
 package trabajo_practico_1_act_3;
 
+import java.util.Scanner;
+
 public class Ejercicio_28 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner miTeclado = new Scanner(System.in);
+		
+		int cant;
+		int i;
+		
+		System.out.print("Ingrese un numero entero para indicar cuantos valores desea comparar ");
+		cant = miTeclado.nextInt();
+		
+//		for ( i = 0; i < cant ; i++) {
+//			
+//			
+//			
+//		}
 
 	}
 
