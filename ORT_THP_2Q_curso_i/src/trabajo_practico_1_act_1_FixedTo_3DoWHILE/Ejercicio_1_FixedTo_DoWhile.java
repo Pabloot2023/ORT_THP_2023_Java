@@ -7,7 +7,7 @@ package trabajo_practico_1_act_1_FixedTo_3DoWHILE;
 
 import java.util.Scanner;
 
-public class Ejercicio_1 {
+public class Ejercicio_1_FixedTo_DoWhile {
 	
 	public static void main(String[] args) {
 		String x = "X";
