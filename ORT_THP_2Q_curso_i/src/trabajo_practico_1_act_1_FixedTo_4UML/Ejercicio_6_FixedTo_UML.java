@@ -8,7 +8,7 @@ package trabajo_practico_1_act_1_FixedTo_4UML;
 
 import java.util.Scanner;
 
-public class Ejercicio_6 {
+public class Ejercicio_6_FixedTo_UML {
 	
 	public static void main(String[] args) {
 	

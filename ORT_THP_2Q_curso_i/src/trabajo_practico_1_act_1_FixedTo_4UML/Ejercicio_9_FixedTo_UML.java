@@ -9,7 +9,7 @@ package trabajo_practico_1_act_1_FixedTo_4UML;
 
 import java.util.Scanner;
 
-public class Ejercicio_9 {
+public class Ejercicio_9_FixedTo_UML {
 
 	public static void main(String[] args) {
 		Scanner miTeclado = new Scanner(System.in);
