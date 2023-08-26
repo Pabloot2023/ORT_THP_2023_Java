@@ -10,10 +10,15 @@ b.	Excluyéndolos.
 
 package trabajo_practico_1_act_3;
 
+import java.util.Scanner;
+
 public class Ejercicio_24 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner miTeclado = new Scanner(System.in);
+		
+		int num1;
+		int num2;
 
 	}
 
