@@ -8,7 +8,7 @@ package trabajo_practico_1_act_1_FixedTo_2WHILE;
 import java.util.Scanner;
 //se importa el scanner
 
-public class Ejercicio_2 {
+public class Ejercicio_2_FixedTo_While {
 	
 	// private static Scanner miTeclado = new Scanner(System.in);
 	// se iniciaria scanner con private static  por estar fuera del metodo main
