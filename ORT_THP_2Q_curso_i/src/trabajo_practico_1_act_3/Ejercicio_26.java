@@ -10,13 +10,23 @@ import java.util.Scanner;
 
 public class Ejercicio_26 {
 
-	public static void main(String[] args) {
-		  Scanner miTeclado = new Scanner(System.in);
-		  int n;
+    public static void main(String[] args) {
+        Scanner miTeclado = new Scanner(System.in);
+        int n;
+        int contador = 0;
+        int i;
 
-	        System.out.print("Ingrese un numero natural: ");
-	        n = miTeclado.nextInt();
+        System.out.print("Ingrese un numero natural: ");
+        n = miTeclado.nextInt();
 
-	}
+        System.out.println("\n" + "Los primeros " + n + " multiplos del numero 3 que no son multiplos de 5 son:");
+        for ( i = 1; contador < n; i++) {
+            if (i % 3 == 0 && i % 5 != 0) {
+                System.out.println(i);
+                contador++;
+            }
+        }
 
+        miTeclado.close();
+    }
 }
