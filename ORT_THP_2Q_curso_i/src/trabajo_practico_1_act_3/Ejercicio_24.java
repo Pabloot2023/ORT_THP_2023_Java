@@ -26,24 +26,29 @@ public class Ejercicio_24 {
         
         System.out.print("Ingrese otro numero entero: ");
         num2 = miTeclado.nextInt();
-        
-        /*
-         * 
-         * ver que forma de ciclo usar para validar que num 2 siempre sea menor a num 1
-         * 
-         */
+		
+                
+        for (i = 0 ; (num1 > num2 && num1 != num2)  ; i++) {
+        	System.out.println("--------------------------------------");
+        	System.out.print("\n" + "Verifique los datos: el segundo numero no puede ser menor al primero");
+        	System.out.print("\n" + "Ingrese nuevamente un numero entero: ");
+            num1 = miTeclado.nextInt();
+            
+            System.out.print("Ingrese nuevamente otro numero entero: ");
+            num2 = miTeclado.nextInt();
+        }
         
         System.out.println("--------------------------------------");
         System.out.println("\n" + "La secuencia de numeros entre " + num1 + " y " + num2 + " incluyendolos, es:" );
         
-        for (i = num1 ; i >= num2 ; i--) {
+        for (i = num1 ; i <= num2 ; i++) {
             System.out.println("--> " + i);
         }
         
         System.out.println("\n" + "--------------------------------------");
         System.out.println("\n" + "La secuencia de numeros entre " + num1 + " y " + num2 + " excluyendolos, es:" );
         
-        for (i = num1 - 1 ; i > num2  ; i--) {
+        for (i = num1 + 1 ; i < num2  ; i++) {
             System.out.println("--> " + i);
         }
         System.out.println("\n" + "--------------------------------------");
