@@ -34,11 +34,14 @@ public class Ejercicio_24 {
          */
         System.out.println("--------------------------------------");
         System.out.println("\n" + "La secuencia de numeros entre " + num1 + " y " + num2 + " incluyendolos, es:" );
+        
         for (i = num1 ; i >= num2 ; i--) {
             System.out.println("--> " + i);
         }
+        
         System.out.println("\n" + "--------------------------------------");
         System.out.println("\n" + "La secuencia de numeros entre " + num1 + " y " + num2 + " excluyendolos, es:" );
+        
         for (i = num1 - 1 ; i > num2  ; i--) {
             System.out.println("--> " + i);
         }
