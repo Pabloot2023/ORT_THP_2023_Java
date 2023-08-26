@@ -7,9 +7,18 @@ package trabajo_practico_1_act_3;
 
 public class Ejercicio_22 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
 
-	}
-
+        int i;
+        System.out.println("--------------------------------------");
+        for (i = 1; i < 6; i++) {
+            System.out.println(i);
+        }
+        System.out.println("--------------------------------------");
+        for (i = 5; i > 0; i--) {
+            System.out.println(i);
+        }
+        System.out.println("--------------------------------------");
+    }
 }
+
