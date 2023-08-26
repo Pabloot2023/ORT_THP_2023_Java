@@ -8,7 +8,7 @@ package trabajo_practico_1_act_1_FixedTo_3DoWHILE;
 import java.util.Scanner;
 //se importa el scanner
 
-public class Ejercicio_2_FixedTo_DoWhile {
+public class Ejercicio_2_FixedTo_DoWHILE {
 	
 	// private static Scanner miTeclado = new Scanner(System.in);
 	// se iniciaria scanner con private static  por estar fuera del metodo main

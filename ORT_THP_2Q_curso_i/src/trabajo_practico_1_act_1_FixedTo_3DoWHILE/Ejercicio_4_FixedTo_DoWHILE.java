@@ -9,7 +9,7 @@ package trabajo_practico_1_act_1_FixedTo_3DoWHILE;
 
 import java.util.Scanner;
 
-public class Ejercicio_4_FixedTo_DoWhile {
+public class Ejercicio_4_FixedTo_DoWHILE {
 
 	public static void main(String[] args) {
 		
