@@ -45,7 +45,7 @@ public class Ejercicio_24 {
         System.out.println("\n" + "--------------------------------------");
         
         
-
+        miTeclado.close(); 
 	}
 
 }
