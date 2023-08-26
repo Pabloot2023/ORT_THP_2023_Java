@@ -13,12 +13,13 @@ public class Ejercicio_23 {
 		Scanner miTeclado = new Scanner(System.in);
 		int n;
 		int multiplo;
+		int i;
 		
 		System.out.print("Ingrese un numero entero: ");
          n = miTeclado.nextInt();
          
          System.out.println("\n" + "Los primeros 10 multiplos del numero " + n + " son:");
-         for (int i = 1; i <= 10; i++) {
+         for (i = 1; i <= 10; i++) {
              multiplo = n * i;
              System.out.println("--> " + multiplo);
              
