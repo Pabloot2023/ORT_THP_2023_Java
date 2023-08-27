@@ -10,21 +10,31 @@ import java.util.Scanner;
 
 public class Ejercicio_28 {
 
-	public static void main(String[] args) {
-		Scanner miTeclado = new Scanner(System.in);
-		
-		int cant;
-		int i;
-		
-		System.out.print("Ingrese un numero entero para indicar cuantos valores desea comparar ");
-		cant = miTeclado.nextInt();
-		
-//		for ( i = 0; i < cant ; i++) {
-//			
-//			
-//			
-//		}
+	 public static void main(String[] args) {
+	        Scanner miTeclado = new Scanner(System.in);
+	        
+	        int cant,mayor,posicion,numero,i;
 
+	        System.out.print("Ingrese la cantidad de numeros a ingresar: ");
+	        cant = miTeclado.nextInt();
+
+	        mayor = Integer.MIN_VALUE;
+	        posicion = 0;
+
+	        for ( i = 0; i < cant; i++) {
+	            System.out.print("Ingrese el numero " + (i + 1) + ": ");
+	            numero = miTeclado.nextInt();
+
+	            if (numero > mayor) {
+	                mayor = numero;
+	                posicion = i + 1;
+	            }
+	        }
+	   	 	System.out.println("--------------------------------------");
+	        System.out.println("\n" + "El mayor numero ingresado es: " + mayor);
+	        System.out.println("Se encontro en la posicion: " + posicion);
+	        System.out.println("\n" + "--------------------------------------");
+
+	        miTeclado.close();
+	    }
 	}
-
-}
