@@ -17,6 +17,7 @@ public class Ejercicio_28 {
 
 	        System.out.print("Ingrese la cantidad de numeros a ingresar: ");
 	        cant = miTeclado.nextInt();
+	        System.out.println("\n" + "--------------------------------------");
 
 	        mayor = Integer.MIN_VALUE;
 	        posicion = 0;
