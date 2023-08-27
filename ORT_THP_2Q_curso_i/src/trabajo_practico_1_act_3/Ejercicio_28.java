@@ -13,7 +13,8 @@ public class Ejercicio_28 {
 	 public static void main(String[] args) {
 	        Scanner miTeclado = new Scanner(System.in);
 	        
-	        int cant,mayor,posicion,numero,i;
+	        int cant,posicion,numero,i;
+	        int mayor = 0;
 
 	        System.out.print("Ingrese la cantidad de numeros a ingresar: ");
 	        cant = miTeclado.nextInt();
@@ -23,7 +24,7 @@ public class Ejercicio_28 {
 	        posicion = 0;
 
 	        for ( i = 0; i < cant; i++) {
-	            System.out.print("Ingrese el numero " + (i + 1) + ": ");
+	            System.out.print("Ingrese el numero de la posicion " + (i + 1) + ": ");
 	            numero = miTeclado.nextInt();
 
 	            if (numero > mayor) {
