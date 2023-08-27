@@ -1,3 +1,3 @@
 # ORT_THP_2023
 
-![TP1Enunciados1al21](https://github.com/Pabloot2023/ORT_THP_2023_Java/assets/142069541/ed8d7f0e-f98e-42de-837c-bad6f225d86a)
+![tp1](https://github.com/Pabloot2023/ORT_THP_2023_Java/assets/142069541/592e9f00-f57e-4c37-9ce5-568e736a1c56)
