@@ -3,6 +3,26 @@
 	Debes mostrar los resultados para las 4 operaciones matemáticas básicas con los números ingresados. [EC] 
 */
 
+/*@startuml
+class Scanner
+class Ejercicio_8_FixedTo_UML {
+    - miTeclado: Scanner
+    - num1: int
+    - num2: int
+    - suma: int
+    - resta: int
+    - multiplicacion: int
+    - division: double
+    
+    +main(args: String[]): void
+}
+
+Ejercicio_8_FixedTo_UML --> Scanner
+
+Ejercicio_8_FixedTo_UML : RealizarOperacionesMatematicas()
+@enduml
+*/
+
 package trabajo_practico_1_act_1_FixedTo_4UML;
 
 import java.util.Scanner;

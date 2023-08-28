@@ -4,6 +4,24 @@
 	y la cantidad de metros de alambre para cercarlo completamente a tres alturas distintas.
 */
 
+/*
+@startuml
+class Ejercicio_7_FixedTo_UML {
+    - ancho: int
+    - largo: int
+    - valorM2: int
+    - miTeclado: Scanner
+    
+    +main(args: String[]): void
+}
+
+Ejercicio_7_FixedTo_UML --> Scanner
+
+Ejercicio_7_FixedTo_UML : CalcularValorTotal()
+Ejercicio_7_FixedTo_UML : CalcularAlambrePorAltura(altura: int): int
+@enduml
+ */
+
 package trabajo_practico_1_act_1_FixedTo_4UML;
 
 import java.util.Scanner;

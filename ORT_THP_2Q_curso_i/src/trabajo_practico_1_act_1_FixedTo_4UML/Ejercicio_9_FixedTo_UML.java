@@ -5,6 +5,17 @@
  	Recorda que la suma de los ángulos interiores de todo triángulo es de 180º.
 */
 
+/* 
+@startuml
+class Scanner
+class Ejercicio_9 {
+    +main(args: String[]): void
+}
+Ejercicio_9 --> Scanner
+@enduml
+*/
+
+
 package trabajo_practico_1_act_1_FixedTo_4UML;
 
 import java.util.Scanner;
