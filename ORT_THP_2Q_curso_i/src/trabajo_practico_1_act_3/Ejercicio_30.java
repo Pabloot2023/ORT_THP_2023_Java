@@ -22,11 +22,22 @@ public class Ejercicio_30 {
 		 int num1;
 		 int num2;
 		 int resultado;
-	     char operacion;
+	     String operacion;
 	     boolean flag = true;
  
+	     do {
+	    	 	System.out.print("\n" + "Ingrese la operacion a realizar (+, -, *, /, F): ");
+	    	 	operacion = miTeclado.nextLine();
+			
+			 		
+	     } while (!operacion.equals("+") && !operacion.equals("-") && !operacion.equals("*") && !operacion.equals("/") && !operacion.equals("F") && !operacion.equals("f") );
  
- 
+	     if (operacion == "F" || operacion == "f") {
+	 			flag = false;
+	 		} else {
+	 			flag = true;
+	 		}
+	     
 	    			while (flag == true )  {
  
  
@@ -36,29 +47,26 @@ public class Ejercicio_30 {
 	    				System.out.print("Ingrese el segundo numero: ");
 	    				num2 = miTeclado.nextInt();
  
-	    				System.out.print("\n" + "Ingrese la operacion a realizar (+, -, *, /): ");
-	    				operacion = miTeclado.next().charAt(0);;
- 
 	    					switch (operacion) {
-	    						case '+':
+	    						case "+":
 	    							resultado = num1 + num2;
 	    							System.out.println("-----------------------------------------");
 	    							System.out.println("\n" + "El resultado de la suma es: " + resultado + "\n");
 	    							System.out.println("-----------------------------------------");
 	    							break;
-	    						case '-':
+	    						case "-":
 	    							resultado = num1 - num2;
 	    							System.out.println("-----------------------------------------");
 	    							System.out.println("\n" + "El resultado de la resta es: " + resultado + "\n");
 	    							System.out.println("-----------------------------------------");
 	    							break;
-	    						case '*':
+	    						case "*":
 	    							resultado = num1 * num2;
 	    							System.out.println("-----------------------------------------");
 	    							System.out.println("\n" + "El resultado de la multiplicacion es: " + resultado + "\n");
 	    							System.out.println("-----------------------------------------");
 	    							break;
-	    						case '/':
+	    						case "/":
 	    							if (num2 == 0) {
 	    								System.out.println("-----------------------------------------");
 	    								System.out.println("\n" + "ERROR: No se puede dividir por cero." + "\n");
@@ -76,9 +84,9 @@ public class Ejercicio_30 {
 	    						}  
 	    					System.out.println("\n" + "si desea finalizar la caluculadora presione F");
 	    	    	        System.out.println("si desea continuar usando la calculadora presiona cualquier otra tecla");
-	    	    	        operacion = miTeclado.next().charAt(0);
+	    	    	        operacion = miTeclado.nextLine();
  
-	    	    	        if (operacion == 'F' || operacion == 'f') {
+	    	    	        if (operacion == "F" || operacion == "f") {
 	    	    	        	flag = false;
 	    	    	        } else {
 	    	    	        	flag = true;
