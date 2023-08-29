@@ -28,7 +28,7 @@ public class Ejercicio_24 {
         num2 = miTeclado.nextInt();
 		
                 
-        for (i = 0 ; (num1 > num2 && num1 != num2)  ; i++) {
+        do  {
         	System.out.println("--------------------------------------");
         	System.out.print("\n" + "Verifique los datos: el segundo numero no puede ser menor al primero");
         	System.out.print("\n" + "Ingrese nuevamente un numero entero: ");
@@ -36,7 +36,7 @@ public class Ejercicio_24 {
             
             System.out.print("Ingrese nuevamente otro numero entero: ");
             num2 = miTeclado.nextInt();
-        }
+        } while (num1 > num2);
         
         System.out.println("--------------------------------------");
         System.out.println("\n" + "La secuencia de numeros entre " + num1 + " y " + num2 + " incluyendolos, es:" );
