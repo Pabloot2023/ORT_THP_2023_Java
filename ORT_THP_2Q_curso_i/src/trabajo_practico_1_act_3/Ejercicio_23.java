@@ -15,7 +15,7 @@ public class Ejercicio_23 {
 		int multiplo;
 		int i;
 		
-		System.out.print("Ingrese un numero entero: ");
+		System.out.println("Ingrese un numero entero: ");
          n = miTeclado.nextInt();
          
          System.out.println("\n" + "Los primeros 10 multiplos del numero " + n + " son:");
