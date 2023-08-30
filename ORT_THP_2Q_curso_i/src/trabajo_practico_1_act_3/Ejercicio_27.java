@@ -10,6 +10,8 @@ import java.util.Scanner;
 
 public class Ejercicio_27 {
 	
+	
+
 	public static void main(String[] args) {
 		Scanner miTeclado = new Scanner(System.in);
 		
@@ -18,6 +20,8 @@ public class Ejercicio_27 {
 		double promedio = 0;
 		int mayor_18 = 0;
 		int i;
+		int edad_mas_alta = 0;
+		int posicion = 0;
 		
 		 for ( i = 0; i < 5; i++) {
 		        System.out.print("Ingrese una edad ");
@@ -27,14 +31,21 @@ public class Ejercicio_27 {
 		        	mayor_18++;
 		        } 
 		        edad_acum += edad_num;
-		        
-		 	  } 
+		        if (edad_num > edad_mas_alta) {
+		        	edad_mas_alta = edad_num;
+		        	posicion = i+1;
+		        } 
+		 } 
 		 
 		 promedio = edad_acum / 5;
 		 System.out.println("--------------------------------------");
 		 System.out.print("El valor promedio de Edad es: " + promedio);
 		 System.out.print("\n" + "La cantidad de edades impares y mayores a 18 es: " + mayor_18);
+		 System.out.print("\n" + "La edad mas alta ingresada fue: " + edad_mas_alta);
+		 System.out.print("\n" + "en la posicion: "  + posicion);
 		 System.out.println("\n" + "--------------------------------------");
+		
+
 	}
 
 }
