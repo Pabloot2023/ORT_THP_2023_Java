@@ -30,11 +30,11 @@ public class Practica_3 {
                 vueltasRojo++;
                 System.out.println("Ingrese la cantidad de Pianitos para el Karting Rojo");
                 pianitosRojo = miTeclado.nextInt();
-                miTeclado.nextLine(); // Consumir el carácter de nueva línea
+                miTeclado.nextLine();
                 while (pianitosRojo < 0) {
                     System.out.println("ERROR: Ingrese la cantidad de Pianitos para el Karting Rojo igual o mayor a 0");
                     pianitosRojo = miTeclado.nextInt();
-                    miTeclado.nextLine(); // Consumir el carácter de nueva línea
+                    miTeclado.nextLine();
                 }
             }
 
@@ -42,11 +42,11 @@ public class Practica_3 {
                 vueltasVerde++;
                 System.out.println("Ingrese la cantidad de Pianitos para el Karting Verde");
                 pianitosVerde = miTeclado.nextInt();
-                miTeclado.nextLine(); // Consumir el carácter de nueva línea
+                miTeclado.nextLine();
                 while (pianitosVerde < 0) {
                     System.out.println("ERROR: Ingrese la cantidad de Pianitos para el Karting Verde igual o mayor a 0");
                     pianitosVerde = miTeclado.nextInt();
-                    miTeclado.nextLine(); // Consumir el carácter de nueva línea
+                    miTeclado.nextLine();
                 }
             }
 
