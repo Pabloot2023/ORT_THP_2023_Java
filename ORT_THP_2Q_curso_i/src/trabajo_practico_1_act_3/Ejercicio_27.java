@@ -39,11 +39,11 @@ public class Ejercicio_27 {
 		 
 		 promedio = edad_acum / 5;
 		 System.out.println("--------------------------------------");
-		 System.out.print("El valor promedio de Edad es: " + promedio);
-		 System.out.print("\n" + "La cantidad de edades impares y mayores a 18 es: " + mayor_18);
-		 System.out.print("\n" + "La edad mas alta ingresada fue: " + edad_mas_alta);
-		 System.out.print("\n" + "en la posicion: "  + posicion);
-		 System.out.println("\n" + "--------------------------------------");
+		 System.out.println("El valor promedio de Edad es: " + promedio);
+		 System.out.println("\n" + "La cantidad de edades impares y mayores a 18 es: " + mayor_18);
+		 System.out.println("\n" + "La edad mas alta ingresada fue: " + edad_mas_alta);
+		 System.out.println("\n" + "en la posicion: "  + posicion);
+		 System.out.println("--------------------------------------");
 		
 
 	}
