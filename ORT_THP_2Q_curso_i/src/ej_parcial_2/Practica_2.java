@@ -118,7 +118,12 @@ public class Practica_2 {
             // FIN bloque impresion resultados de partida
 
         } while (puntaje_J1 < puntajeLimite && puntaje_J2 < puntajeLimite);
-
+        
+//        if (puntaje_J1 == puntajeLimite) {
+//        	System.out.println("Ganador de la partida: " + jugador1);
+//        } else if (puntaje_J2 == puntajeLimite) {
+//        	System.out.println("Ganador de la partida: " + jugador2);
+//        }
     }
 
 }
