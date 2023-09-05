@@ -11,7 +11,6 @@ public class Practica_2 {
         final String jugador2 = "Bartolo";
         int Eleccion;
         int Comparador;
-        int C;
         String Tipo1 = "Piedra";
         String Tipo2 = "Piedra";
         int puntajeLimite;
