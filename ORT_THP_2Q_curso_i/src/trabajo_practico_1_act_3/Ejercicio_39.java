@@ -23,11 +23,72 @@ máximo)
 
 package trabajo_practico_1_act_3;
 
+import java.util.Scanner;
+
 public class Ejercicio_39 {
 
 	public static void main(String[] args) {
-		
+		 Scanner miTeclado = new Scanner(System.in);
 
+	        int cantidadJugadores;
+	        int puntajeMaximo = 0;
+	        int tirosAlCentro = 0;
+	        String ganador = null;
+	        int puntajeTotal = 0; // Inicializar el puntaje total para cada jugador
+            int tirosCentroJugador = 0; // Inicializar los tiros al centro para cada jugador
+            int i;
+            int j;
+            int distancia;
+            int puntaje = 0;
+
+	        System.out.print("Ingrese la cantidad de jugadores: ");
+	        cantidadJugadores = miTeclado.nextInt();
+	        while (cantidadJugadores < 2) {
+	            System.out.println("Cantidad de jugadores no válida. Intente nuevamente. (mínimo 2)");
+	            System.out.println("Ingrese la cantidad de jugadores: ");
+	            cantidadJugadores = miTeclado.nextInt();
+	        }
+	        miTeclado.nextLine();
+
+	        for (i = 0; i < cantidadJugadores; i++) {
+	            
+
+	            System.out.print("Ingrese el nombre del jugador " + (i + 1) + ": ");
+	            String nombre = miTeclado.nextLine();
+
+	            				puntajeTotal = 0;
+					            for (j = 0; j < 3; j++) {
+					                System.out.println("Ingrese la distancia del tiro " + (j + 1) + " para " + nombre + ": ");
+					                distancia = miTeclado.nextInt();
+					                miTeclado.nextLine();
+				
+					                
+				
+					                if (distancia == 0) {
+					                    puntaje = 500;
+					                    tirosCentroJugador++;
+					                } else if (distancia <= 10) {
+					                    puntaje = 250;
+					                } else if (distancia >= 11 && distancia <= 50) {
+					                    puntaje = 100;
+					                }
+				
+					                puntajeTotal += puntaje;
+					            }
+
+	         
+	            if (puntajeTotal > puntajeMaximo) {
+	                puntajeMaximo = puntajeTotal;
+	                ganador = nombre;
+	                tirosAlCentro = tirosCentroJugador;
+	            }
+	        }
+
+	        System.out.println("\n" + "El ganador del torneo es: " + ganador);
+	        System.out.println("Puntaje total: " + puntajeMaximo);
+	        System.out.println("Cantidad total de tiros al centro: " + tirosAlCentro);
+
+	        
+	        miTeclado.close();
+	    }
 	}
-
-}
