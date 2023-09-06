@@ -29,15 +29,15 @@ public class Ejercicio_39 {
 
 	public static void main(String[] args) {
 		 Scanner miTeclado = new Scanner(System.in);
-
+		 	
+		 	String nombre;
 	        int cantidadJugadores;
 	        int puntajeMaximo = 0;
 	        int tirosAlCentro = 0;
 	        String ganador = null;
-	        int puntajeTotal = 0; // Inicializar el puntaje total para cada jugador
-            int tirosCentroJugador = 0; // Inicializar los tiros al centro para cada jugador
-            int i;
-            int j;
+	        int puntajeTotal = 0; 
+            int tirosCentroJugador = 0; 
+            int i,j;
             int distancia;
             int puntaje = 0;
 
@@ -48,19 +48,19 @@ public class Ejercicio_39 {
 	            System.out.println("Ingrese la cantidad de jugadores: ");
 	            cantidadJugadores = miTeclado.nextInt();
 	        }
-	        miTeclado.nextLine();
+	        miTeclado.nextLine(); //limpiar
 
 	        for (i = 0; i < cantidadJugadores; i++) {
 	            
 
 	            System.out.print("Ingrese el nombre del jugador " + (i + 1) + ": ");
-	            String nombre = miTeclado.nextLine();
+	            nombre = miTeclado.nextLine();
 
 	            				puntajeTotal = 0;
 					            for (j = 0; j < 3; j++) {
 					                System.out.println("Ingrese la distancia del tiro " + (j + 1) + " para " + nombre + ": ");
 					                distancia = miTeclado.nextInt();
-					                miTeclado.nextLine();
+					                miTeclado.nextLine(); //limpiar
 				
 					                
 				
