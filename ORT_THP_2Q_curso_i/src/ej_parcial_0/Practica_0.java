@@ -52,68 +52,65 @@ public class Practica_0 {
         System.out.println("N" + " Para votar que NO");
         System.out.println("F" + " Para finalizar la carga de votos");
         opcion = miTeclado.nextLine().toUpperCase();
-
         // FIN pedir voto
 
-        // INICIO ciclo mayor
-        while (!opcion.equals("F")) {
-            // INICIO pedir edad
-            System.out.println("Ingrese la edad del votante");
-            edad = miTeclado.nextInt();
-            while (edad < 18) {
-                System.out.println("Error verifique la edad ingresada");
-                System.out.println("Solo pueden votar personas de 18 anios en adelante");
-                System.out.println("Ingrese la edad del votante");
-                edad = miTeclado.nextInt();
-            }
-
-            // FIN pedir edad
-
-            // INICIO asignar valores
-            switch (opcion) {
-                case "S":
-                    votS++;
-                    break;
-                case "N":
-                    votN++;
-                    break;
-                case "B":
-                    votB++;
-                    break;
-                default:
-
-                    break;
-            }
-            // FIN asignar valores
-
-            // INICIO interno Promedio de edad
-            totalEDAD += edad;
-            totalVOTOS++;
-            contadorEDAD++;
-
-            // FIN interno Promedio de edad
-
-            // INICIO pedir voto
-            miTeclado.nextLine();
-            System.out.println("Ingrese el voto, las ocpiones son");
-            System.out.println("S" + " Para votar que SI");
-            System.out.println("B" + " Para votar en BLANCO");
-            System.out.println("N" + " Para votar que NO");
-            System.out.println("F" + " Para finalizar la carga de votos");
-            opcion = miTeclado.nextLine().toUpperCase();
-
-            while (!opcion.equals("S") && !opcion.equals("N") && !opcion.equals("B") && !opcion.equals("F")) {
-                System.out.println("Ingrese el voto, las ocpiones son");
-                System.out.println("S" + " Para votar que SI");
-                System.out.println("B" + " Para votar en BLANCO");
-                System.out.println("N" + " Para votar que NO");
-                System.out.println("F" + " Para finalizar la carga de votos");
-                opcion = miTeclado.nextLine().toUpperCase();
-            }
-            // FIN pedir voto
-
-        }
-        // FIN ciclo mayor
+				        // INICIO ciclo mayor
+				        while (!opcion.equals("F")) {
+					            // INICIO pedir edad
+					            System.out.println("Ingrese la edad del votante");
+					            edad = miTeclado.nextInt();
+							            while (edad < 18) {
+							                System.out.println("Error verifique la edad ingresada");
+							                System.out.println("Solo pueden votar personas de 18 anios en adelante");
+							                System.out.println("Ingrese la edad del votante");
+							                edad = miTeclado.nextInt();
+							            }				
+					            // FIN pedir edad
+					
+					            // INICIO asignar valores
+					            switch (opcion) {
+					                case "S":
+					                    votS++;
+					                    break;
+					                case "N":
+					                    votN++;
+					                    break;
+					                case "B":
+					                    votB++;
+					                    break;
+					                default:
+					
+					                    break;
+					            }
+					            // FIN asignar valores
+					
+					            // INICIO interno Promedio de edad
+					            totalEDAD += edad;
+					            totalVOTOS++;
+					            contadorEDAD++;
+					
+					            // FIN interno Promedio de edad
+					
+					            // INICIO pedir voto
+					            miTeclado.nextLine();
+					            System.out.println("Ingrese el voto, las ocpiones son");
+					            System.out.println("S" + " Para votar que SI");
+					            System.out.println("B" + " Para votar en BLANCO");
+					            System.out.println("N" + " Para votar que NO");
+					            System.out.println("F" + " Para finalizar la carga de votos");
+					            opcion = miTeclado.nextLine().toUpperCase();					
+								            while (!opcion.equals("S") && !opcion.equals("N") && !opcion.equals("B") && !opcion.equals("F")) {
+								                System.out.println("Ingrese el voto, las ocpiones son");
+								                System.out.println("S" + " Para votar que SI");
+								                System.out.println("B" + " Para votar en BLANCO");
+								                System.out.println("N" + " Para votar que NO");
+								                System.out.println("F" + " Para finalizar la carga de votos");
+								                opcion = miTeclado.nextLine().toUpperCase();
+								            }
+					            // FIN pedir voto
+				
+				        }
+				        // FIN ciclo mayor
 
         // INICIO porcentaje negativo
         if (totalVOTOS > 0) {
