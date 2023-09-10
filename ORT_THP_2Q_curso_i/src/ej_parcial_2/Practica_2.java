@@ -10,7 +10,7 @@ public class Practica_2 {
         final String jugador1 = "Ana";
         final String jugador2 = "Bartolo";
         int Eleccion;
-        int Comparador;
+//        int Comparador;
         String Tipo1 = "Piedra";
         String Tipo2 = "Piedra";
         int puntajeLimite;
@@ -113,7 +113,7 @@ public class Practica_2 {
             // Fin bloque comparador y asignador
 
             // INICIO bloque impresion resultados de partida
-            System.out.println("Ganador de la ronda: " + ganador_ronda);
+            System.out.println("Ganador de la Partida: " + ganador_ronda);
             // FIN bloque impresion resultados de partida
 
         } while (puntaje_J1 < puntajeLimite && puntaje_J2 < puntajeLimite);
@@ -123,6 +123,8 @@ public class Practica_2 {
 //        } else if (puntaje_J2 == puntajeLimite) {
 //        	System.out.println("Ganador de la partida: " + jugador2);
 //        }
+        
+        miTeclado.close();
     }
 
 }
