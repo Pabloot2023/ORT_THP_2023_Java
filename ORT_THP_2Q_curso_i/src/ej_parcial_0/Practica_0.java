@@ -137,11 +137,11 @@ public class Practica_0 {
         // FIN externo Promedio de edad
 
         // INICIO ver que opción ganó
-        if (votS > votN || votS > votB) {
+        if (votS > votN && votS > votB) {
             mensaje = "La opción ganadora fue 'SI' ";
-        } else if (votN > votS || votN > votB) {
+        } else if (votN > votS && votN > votB) {
             mensaje = "La opción ganadora fue 'NO' ";
-        } else if (votB > votS || votB > votN) {
+        } else if (votB > votS && votB > votN) {
             mensaje = "La opción ganadora fue 'Indeterminado' ";
         }
         // FIN ver qué opción ganó
