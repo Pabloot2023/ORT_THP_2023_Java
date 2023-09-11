@@ -52,6 +52,14 @@ public class Practica_0 {
         System.out.println("N" + " Para votar que NO");
         System.out.println("F" + " Para finalizar la carga de votos");
         opcion = miTeclado.nextLine().toUpperCase();
+        while (!opcion.equals("S") && !opcion.equals("N") && !opcion.equals("B") && !opcion.equals("F")) {
+            System.out.println("ERROR! VERIFIQUE EL DATO INGRESADO! las ocpiones son");
+            System.out.println("S" + " Para votar que SI");
+            System.out.println("B" + " Para votar en BLANCO");
+            System.out.println("N" + " Para votar que NO");
+            System.out.println("F" + " Para finalizar la carga de votos");
+            opcion = miTeclado.nextLine().toUpperCase();
+        }
         // FIN pedir voto
 
 				        // INICIO ciclo mayor
@@ -100,7 +108,7 @@ public class Practica_0 {
 					            System.out.println("F" + " Para finalizar la carga de votos");
 					            opcion = miTeclado.nextLine().toUpperCase();					
 								            while (!opcion.equals("S") && !opcion.equals("N") && !opcion.equals("B") && !opcion.equals("F")) {
-								                System.out.println("Ingrese el voto, las ocpiones son");
+								                System.out.println("ERROR! VERIFIQUE EL DATO INGRESADO! las ocpiones son");
 								                System.out.println("S" + " Para votar que SI");
 								                System.out.println("B" + " Para votar en BLANCO");
 								                System.out.println("N" + " Para votar que NO");
