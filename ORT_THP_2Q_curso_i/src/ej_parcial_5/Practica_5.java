@@ -67,8 +67,7 @@ public class Practica_5 {
 		            	// INICIO Retirar dinero
 		            	System.out.println("Ingrese un  monto positivo que desea retirar");
 		            	retirar_monto = miTeclado.nextDouble();
-		            	miTeclado.nextLine(); // Consumir el salto de línea
-
+		            	miTeclado.nextLine(); 
 		            	while (retirar_monto < 0 || retirar_monto > billetera_monto) {      
 		            	    if (retirar_monto < 0) {
 		            	        System.out.println("Ingrese un monto positivo");
@@ -77,7 +76,7 @@ public class Practica_5 {
 		            	    }
 		            	    System.out.println("Ingrese el monto que desea retirar");
 		            	    retirar_monto = miTeclado.nextDouble();
-		            	    miTeclado.nextLine(); // Consumir el salto de línea
+		            	    miTeclado.nextLine(); 
 		            	}
 
 		            	billetera_monto -= retirar_monto;
@@ -141,7 +140,7 @@ public class Practica_5 {
 
 		            	    System.out.println("Ingrese un monto positivo");
 		            	    transferencia_monto = miTeclado.nextInt();
-		            	    miTeclado.nextLine(); // Consumir el salto de línea
+		            	    miTeclado.nextLine(); 
 
 		            	    if (transferencia_monto <= billetera_monto) {
 		            	        billetera_monto -= transferencia_monto;
