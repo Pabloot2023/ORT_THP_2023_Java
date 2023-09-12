@@ -24,29 +24,29 @@ public class Practica_5 {
 		int transferencia_monto = 0;
 		String eleccion;
 		String bloqueo = "a";		
+		boolean comboCorrecto = false;
 		
 		// INICIO pedir combo user:pass
 		System.out.println("*** Bienvenido/a al Cajero Bancario de ORT Banking *** ");
-		do {
+			while (!comboCorrecto) {
 		    System.out.println("Ingrese el usuario");
 		    userINPUT = miTeclado.nextInt();
 		    System.out.println("Ingrese la contrasena");
 		    passINPUT = miTeclado.nextInt();
 		    miTeclado.nextLine();
 
-		    if (user != userINPUT || pass != passINPUT) {
-		        intentos++;
-		        System.out.println("ERROR! VERIFIQUE LOS DATOS INGRESADOS");
-		        if (intentos >= 5) {
-		            bloqueo = "F";
-		            break;
-		        }
-		    } else {
-		        break; 
-		    }
-		} while (true);
-
+					    if (user == userINPUT && pass == passINPUT) {
+					        comboCorrecto = true;
+					    } else {
+					        intentos++;
+					        System.out.println("ERROR! VERIFIQUE LOS DATOS INGRESADOS");
+							        if (intentos >= 5) {
+							            bloqueo = "F";
+							        }
+					    }
+			}
 		// FIN pedir combo user:pass
+
 
 			        
 			        
@@ -56,7 +56,7 @@ public class Practica_5 {
 			System.out.println("a) Retirar dinero");
 			System.out.println("b) Depositar dinero");
 			System.out.println("c) Consultar saldo actual");
-			System.out.println("d) Pedir préstamo");
+			System.out.println("d) Pedir prestamo");
 			System.out.println("e) Transferencia de dinero");
 			System.out.println("f) Salir");
 			eleccion = miTeclado.nextLine().toUpperCase();
