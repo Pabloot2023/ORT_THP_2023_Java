@@ -99,7 +99,7 @@ public class Practica_5 {
 		            	
 		            	if (depositar_monto >= 0) {
 		            	    billetera_monto += depositar_monto;
-		            	    System.out.println("Operación realizada. El saldo actual disponible es: " + billetera_monto);
+		            	    System.out.println("Operacin realizada. El saldo actual disponible es: " + billetera_monto);
 		            	}
 		            	// FIN Depositar dinero
 
@@ -139,7 +139,7 @@ public class Practica_5 {
 		            	    while (transferencia_alias == null || transferencia_alias.trim().isEmpty()) {
 		            	        System.out.println("Ingrese un alias");
 		            	        transferencia_alias = miTeclado.nextLine();
-		            	    }
+		            	    } 
 
 		            	    System.out.println("Ingrese un monto positivo");
 		            	    transferencia_monto = miTeclado.nextInt();
@@ -147,11 +147,13 @@ public class Practica_5 {
 
 		            	    if (transferencia_monto <= billetera_monto) {
 		            	        billetera_monto -= transferencia_monto;
-		            	        System.out.println("Operación realizada. El saldo actual disponible es: " + billetera_monto);
+		            	        System.out.println("Operacion realizada. El saldo actual disponible es: " + billetera_monto);
 		            	    } else {
 		            	    	System.out.println("Estimado " + user + " usted no dispone de este monto para realizar la transferencia");
 		            	    }
-		            	}
+		            	}else {
+	            	    	System.out.println("Estimado " + user + " usted no dispone de este monto para realizar la transferencia");
+	            	    }
 		            	// FIN Transferencia de dinero
 
 		                break;
