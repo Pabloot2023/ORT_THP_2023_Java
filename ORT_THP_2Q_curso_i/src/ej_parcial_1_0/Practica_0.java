@@ -23,7 +23,7 @@ Se considera Indeterminado si la mayoría votó en blanco. Se considera que no h
 3. Promedio de edad de los votantes.
  */
 
-package ej_parcial_0;
+package ej_parcial_1_0;
 
 import java.util.Scanner;
 

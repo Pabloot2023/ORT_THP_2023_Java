@@ -1,4 +1,4 @@
-package ej_parcial_3;
+package ej_parcial_1_3;
 
 import java.util.Scanner;
 

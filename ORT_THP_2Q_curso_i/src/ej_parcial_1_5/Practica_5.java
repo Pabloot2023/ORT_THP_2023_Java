@@ -1,4 +1,4 @@
-package ej_parcial_5;
+package ej_parcial_1_5;
 
 import java.util.Scanner;
 
@@ -34,7 +34,6 @@ public class Practica_5 {
 		    System.out.println("Ingrese la contrasena");
 		    passINPUT = miTeclado.nextInt();
 		    miTeclado.nextLine();
-
 					    if (user == userINPUT && pass == passINPUT) {
 					        comboCorrecto = true;
 					    } else {
