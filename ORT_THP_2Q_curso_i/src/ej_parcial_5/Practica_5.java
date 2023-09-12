@@ -6,7 +6,7 @@ public class Practica_5 {
 
 	public static void main(String[] args) {
 		Scanner miTeclado = new Scanner(System.in);
-		int user = 35357927;
+		int user = 11111111;
 		int pass = 1234; 
 		int userINPUT = 0;
 		int passINPUT = 0;
@@ -21,10 +21,9 @@ public class Practica_5 {
 		final double PRESTAMO3 = 1000000.00;
 		int prestamo_monto;
 		String transferencia_alias;
-		int transferencia_monto;
+		int transferencia_monto = 0;
 		String eleccion;
-		String bloqueo = "a";
-		
+		String bloqueo = "a";		
 		
 		// INICIO pedir combo user:pass
 		System.out.println("*** Bienvenido/a al Cajero Bancario de ORT Banking *** ");
@@ -60,7 +59,7 @@ public class Practica_5 {
 			System.out.println("d) Pedir préstamo");
 			System.out.println("e) Transferencia de dinero");
 			System.out.println("f) Salir");
-			eleccion = miTeclado.nextLine().toUpperCase().trim();
+			eleccion = miTeclado.nextLine().toUpperCase();
 			
 					switch (eleccion) {
 		            case "A":
@@ -128,8 +127,12 @@ public class Practica_5 {
 						// FIN Pedir préstamo
 		                break;
 		            case "E":
-		            	// INICIO Transferencia de dinero
-		            	if (billetera_monto >= 10000) {
+		            	// INICIO Transferencia de dinero        	
+//		            	if (transferencia_monto < billetera_monto) {
+//		            		System.out.println("Estimado " + user + " usted no dispone de este monto para realizar la transferencia");
+//					} else 
+		            		
+		            	 if (billetera_monto >= 10000) {
 		            	    System.out.println("Ingrese un alias");
 		            	    transferencia_alias = miTeclado.nextLine();
 
@@ -146,7 +149,7 @@ public class Practica_5 {
 		            	        billetera_monto -= transferencia_monto;
 		            	        System.out.println("Operación realizada. El saldo actual disponible es: " + billetera_monto);
 		            	    } else {
-		            	        System.out.println("Estimado " + user + " usted no dispone de este monto para realizar la transferencia");
+		            	    	System.out.println("Estimado " + user + " usted no dispone de este monto para realizar la transferencia");
 		            	    }
 		            	}
 		            	// FIN Transferencia de dinero
