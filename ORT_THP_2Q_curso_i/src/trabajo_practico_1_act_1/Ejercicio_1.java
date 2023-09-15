@@ -17,7 +17,7 @@ public class Ejercicio_1 {
 		
 		Scanner miTeclado = new Scanner(System.in);
 		
-		System.out.println("Por favor, ingrese su nombre:" + "\n");
+		System.out.println(" Por favor, ingrese su nombre:" + "\n");
 		x =miTeclado.nextLine();
 		
 		System.out.println( "\n" + "Bienvenido " + x + "!");
