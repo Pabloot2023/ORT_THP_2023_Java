@@ -62,6 +62,12 @@ public class Alumno {
 	public double calcularPromedio(){
 		return (double) (this.notaPrimerParcial+this.notaSegundoParcial)/2;	
 	}
+// el override es una clausa que indica que sobrescriba es decir que pise el tostring original y lo reemplaze con el que sigue
+	@Override
+	public String toString() {
+		return "Alumno [nombre=" + nombre + ", dni=" + dni + ", email=" + email + ", notaPrimerParcial="
+				+ notaPrimerParcial + ", notaSegundoParcial=" + notaSegundoParcial + "]";
+	}
 	
 	
 }

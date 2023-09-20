@@ -62,6 +62,13 @@ public class PruebaAlumno {
 		alumno2.setNotaSegundoParcial(9);
 		
 		System.out.println("el promedio del segundo alumno es " + alumno2.calcularPromedio());
+		
+		System.out.println(alumno1.toString());
+		
+		System.out.println(alumno2.toString());
+	
+	
+	
 	}
 
 }
