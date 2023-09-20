@@ -8,8 +8,22 @@ public class Alumno {
 	private String nombre;
 	private String dni;
 	private String email;
-	private int notraPrimerParcial;
-	private int notraSegundoParcial;	
+	private int notaPrimerParcial;
+	private int notaSegundoParcial;	
+	
+	// metodo constructor por defecto SIEMPRE PUBLICO
+	// crea imagen por defecto en memoria e inicializa atributos con sus valores por defecto, null o 0 segun corresponda
+	public Alumno() {
+		
+	}
+	
+	// cosntructor parametrizado sirve para crear el objeto  con valores  en algunos atributos
+	public Alumno(String nuevoNombre ,String nuevoDni ,String nuevoEail) {
+		this.setNombre(nuevoNombre);
+		this.setDni(nuevoDni);
+		this.setEmail(nuevoEail);
+	}
+	
 	
 	// generar getters y setters
 	
@@ -31,21 +45,23 @@ public class Alumno {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getNotraPrimerParcial() {
-		return notraPrimerParcial;
+	public int getNotaPrimerParcial() {
+		return notaPrimerParcial;
 	}
-	public void setNotraPrimerParcial(int notraPrimerParcial) {
-		this.notraPrimerParcial = notraPrimerParcial;
+	public void setNotaPrimerParcial(int notraPrimerParcial) {
+		this.notaPrimerParcial = notraPrimerParcial;
 	}
-	public int getNotraSegundoParcial() {
-		return notraSegundoParcial;
+	public int getNotaSegundoParcial() {
+		return notaSegundoParcial;
 	}
-	public void setNotraSegundoParcial(int notraSegundoParcial) {
-		this.notraSegundoParcial = notraSegundoParcial;
+	public void setNotaSegundoParcial(int notraSegundoParcial) {
+		this.notaSegundoParcial = notraSegundoParcial;
 	}
 	
 
-	
+	public double calcularPromedio(){
+		return (double) (this.notaPrimerParcial+this.notaSegundoParcial)/2;	
+	}
 	
 	
 }
