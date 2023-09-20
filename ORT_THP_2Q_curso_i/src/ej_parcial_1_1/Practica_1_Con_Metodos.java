@@ -17,10 +17,10 @@ public class Practica_1_Con_Metodos {
     static boolean tieneSaldo;
     static boolean puedeSeguirJugando;
     static int guita_min_pa_quedarse = MONTO_MINIMO_GUITA;
+    static String nombre_jugador = " ";
+    static  int guita_inicial = 0;
     
     public static void main(String[] args) {
-        String nombre_jugador = " ";
-        int guita_inicial = 0;
 
         nombre_jugador = iniciarJuego(nombre_jugador);
         guita_inicial = preguntarYValidarSaldo(guita_inicial);
@@ -38,8 +38,7 @@ public class Practica_1_Con_Metodos {
         System.out.println("Ingrese su nombre: ");
         nombre_jugador = miTeclado.nextLine();
         return nombre_jugador;
-    }
-    
+    }    
     public static int preguntarYValidarSaldo(int guita_inicial) {        
         System.out.println("Ingrese la cantidad de dinero inicial con que jugara: ");
         guita_inicial = miTeclado.nextInt();
@@ -53,24 +52,22 @@ public class Practica_1_Con_Metodos {
         
         return guita_inicial;
     }
-
     public static int cargarSaldo(int guita_inicial) {
         return guita_inicial;
     }
-    
     public static String pedirJuego(String nombre_juego) {
         
         System.out.println("Elija el tipo de juego ingresando unicamente su alias entre comillas: ");
         System.out.println("Si desea Jugar a la ruleta escriba RUL");
         System.out.println("Si desea Jugar a la Black Jack escriba BJK");
         System.out.println("Si desea Jugar a la Poker escriba PKR");
-        nombre_juego = miTeclado.next().toUpperCase(); // Cambiado a miTeclado.next()
+        nombre_juego = miTeclado.nextLine().toUpperCase(); // 
+        miTeclado.nextLine();
         
         nombre_juego = validarJuego(nombre_juego);
         
         return nombre_juego;
-    }
-            
+    }      
     public static int asignacionDeCostoSegunJuego() {
         switch (nombre_juego) {
             case "RUL":
@@ -82,8 +79,7 @@ public class Practica_1_Con_Metodos {
             default:
                 return 0;
         }
-    }
-    
+    } 
     public static int bloqueJuegoYCalculador(int guita_jugador) {
         guita_jugador = guita_jugador - costo_juego_elegido;
 
@@ -104,23 +100,20 @@ public class Practica_1_Con_Metodos {
         }
         return guita_jugador;
     }
-    
     public static boolean tieneSaldo() {
         return guita_jugador >= COSTO_RUL || guita_jugador >= COSTO_BJK || guita_jugador >= COSTO_PKR; // Cambiado > a >=
-    }
-    
+    }   
     public static boolean puedeSeguirJugando() {
         return guita_jugador >= guita_min_pa_quedarse && guita_jugador <= GANANCIA_MAX;
-    }
-      
+    }      
     public static String validarJuego(String nombre_juego) {
-    //	do {    
+    	do {    
 	        if (!nombre_juego.equals("RUL") && !nombre_juego.equals("BJK") && !nombre_juego.equals("PKR")) {
 	            System.out.println("ATENCION ------ ERROR ------- ATENCION");
 	        }
-   // } while (!nombre_juego.equals("RUL") && !nombre_juego.equals("BJK") && !nombre_juego.equals("PKR"));
+	        nombre_juego = pedirJuego(nombre_juego);
+    	} while (!nombre_juego.equals("RUL") && !nombre_juego.equals("BJK") && !nombre_juego.equals("PKR"));
 
     return nombre_juego;
-}
-    
+}  
 }
