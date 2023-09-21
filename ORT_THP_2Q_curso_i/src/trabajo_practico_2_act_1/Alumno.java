@@ -48,21 +48,21 @@ public class Alumno {
 	public int getNotaPrimerParcial() {
 		return notaPrimerParcial;
 	}
-	public void setNotaPrimerParcial(int notraPrimerParcial) {
-		this.notaPrimerParcial = notraPrimerParcial;
+	public void setNotaPrimerParcial(int notaPrimerParcial) {
+		this.notaPrimerParcial = notaPrimerParcial;
 	}
 	public int getNotaSegundoParcial() {
 		return notaSegundoParcial;
 	}
-	public void setNotaSegundoParcial(int notraSegundoParcial) {
-		this.notaSegundoParcial = notraSegundoParcial;
+	public void setNotaSegundoParcial(int notaSegundoParcial) {
+		this.notaSegundoParcial = notaSegundoParcial;
 	}
 	
 
 	public double calcularPromedio(){
 		return (double) (this.notaPrimerParcial+this.notaSegundoParcial)/2;	
 	}
-// el override es una clausa que indica que sobrescriba es decir que pise el tostring original y lo reemplaze con el que sigue
+// el override es una clausulaa que indica que sobrescriba es decir que pise el tostring original y lo reemplaze con el que sigue
 	@Override
 	public String toString() {
 		return "Alumno [nombre=" + nombre + ", dni=" + dni + ", email=" + email + ", notaPrimerParcial="
