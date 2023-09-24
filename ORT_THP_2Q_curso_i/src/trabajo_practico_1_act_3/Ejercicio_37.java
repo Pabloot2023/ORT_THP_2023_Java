@@ -11,12 +11,32 @@ Realizá un programa que permita al usuario ingresar hasta 12 valores,
 
 
 package trabajo_practico_1_act_3;
+import java.util.Scanner;
 
 public class Ejercicio_37 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+       
+        double sueldo = 0;
+        double totalSueldos = 0;
+        int i = 0;
+        boolean continuar = true;
 
-	}
+        while (i < 12 && continuar) {
+            System.out.println("Ingrese el sueldo del mes " + (i + 1));
+            sueldo = scanner.nextDouble();
 
+            if (sueldo < 0) {
+                continuar = false;
+            } else {
+                totalSueldos += sueldo;
+                i++;
+            }
+        }
+
+        System.out.println("El monto percibido por el empleado hasta el momento es: $" + totalSueldos);
+        
+        scanner.close();
+    }
 }
