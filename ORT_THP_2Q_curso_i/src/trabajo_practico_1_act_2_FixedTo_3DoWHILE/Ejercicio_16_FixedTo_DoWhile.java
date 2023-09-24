@@ -17,6 +17,10 @@ public class Ejercicio_16_FixedTo_DoWhile {
 		int inscriptos;
         int asientosDisponibles;
         int faltantes;
+        int y = 1;
+		
+		do {
+
         
         System.out.print("Ingrese la cantidad de inscriptos: ");
         inscriptos = miTeclado.nextInt();
@@ -30,6 +34,7 @@ public class Ejercicio_16_FixedTo_DoWhile {
             System.out.println("\n" +"No hay suficientes asientos para todos los inscriptos."); 
             System.out.println("Faltan " + faltantes + " asientos.");
         }
+		} while (y == 1);
 
         miTeclado.close();
 	}

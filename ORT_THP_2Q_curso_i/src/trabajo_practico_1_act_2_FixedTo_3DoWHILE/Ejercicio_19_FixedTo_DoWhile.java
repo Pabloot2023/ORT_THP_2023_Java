@@ -27,6 +27,9 @@ public class Ejercicio_19_FixedTo_DoWhile {
         boolean esImpar;
         boolean estaEnAmbosGrupos;
         boolean noEstaEnNingunGrupo;
+        int y = 1;
+		
+		do {
 
         System.out.print("Ingrese un numero entero: ");
         num = miTeclado.nextInt();
@@ -60,7 +63,8 @@ public class Ejercicio_19_FixedTo_DoWhile {
         		System.out.println("\n" + "No esta en ningun grupo: " + "Falso" );	
         }
 
-        
+
+	} while (y == 1);
         miTeclado.close();
 		
 

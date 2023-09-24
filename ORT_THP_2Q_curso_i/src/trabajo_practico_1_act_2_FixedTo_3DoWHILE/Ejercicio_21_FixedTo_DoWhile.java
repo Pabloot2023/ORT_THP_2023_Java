@@ -16,6 +16,9 @@ public class Ejercicio_21_FixedTo_DoWhile {
 		
 		int diaSemana;
         String nombreDia;
+        int y = 1;
+		
+		do {
 
         System.out.println("Ingrese un numero entre 1 y 7: ");
         diaSemana = miTeclado.nextInt();
@@ -53,7 +56,7 @@ public class Ejercicio_21_FixedTo_DoWhile {
         } else {
             System.out.println("\n" + "El numero " + diaSemana + " corresponde al dia " + nombreDia + ".");
         }
-
+	} while (y == 1);
         miTeclado.close();
 
 	}

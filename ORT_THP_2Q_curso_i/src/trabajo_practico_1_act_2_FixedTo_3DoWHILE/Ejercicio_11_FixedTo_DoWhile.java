@@ -13,6 +13,9 @@ public class Ejercicio_11_FixedTo_DoWhile {
 		Scanner miTeclado = new Scanner(System.in);
 		int num = 0;
 //		boolean esPar = false;
+		int y = 1;
+		
+		do {
 		
 		System.out.println("Ingrese un numero entero, le dire si es par o impar");
 		num =  miTeclado.nextInt();
@@ -24,7 +27,7 @@ public class Ejercicio_11_FixedTo_DoWhile {
         }
 
 		  miTeclado.close();
-
+		} while (y == 1);
 
 		}
 

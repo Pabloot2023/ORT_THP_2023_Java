@@ -15,6 +15,9 @@ public class Ejercicio_12_FixedTo_DoWhile {
 		
 		int num1 = 0;
 		int num2 = 0;
+		int y = 1;
+		
+		do {
 		
 		System.out.println("Ingrese un numero entero");
 		num1 = miTeclado.nextInt();
@@ -32,10 +35,13 @@ public class Ejercicio_12_FixedTo_DoWhile {
 					} else {
 						System.out.println("El segundo valor es mayor");
 						}
+
+		} 
+		}while (y == 1);
 		
 		  miTeclado.close();
 		
 
-	}
+	
 	}
 }

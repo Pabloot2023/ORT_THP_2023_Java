@@ -17,6 +17,10 @@ public class Ejercicio_13_FixedTo_DoWhile {
 		 int numero2 = 0;
 		 int numero3 = 0;
 		 int mayor = 0;
+			int y = 1;
+			
+			do {
+
 		
 		System.out.print("Ingrese el primer numero: ");
 	    numero1 = miTeclado.nextInt();  
@@ -41,7 +45,7 @@ public class Ejercicio_13_FixedTo_DoWhile {
 //	    else if (numero3 > mayor) {
 //	        mayor = numero3;  
 //	    }
-	    
+			} while (y == 1);
 	    System.out.println("El numero mayor es: " + mayor);  // imprimir el número mayor
 	    
 	    miTeclado.close(); 

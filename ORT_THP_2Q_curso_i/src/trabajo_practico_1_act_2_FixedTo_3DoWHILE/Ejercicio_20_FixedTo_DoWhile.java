@@ -19,6 +19,9 @@ public class Ejercicio_20_FixedTo_DoWhile {
 		 int num2;
 		 int resultado;
 	     char operacion;
+	     int y = 1;
+		
+		do {
 
 	    System.out.print("Ingrese el primer numero: ");
 	    num1 = miTeclado.nextInt();
@@ -54,7 +57,7 @@ public class Ejercicio_20_FixedTo_DoWhile {
 	                System.out.println("ERROR: Operacion invalida.");
 	                break;
 	        }    
-
+		} while (y == 1);
 	        miTeclado.close();
 
 	}

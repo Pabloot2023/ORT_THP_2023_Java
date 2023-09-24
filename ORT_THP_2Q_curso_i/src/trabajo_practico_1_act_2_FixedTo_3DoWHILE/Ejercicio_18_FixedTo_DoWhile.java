@@ -18,6 +18,9 @@ public class Ejercicio_18_FixedTo_DoWhile {
         int num2;
         int mayor;
         int menor;
+        int y = 1;
+		
+		do {
         
         System.out.print("Ingrese el primer numero: ");
         num1 = miTeclado.nextInt();
@@ -34,6 +37,7 @@ public class Ejercicio_18_FixedTo_DoWhile {
             System.out.println("\n +" + "El mayor " +  "(" + mayor + ")" + " no es divisible por el menor " +  "(" + menor + ")" );
         }
 
+		} while (y == 1);	
         miTeclado.close();
 
 	}

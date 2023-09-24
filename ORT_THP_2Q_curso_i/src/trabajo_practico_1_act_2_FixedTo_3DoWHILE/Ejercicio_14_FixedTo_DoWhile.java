@@ -36,6 +36,10 @@ public class Ejercicio_14_FixedTo_DoWhile {
 	        String Luis;
 	        String Ana;
 	        String flag;
+	    	int y = 1;
+			
+			do {
+
 
 	        // Juan
 	        nombre = "Juan";
@@ -109,7 +113,8 @@ public class Ejercicio_14_FixedTo_DoWhile {
 	        System.out.print( Maria + "\n");
 	        System.out.print( Luis + "\n");
 	        System.out.print( Ana + "\n");
-	        
+			} while (y == 1);
+			
 	        miTeclado.close();
 		
 
