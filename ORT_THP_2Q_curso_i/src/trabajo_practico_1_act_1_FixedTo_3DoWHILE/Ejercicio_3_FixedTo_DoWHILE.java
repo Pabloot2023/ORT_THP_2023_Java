@@ -16,7 +16,9 @@ public class Ejercicio_3_FixedTo_DoWHILE {
 		// se inicia scanner SIN private static  por estar dentro  del metodo main
 		
         int numero = 0;
-        
+        int y = 1;
+		
+		do {
         System.out.println("Ingrese un numero entero: ");
         numero = miTeclado.nextInt();
         
@@ -25,6 +27,8 @@ public class Ejercicio_3_FixedTo_DoWHILE {
         System.out.println("El numero multiplicado por 5 es: " + (numero * 5) + "\n");
         
         System.out.println("El número dividido por 2 es: " + (numero / 2) + "\n");
+        
+		} while (y == 1);
         //System.out.printf("El numero dividido por 2 es: %.2f", ((double) numero / 2));
 		
         //%.2f para que exhiba los dos decimales

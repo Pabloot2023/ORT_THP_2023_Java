@@ -17,7 +17,9 @@ public class Ejercicio_5_FixedTo_DoWHILE {
 		int num0 = 0;
 		int num1 = 0;
 		int num2 = 0;
-		
+		int y = 1;
+			
+			do {
 		System.out.println("Ingrese un primer numero");
 		num1 = miTeclado.nextInt();
 		
@@ -31,7 +33,7 @@ public class Ejercicio_5_FixedTo_DoWHILE {
 		
 		
 		System.out.println("El primer numero actualizado es " + num1 + " y el segundo numero actualizado es " + num2);
-		
+			} while (y == 1);
 		miTeclado.close();
 		
 	}

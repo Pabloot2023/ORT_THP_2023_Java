@@ -20,7 +20,9 @@ public class Ejercicio_4_FixedTo_DoWHILE {
         int pagoDia = valorHora*cantHora;
         int pagoSem = pagoDia*5;
         int horaSab = ((cantHora/2)*valorHora);
-        
+        int y = 1;
+		
+		do {
         
         System.out.println("Ingrese un numero el valor monetario de una hora de trabajo: ");
         valorHora = miTeclado.nextInt();
@@ -37,7 +39,7 @@ public class Ejercicio_4_FixedTo_DoWHILE {
         
         System.out.println("\n" + "El valor del salario semanal incluyendo media jornada del sabado es de:");
         System.out.println("$ " + (pagoSem+horaSab)) ;
-        
+		} while (y == 1);
         
         miTeclado.close();
 		

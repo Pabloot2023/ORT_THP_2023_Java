@@ -18,6 +18,9 @@ public class Ejercicio_8_FixedTo_DoWHILE {
 		int resta = 0;
 		int multiplicacion = 0;
 		double division = 0;
+		int y = 1;
+		
+		do {
 		
 		// Pedir al usuario que ingrese dos números naturales.
         System.out.println("Ingrese el primer numero:");
@@ -39,7 +42,8 @@ public class Ejercicio_8_FixedTo_DoWHILE {
         System.out.println("Resta: " + resta);
         System.out.println("Multiplicacion: " + multiplicacion);
         System.out.println("Division: " + division);
-
+		} while (y == 1);
+		
         miTeclado.close();
 		
 	

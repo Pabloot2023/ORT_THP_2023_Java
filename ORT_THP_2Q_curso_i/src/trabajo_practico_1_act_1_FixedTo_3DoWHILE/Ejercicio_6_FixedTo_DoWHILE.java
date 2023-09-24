@@ -18,13 +18,16 @@ public class Ejercicio_6_FixedTo_DoWHILE {
 	int ventasTot = 0;
 	final int SUELDOFIJO = 44000;
 	final double COMISION = 16;
-	
+	int y = 1;
+		
+		do {
 	System.out.println(CARTEL);
 	System.out.println("Ingrese el monto total de las ventas realizadas");
 	ventasTot = miTeclado.nextInt();
 	System.out.println("\n" + "El monto a cobrar por el vendedor es de: $" + ((double)SUELDOFIJO+(ventasTot*COMISION/100)));
+	} while (y == 1);
 	
-	miTeclado.close();
+		miTeclado.close();
 	
 	
 	}

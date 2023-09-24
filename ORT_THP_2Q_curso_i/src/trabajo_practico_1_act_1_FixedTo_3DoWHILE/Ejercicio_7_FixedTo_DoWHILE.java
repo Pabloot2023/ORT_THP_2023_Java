@@ -11,11 +11,14 @@ import java.util.Scanner;
 public class Ejercicio_7_FixedTo_DoWHILE {
 
 	public static void main(String[] args) {
+		Scanner miTeclado = new Scanner(System.in);
 		int ancho;
 		int largo;
 		int valorM2;
+		int y = 1;
 		
-		Scanner miTeclado = new Scanner(System.in);
+		do {
+		
 		
 		System.out.println("Ingrese el ancho del terreno: ");
 		ancho =  miTeclado.nextInt();
@@ -31,7 +34,8 @@ public class Ejercicio_7_FixedTo_DoWHILE {
 		System.out.println("Se precisan " + (ancho*largo*1) + " metros de alambre para cercar por completo en una altura");
 		System.out.println("Se precisan " + (ancho*largo*2) + " metros de alambre para cercar por completo en dos alturas");
 		System.out.println("Se precisan " + (ancho*largo*3) + " metros de alambre para cercar por completo en tres alturas");
-		
+	} while (y == 1);
+	
 		miTeclado.close();
 		
 	}

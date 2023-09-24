@@ -29,7 +29,9 @@ public class Ejercicio_10_FixedTo_DoWHILE {
 		double p1 = 0;
 		double p2 = 0;
 		double p3 = 0;
+		int y = 1;
 		
+		do {
 		 System.out.println("\n" + CARTEL_NOMBRE);
 		 user1 =miTeclado1.nextLine();
 		 System.out.println(CARTEL_APORTE);
@@ -62,7 +64,8 @@ public class Ejercicio_10_FixedTo_DoWHILE {
 		 System.out.println( user1 + " aporto: " + user11 + " pesos representando el " + p1 + "% del Total de la Sociedad" + "\n");
 		 System.out.println( user2 + " aporto: " + user22 + " pesos representando el " + p2 + "% del Total de la Sociedad" + "\n");
 		 System.out.println( user3 + " aporto: " + user33 + " pesos representando el " + p3 + "% del Total de la Sociedad" + "\n");
-		 
+		} while (y == 1);
+		
 		  miTeclado1.close();
 	
 	}

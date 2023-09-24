@@ -29,7 +29,9 @@ public class Ejercicio_2_FixedTo_DoWHILE {
 		// variable para el promedio
 		String nombre = "Juan";
 		// variable para el nombre del alumno
-	
+		int y = 1;
+		
+		do {
 		
 		System.out.println("Ingrese el Nombre del Alumno: ");
 		nombre = miTeclado.nextLine();
@@ -68,7 +70,7 @@ public class Ejercicio_2_FixedTo_DoWHILE {
         // caso negativo
         }
   
-
+		} while (y == 1);
 			
 		miTeclado.close();
 	    // por buena practica siempre cerrar el scanner que se abre

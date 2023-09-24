@@ -10,17 +10,21 @@ import java.util.Scanner;
 public class Ejercicio_1_FixedTo_DoWHILE {
 	
 	public static void main(String[] args) {
+		Scanner miTeclado = new Scanner(System.in);
 		String x = "X";
+		int y = 1;
 		
+		do {
 		System.out.println("Bienvenidos a THP!!!!!!" + "\n");
 		System.out.println("Aprenderemos a programar muchas cosas!!!!!" + "\n");
 		
-		Scanner miTeclado = new Scanner(System.in);
+		
 		
 		System.out.println("Por favor, ingrese su nombre:" + "\n");
 		x =miTeclado.nextLine();
 		
 		System.out.println( "\n" + "Bienvenido " + x + "!");
+		} while (y == 1);
 		
 		
 		miTeclado.close();
