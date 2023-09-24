@@ -17,6 +17,10 @@ public class Ejercicio_36_FixedTo_1FOR {
 		double promedio = 0;
 		int divisor = 0 ; 
 		int vueltas = 0 ; //cantidad de valores leídos
+		int a =1;
+		int b =0 ;
+		
+		for (b=0;a == 1;b++) {
  
 		while ( promedio < 20 )   {
 			divisor ++ ;
@@ -31,6 +35,6 @@ public class Ejercicio_36_FixedTo_1FOR {
 		System.out.println("la cantidad de valores leidos fue " + vueltas);
 		miTeclado.close();
 	}
- 
+	}
 }
 

@@ -16,6 +16,10 @@ public class Ejercicio_33_FixedTo_1FOR {
 		int num_max = 0;
 		int num_min = 100000;
 		int num;
+		int a =1;
+		int b =0 ;
+		
+		for (b=0;a == 1;b++) {
 		
 		
 		
@@ -45,5 +49,5 @@ public class Ejercicio_33_FixedTo_1FOR {
 		
 		miTeclado.close();
 	}
-
+	}
 }

@@ -20,6 +20,10 @@ public class Ejercicio_35_FixedTo_1FOR {
         int younger = 100000;
         String dato_nombre = "a";
         int dato_edad = 0;
+        int a =1;
+		int b =0 ;
+		
+		for (b=0;a == 1;b++) {
 
         System.out.print("Ingrese el nombre de la persona: ");
         nombre = miTeclado1.nextLine();
@@ -46,4 +50,5 @@ public class Ejercicio_35_FixedTo_1FOR {
         miTeclado1.close();
         miTeclado2.close();
     }
+}
 }

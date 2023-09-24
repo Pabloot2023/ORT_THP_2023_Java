@@ -40,6 +40,10 @@ public class Ejercicio_39_FixedTo_1FOR {
             int i,j;
             int distancia;
             int puntaje = 0;
+            int a =1;
+    		int b =0 ;
+    		
+    		for (b=0;a == 1;b++) {
 
 	        System.out.print("Ingrese la cantidad de jugadores: ");
 	        cantidadJugadores = miTeclado.nextInt();
@@ -92,3 +96,4 @@ public class Ejercicio_39_FixedTo_1FOR {
 	        miTeclado.close();
 	    }
 	}
+}

@@ -24,6 +24,10 @@ public class Ejercicio_30_FixedTo_1FOR {
 		 int resultado;
 	     String operacion;
 	     boolean flag = true;
+	     int a =1;
+			int b =0 ;
+			
+			for (b=0;a == 1;b++) {
  
 	     do {
 	    	 	System.out.print("\n" + "Ingrese la operacion a realizar (+, -, *, /, F): ");
@@ -98,4 +102,4 @@ public class Ejercicio_30_FixedTo_1FOR {
 	    			miTeclado.close();
 	    			}
 	    }	
- 
+}

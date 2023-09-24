@@ -21,6 +21,10 @@ public class Ejercicio_31_FixedTo_1FOR {
 		String x = "X";
 		boolean flag = true;
 		char operacion;
+		int a =1;
+		int b =0 ;
+		
+		for (b=0;a == 1;b++) {
  
  
 		while (flag)  {	
@@ -45,6 +49,6 @@ public class Ejercicio_31_FixedTo_1FOR {
 		System.out.println("PROGRAMA FINALIZADO");
 		miTeclado.close();
 	}
- 
+	}
 }
  

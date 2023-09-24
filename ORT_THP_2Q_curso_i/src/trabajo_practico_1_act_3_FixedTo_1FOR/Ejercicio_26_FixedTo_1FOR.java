@@ -15,6 +15,10 @@ public class Ejercicio_26_FixedTo_1FOR {
         int n;
         int contador = 0;
         int i;
+        int a =1;
+		int b =0 ;
+		
+		for (b=0;a == 1;b++) {
 
         System.out.print("Ingrese un numero natural: ");
         n = miTeclado.nextInt();
@@ -29,4 +33,5 @@ public class Ejercicio_26_FixedTo_1FOR {
 
         miTeclado.close();
     }
+}
 }

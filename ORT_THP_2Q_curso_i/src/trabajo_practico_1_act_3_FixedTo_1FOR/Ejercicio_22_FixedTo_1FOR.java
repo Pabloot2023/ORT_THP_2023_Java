@@ -10,6 +10,10 @@ public class Ejercicio_22_FixedTo_1FOR {
     public static void main(String[] args) {
 
         int i;
+        int a =1;
+		int b =0 ;
+		
+		for (b=0;a == 1;b++) {
         System.out.println("--------------------------------------");
         for (i = 1; i < 6; i++) {
             System.out.println(i);
@@ -21,4 +25,4 @@ public class Ejercicio_22_FixedTo_1FOR {
         System.out.println("--------------------------------------");
     }
 }
-
+}

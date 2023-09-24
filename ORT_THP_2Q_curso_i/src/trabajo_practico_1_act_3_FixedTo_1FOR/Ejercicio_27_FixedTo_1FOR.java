@@ -22,6 +22,10 @@ public class Ejercicio_27_FixedTo_1FOR {
 		int i;
 		int edad_mas_alta = 0;
 		int posicion = 0;
+		int a =1;
+		int b =0 ;
+		
+		for (b=0;a == 1;b++) {
 		
 		 for ( i = 0; i < 5; i++) {
 		        System.out.print("Ingrese una edad ");
@@ -47,5 +51,5 @@ public class Ejercicio_27_FixedTo_1FOR {
 		
 
 	}
-
+	}
 }

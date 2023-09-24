@@ -20,6 +20,10 @@ public class Ejercicio_24_FixedTo_1FOR {
 		int num1;
 		int num2;
 		int i;
+		int a =1;
+		int b =0 ;
+		
+		for (b=0;a == 1;b++) {
 		
 		System.out.print("Ingrese un numero entero: ");
         num1 = miTeclado.nextInt();
@@ -56,5 +60,5 @@ public class Ejercicio_24_FixedTo_1FOR {
         
         miTeclado.close(); 
 	}
-
+	}
 }

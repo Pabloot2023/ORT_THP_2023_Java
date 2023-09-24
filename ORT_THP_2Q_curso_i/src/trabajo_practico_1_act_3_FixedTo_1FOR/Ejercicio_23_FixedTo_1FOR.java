@@ -14,6 +14,10 @@ public class Ejercicio_23_FixedTo_1FOR {
 		int n;
 		int multiplo;
 		int i;
+		int a =1;
+		int b =0 ;
+		
+		for (b=0;a == 1;b++) {
 		
 		System.out.println("Ingrese un numero entero: ");
          n = miTeclado.nextInt();
@@ -27,5 +31,5 @@ public class Ejercicio_23_FixedTo_1FOR {
          }
 
 	}
-
+	}
 }

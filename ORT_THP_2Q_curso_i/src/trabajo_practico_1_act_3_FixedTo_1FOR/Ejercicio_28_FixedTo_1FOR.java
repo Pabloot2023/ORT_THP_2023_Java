@@ -15,6 +15,10 @@ public class Ejercicio_28_FixedTo_1FOR {
 	        
 	        int cant,posicion,numero,i;
 	        int mayor = 0;
+	        int a =1;
+			int b =0 ;
+			
+			for (b=0;a == 1;b++) {
 
 	        System.out.print("Ingrese la cantidad de numeros a ingresar: ");
 	        cant = miTeclado.nextInt();
@@ -40,3 +44,4 @@ public class Ejercicio_28_FixedTo_1FOR {
 	        miTeclado.close();
 	    }
 	}
+}

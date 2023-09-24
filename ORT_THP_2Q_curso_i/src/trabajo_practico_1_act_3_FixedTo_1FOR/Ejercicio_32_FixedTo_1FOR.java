@@ -16,6 +16,10 @@ public class Ejercicio_32_FixedTo_1FOR {
 		Scanner miTeclado = new Scanner(System.in);
 		int i;
 		int nota;
+		int a =1;
+		int b =0 ;
+		
+		for (b=0;a == 1;b++) {
  
 		System.out.println("Ingrese la nota del examen:");
 		nota = miTeclado.nextInt();
@@ -38,5 +42,5 @@ public class Ejercicio_32_FixedTo_1FOR {
 			System.out.println("\n" + "------------PROGRAMA FINALIZADO------------");
 			miTeclado.close();
 	}
- 
+	}
 }
