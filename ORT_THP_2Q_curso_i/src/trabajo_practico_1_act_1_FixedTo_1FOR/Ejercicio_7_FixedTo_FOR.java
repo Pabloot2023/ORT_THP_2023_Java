@@ -14,7 +14,10 @@ public class Ejercicio_7_FixedTo_FOR {
 		int ancho;
 		int largo;
 		int valorM2;
-		
+		int y =1;
+		int i =0 ;
+			
+		for (i=0;y == 1;i++) {
 		Scanner miTeclado = new Scanner(System.in);
 		
 		System.out.println("Ingrese el ancho del terreno: ");
@@ -35,5 +38,5 @@ public class Ejercicio_7_FixedTo_FOR {
 		miTeclado.close();
 		
 	}
-
+	}
 }

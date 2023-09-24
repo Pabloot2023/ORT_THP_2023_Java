@@ -20,8 +20,10 @@ public class Ejercicio_4_FixedTo_FOR {
         int pagoDia = valorHora*cantHora;
         int pagoSem = pagoDia*5;
         int horaSab = ((cantHora/2)*valorHora);
-        
-        
+        int y =1;
+		int i =0 ;
+		
+		for (i=0;y == 1;i++) {
         System.out.println("Ingrese un numero el valor monetario de una hora de trabajo: ");
         valorHora = miTeclado.nextInt();
         	
@@ -44,5 +46,5 @@ public class Ejercicio_4_FixedTo_FOR {
        
 		
 	}
-
+	}
 }

@@ -16,7 +16,10 @@ public class Ejercicio_9_FixedTo_FOR {
 		
 		int angulo1 = 0;
 		int angulo2 = 0;
-		
+		int y =1;
+		int i =0 ;
+			
+		for (i=0;y == 1;i++) {
 		 System.out.println("Ingrese el valor del primer angulo");
 		 angulo1 = miTeclado.nextInt();
 		
@@ -32,5 +35,5 @@ public class Ejercicio_9_FixedTo_FOR {
 		
 
 	}
-
+	}
 }

@@ -10,20 +10,23 @@ import java.util.Scanner;
 public class Ejercicio_1_FixedTo_FOR {
 	
 	public static void main(String[] args) {
-		String x = "X";
-		
-		System.out.println("Bienvenidos a THP!!!!!!" + "\n");
-		System.out.println("Aprenderemos a programar muchas cosas!!!!!" + "\n");
-		
 		Scanner miTeclado = new Scanner(System.in);
+		String x = "X";
+		int y =1;
+		int i =0 ;
+		
+		for (i=0;y == 1;i++) {
+		System.out.println("Bienvenidos a THP!!!!!!" + "\n");
+		System.out.println("Aprenderemos a programar muchas cosas!!!!!" + "\n");		
 		
 		System.out.println("Por favor, ingrese su nombre:" + "\n");
 		x =miTeclado.nextLine();
 		
 		System.out.println( "\n" + "Bienvenido " + x + "!");
 		
-		
-		miTeclado.close();
+		System.out.println( "\n" + "----------------------");
+				
 	}
-
+		miTeclado.close();
+}
 }

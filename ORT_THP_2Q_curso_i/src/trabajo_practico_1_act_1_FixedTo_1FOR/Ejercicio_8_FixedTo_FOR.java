@@ -18,6 +18,10 @@ public class Ejercicio_8_FixedTo_FOR {
 		int resta = 0;
 		int multiplicacion = 0;
 		double division = 0;
+		int y =1;
+		int i =0 ;
+			
+		for (i=0;y == 1;i++) {
 		
 		// Pedir al usuario que ingrese dos números naturales.
         System.out.println("Ingrese el primer numero:");
@@ -45,5 +49,5 @@ public class Ejercicio_8_FixedTo_FOR {
 	
 
 	}
-
+	}
 }

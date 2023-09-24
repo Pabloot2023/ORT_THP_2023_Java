@@ -18,6 +18,10 @@ public class Ejercicio_6_FixedTo_FOR {
 	int ventasTot = 0;
 	final int SUELDOFIJO = 44000;
 	final double COMISION = 16;
+	int y =1;
+	int i =0 ;
+		
+	for (i=0;y == 1;i++) {
 	
 	System.out.println(CARTEL);
 	System.out.println("Ingrese el monto total de las ventas realizadas");
@@ -27,5 +31,6 @@ public class Ejercicio_6_FixedTo_FOR {
 	miTeclado.close();
 	
 	
+	}
 	}
 }

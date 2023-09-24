@@ -16,7 +16,10 @@ public class Ejercicio_3_FixedTo_FOR {
 		// se inicia scanner SIN private static  por estar dentro  del metodo main
 		
         int numero = 0;
-        
+        int y =1;
+		int i =0 ;
+		
+		for (i=0;y == 1;i++) {
         System.out.println("Ingrese un numero entero: ");
         numero = miTeclado.nextInt();
         
@@ -41,5 +44,5 @@ public class Ejercicio_3_FixedTo_FOR {
 		
 
 	}
-
+	}
 }

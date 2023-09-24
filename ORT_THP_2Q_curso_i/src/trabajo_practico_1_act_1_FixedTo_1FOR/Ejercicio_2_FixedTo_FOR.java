@@ -29,8 +29,10 @@ public class Ejercicio_2_FixedTo_FOR {
 		// variable para el promedio
 		String nombre = "Juan";
 		// variable para el nombre del alumno
+		int y =1;
+		int i =0 ;
 	
-		
+		for (i=0;y == 1;i++) {
 		System.out.println("Ingrese el Nombre del Alumno: ");
 		nombre = miTeclado.nextLine();
 		// se pregunta el nombre y pisa lo inicializado
@@ -75,4 +77,5 @@ public class Ejercicio_2_FixedTo_FOR {
 
 	}
 
+}
 }

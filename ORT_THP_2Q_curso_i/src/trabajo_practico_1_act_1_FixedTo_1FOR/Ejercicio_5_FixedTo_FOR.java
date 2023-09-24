@@ -17,7 +17,10 @@ public class Ejercicio_5_FixedTo_FOR {
 		int num0 = 0;
 		int num1 = 0;
 		int num2 = 0;
-		
+		int y =1;
+		int i =0 ;
+			
+		for (i=0;y == 1;i++) {
 		System.out.println("Ingrese un primer numero");
 		num1 = miTeclado.nextInt();
 		
@@ -35,5 +38,5 @@ public class Ejercicio_5_FixedTo_FOR {
 		miTeclado.close();
 		
 	}
-
+	}
 }
