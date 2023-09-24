@@ -29,6 +29,11 @@ public class Ejercicio_10_FixedTo_FOR {
 		double p1 = 0;
 		double p2 = 0;
 		double p3 = 0;
+		int y =1;
+		int i =0 ;
+		
+		
+		for (i=0;y == 1;i++) {
 		
 		 System.out.println("\n" + CARTEL_NOMBRE);
 		 user1 =miTeclado1.nextLine();
@@ -66,5 +71,5 @@ public class Ejercicio_10_FixedTo_FOR {
 		  miTeclado1.close();
 	
 	}
-
+	}
 }
