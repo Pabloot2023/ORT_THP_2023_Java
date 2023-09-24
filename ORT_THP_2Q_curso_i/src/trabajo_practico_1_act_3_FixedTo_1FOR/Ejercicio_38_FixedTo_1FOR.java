@@ -9,12 +9,37 @@
 */
 
 package trabajo_practico_1_act_3_FixedTo_1FOR;
+import java.util.Scanner;
 
 public class Ejercicio_38_FixedTo_1FOR {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String usuarioCorrecto = "admin";
+        String contrasenaCorrecta = "123456";
+        int intentos = 3;
 
-	}
+        while (intentos > 0) {
+            System.out.print("Ingrese su nombre de usuario: ");
+            String usuario = scanner.nextLine();
+            System.out.print("Ingrese su contraseña: ");
+            String contrasena = scanner.nextLine();
 
+            if (usuario.equals(usuarioCorrecto) && contrasena.equals(contrasenaCorrecta)) {
+                System.out.println("Acceso concedido");
+                break;
+            } else {
+                intentos--;
+                if (intentos == 0) {
+                    System.out.println("Se ha bloqueado la cuenta");
+                } else {
+                    System.out.println("Credenciales incorrectas. Intentos restantes: " + intentos);
+                }
+            }
+        }
+
+        scanner.close();
+    }
 }
+
+
