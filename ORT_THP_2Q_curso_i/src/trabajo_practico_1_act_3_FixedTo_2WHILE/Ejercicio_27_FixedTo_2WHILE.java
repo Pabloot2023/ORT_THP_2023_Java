@@ -22,6 +22,8 @@ public class Ejercicio_27_FixedTo_2WHILE {
 		int i;
 		int edad_mas_alta = 0;
 		int posicion = 0;
+		int y = 1;
+		while (y == 1){
 		
 		 for ( i = 0; i < 5; i++) {
 		        System.out.print("Ingrese una edad ");
@@ -47,5 +49,5 @@ public class Ejercicio_27_FixedTo_2WHILE {
 		
 
 	}
-
+	}
 }

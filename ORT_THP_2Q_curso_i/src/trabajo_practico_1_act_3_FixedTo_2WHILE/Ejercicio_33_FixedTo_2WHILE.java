@@ -16,6 +16,8 @@ public class Ejercicio_33_FixedTo_2WHILE {
 		int num_max = 0;
 		int num_min = 100000;
 		int num;
+		int y = 1;
+		while (y == 1){
 		
 		
 		
@@ -45,5 +47,5 @@ public class Ejercicio_33_FixedTo_2WHILE {
 		
 		miTeclado.close();
 	}
-
+	}
 }

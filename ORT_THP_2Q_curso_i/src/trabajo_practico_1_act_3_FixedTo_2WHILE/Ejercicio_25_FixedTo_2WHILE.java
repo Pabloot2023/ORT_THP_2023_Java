@@ -13,6 +13,8 @@ public class Ejercicio_25_FixedTo_2WHILE {
     public static void main(String[] args) {
         Scanner miTeclado = new Scanner(System.in);
         int i,j,ancho,alto;
+        int y = 1;
+    	while (y == 1){
         
 
         System.out.print("Ingrese el ancho de la matriz de cruces: ");
@@ -39,4 +41,5 @@ public class Ejercicio_25_FixedTo_2WHILE {
 
         miTeclado.close();
     }
+}
 }

@@ -22,6 +22,8 @@ public class Ejercicio_37_FixedTo_2WHILE {
         double totalSueldos = 0;
         int i = 0;
         boolean continuar = true;
+        int y = 1;
+    	while (y == 1){
 
         while (i < 12 && continuar) {
             System.out.println("Ingrese el sueldo del mes " + (i + 1));
@@ -39,4 +41,5 @@ public class Ejercicio_37_FixedTo_2WHILE {
         
         scanner.close();
     }
+}
 }

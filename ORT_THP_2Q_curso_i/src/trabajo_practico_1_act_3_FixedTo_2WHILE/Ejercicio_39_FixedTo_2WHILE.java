@@ -40,6 +40,8 @@ public class Ejercicio_39_FixedTo_2WHILE {
             int i,j;
             int distancia;
             int puntaje = 0;
+            int y = 1;
+        	while (y == 1){
 
 	        System.out.print("Ingrese la cantidad de jugadores: ");
 	        cantidadJugadores = miTeclado.nextInt();
@@ -92,3 +94,4 @@ public class Ejercicio_39_FixedTo_2WHILE {
 	        miTeclado.close();
 	    }
 	}
+}

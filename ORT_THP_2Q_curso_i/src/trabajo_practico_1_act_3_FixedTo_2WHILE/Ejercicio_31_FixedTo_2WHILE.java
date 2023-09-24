@@ -21,6 +21,8 @@ public class Ejercicio_31_FixedTo_2WHILE {
 		String x = "X";
 		boolean flag = true;
 		char operacion;
+		int y = 1;
+		while (y == 1){
  
  
 		while (flag)  {	
@@ -45,6 +47,6 @@ public class Ejercicio_31_FixedTo_2WHILE {
 		System.out.println("PROGRAMA FINALIZADO");
 		miTeclado.close();
 	}
- 
+	}
 }
  

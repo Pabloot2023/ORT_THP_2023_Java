@@ -16,6 +16,8 @@ public class Ejercicio_32_FixedTo_2WHILE {
 		Scanner miTeclado = new Scanner(System.in);
 		int i;
 		int nota;
+		int y = 1;
+		while (y == 1){
  
 		System.out.println("Ingrese la nota del examen:");
 		nota = miTeclado.nextInt();
@@ -38,5 +40,5 @@ public class Ejercicio_32_FixedTo_2WHILE {
 			System.out.println("\n" + "------------PROGRAMA FINALIZADO------------");
 			miTeclado.close();
 	}
- 
+	}
 }

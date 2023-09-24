@@ -18,6 +18,8 @@ public class Ejercicio_38_FixedTo_2WHILE {
         String usuarioCorrecto = "admin";
         String contrasenaCorrecta = "123456";
         int intentos = 3;
+        int y = 1;
+    	while (y == 1){
 
         while (intentos > 0) {
             System.out.print("Ingrese su nombre de usuario: ");
@@ -41,4 +43,4 @@ public class Ejercicio_38_FixedTo_2WHILE {
         scanner.close();
     }
 }
-
+}

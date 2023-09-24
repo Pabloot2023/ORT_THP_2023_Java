@@ -20,6 +20,8 @@ Scanner miTeclado = new Scanner(System.in);
 		double acumulador_altura = 0;
 		int contador_altura = 0;
 		double promedio_altura = 0;
+		int y = 1;
+		while (y == 1){
 		
 		
 		
@@ -49,5 +51,5 @@ Scanner miTeclado = new Scanner(System.in);
 		miTeclado.close();
 
 	}
-
+	}
 }

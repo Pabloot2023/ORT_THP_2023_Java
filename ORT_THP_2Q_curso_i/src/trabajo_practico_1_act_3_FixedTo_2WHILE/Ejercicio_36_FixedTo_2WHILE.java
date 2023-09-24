@@ -17,6 +17,8 @@ public class Ejercicio_36_FixedTo_2WHILE {
 		double promedio = 0;
 		int divisor = 0 ; 
 		int vueltas = 0 ; //cantidad de valores leídos
+		int y = 1;
+		while (y == 1){
  
 		while ( promedio < 20 )   {
 			divisor ++ ;
@@ -31,6 +33,6 @@ public class Ejercicio_36_FixedTo_2WHILE {
 		System.out.println("la cantidad de valores leidos fue " + vueltas);
 		miTeclado.close();
 	}
- 
+	}
 }
 

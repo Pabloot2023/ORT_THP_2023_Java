@@ -20,6 +20,8 @@ public class Ejercicio_35_FixedTo_2WHILE {
         int younger = 100000;
         String dato_nombre = "a";
         int dato_edad = 0;
+        int y = 1;
+    	while (y == 1){
 
         System.out.print("Ingrese el nombre de la persona: ");
         nombre = miTeclado1.nextLine();
@@ -46,4 +48,5 @@ public class Ejercicio_35_FixedTo_2WHILE {
         miTeclado1.close();
         miTeclado2.close();
     }
+}
 }

@@ -15,6 +15,8 @@ public class Ejercicio_28_FixedTo_2WHILE {
 	        
 	        int cant,posicion,numero,i;
 	        int mayor = 0;
+	        int y = 1;
+	    	while (y == 1){
 
 	        System.out.print("Ingrese la cantidad de numeros a ingresar: ");
 	        cant = miTeclado.nextInt();
@@ -40,3 +42,4 @@ public class Ejercicio_28_FixedTo_2WHILE {
 	        miTeclado.close();
 	    }
 	}
+}
