@@ -13,6 +13,10 @@ public class Ejercicio_11_FixedTo_FOR {
 		Scanner miTeclado = new Scanner(System.in);
 		int num = 0;
 //		boolean esPar = false;
+		int y =1;
+		int i =0 ;
+		
+		for (i=0;y == 1;i++) {
 		
 		System.out.println("Ingrese un numero entero, le dire si es par o impar");
 		num =  miTeclado.nextInt();
@@ -27,7 +31,7 @@ public class Ejercicio_11_FixedTo_FOR {
 
 
 		}
-
+	}
 	}
 	
 /* otra forma de hacer lo mismo

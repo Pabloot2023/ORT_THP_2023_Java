@@ -18,6 +18,10 @@ public class Ejercicio_18_FixedTo_FOR {
         int num2;
         int mayor;
         int menor;
+        int y =1;
+		int i =0 ;
+		
+		for (i=0;y == 1;i++) {
         
         System.out.print("Ingrese el primer numero: ");
         num1 = miTeclado.nextInt();
@@ -37,5 +41,5 @@ public class Ejercicio_18_FixedTo_FOR {
         miTeclado.close();
 
 	}
-
+	}
 }

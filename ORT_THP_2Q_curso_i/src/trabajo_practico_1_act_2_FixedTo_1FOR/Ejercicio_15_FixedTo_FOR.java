@@ -35,6 +35,10 @@ public class Ejercicio_15_FixedTo_FOR {
 	        String Luis;
 	        String Ana;
 	        String flag;
+	        int y =1;
+			int i =0 ;
+			
+			for (i=0;y == 1;i++) {
 
 	        // Juan
 	        nombre = "Juan";
@@ -112,5 +116,5 @@ public class Ejercicio_15_FixedTo_FOR {
 	        miTeclado.close();
 
 	}
-
+	}
 }

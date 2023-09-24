@@ -22,6 +22,10 @@ public class Ejercicio_17_FixedTo_FOR {
 		boolean edadFlag;
         String genero;
         boolean generoFlag;
+        int y =1;
+		int i =0 ;
+		
+		for (i=0;y == 1;i++) {
         
         System.out.print("Ingrese la edad: ");
         edadNum = miTeclado.nextInt();
@@ -77,5 +81,5 @@ public class Ejercicio_17_FixedTo_FOR {
         		}
         miTeclado.close();
 	}
-	
+	}
   }

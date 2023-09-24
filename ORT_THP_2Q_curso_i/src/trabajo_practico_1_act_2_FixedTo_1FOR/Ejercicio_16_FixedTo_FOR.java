@@ -17,6 +17,10 @@ public class Ejercicio_16_FixedTo_FOR {
 		int inscriptos;
         int asientosDisponibles;
         int faltantes;
+        int y =1;
+		int i =0 ;
+		
+		for (i=0;y == 1;i++) {
         
         System.out.print("Ingrese la cantidad de inscriptos: ");
         inscriptos = miTeclado.nextInt();
@@ -33,5 +37,5 @@ public class Ejercicio_16_FixedTo_FOR {
 
         miTeclado.close();
 	}
-
+	}
 }

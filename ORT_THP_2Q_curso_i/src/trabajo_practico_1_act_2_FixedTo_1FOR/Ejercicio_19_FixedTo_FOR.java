@@ -27,6 +27,10 @@ public class Ejercicio_19_FixedTo_FOR {
         boolean esImpar;
         boolean estaEnAmbosGrupos;
         boolean noEstaEnNingunGrupo;
+        int y =1;
+		int i =0 ;
+		
+		for (i=0;y == 1;i++) {
 
         System.out.print("Ingrese un numero entero: ");
         num = miTeclado.nextInt();
@@ -65,5 +69,5 @@ public class Ejercicio_19_FixedTo_FOR {
 		
 
 	}
-
+	}
 }
