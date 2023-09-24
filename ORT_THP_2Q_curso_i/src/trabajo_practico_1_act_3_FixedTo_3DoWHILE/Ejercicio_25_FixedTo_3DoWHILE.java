@@ -8,21 +8,23 @@ package trabajo_practico_1_act_3_FixedTo_3DoWHILE;
 
 import java.util.Scanner;
 
-public class Ejercicio_25_FixedTo_DoWHILE {
+public class Ejercicio_25_FixedTo_3DoWHILE {
 
     public static void main(String[] args) {
         Scanner miTeclado = new Scanner(System.in);
+        int i,j,ancho,alto;
+        
 
         System.out.print("Ingrese el ancho de la matriz de cruces: ");
-        int ancho = miTeclado.nextInt();
+         ancho = miTeclado.nextInt();
 
         System.out.print("Ingrese el alto de la matriz de cruces: ");
-        int alto = miTeclado.nextInt();
+         alto = miTeclado.nextInt();
         
         
-        for (int i = 0; i < alto; i++) {
+        for ( i = 0; i < alto; i++) {
 
-            for (int j = 0; j < ancho; j++) {
+            for ( j = 0; j < ancho; j++) {
             	
                 if (j == ancho / 2 && i == alto / 2) {
                     System.out.print("+ ");

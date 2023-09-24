@@ -12,7 +12,7 @@ package trabajo_practico_1_act_3_FixedTo_3DoWHILE;
 
 import java.util.Scanner;
 
-public class Ejercicio_24_FixedTo_DoWHILE {
+public class Ejercicio_24_FixedTo_3DoWHILE {
 
 	public static void main(String[] args) {
 		Scanner miTeclado = new Scanner(System.in);
@@ -28,7 +28,7 @@ public class Ejercicio_24_FixedTo_DoWHILE {
         num2 = miTeclado.nextInt();
 		
                 
-        for (i = 0 ; (num1 > num2 && num1 != num2)  ; i++) {
+        while (num1 < num2) {
         	System.out.println("--------------------------------------");
         	System.out.print("\n" + "Verifique los datos: el segundo numero no puede ser menor al primero");
         	System.out.print("\n" + "Ingrese nuevamente un numero entero: ");
@@ -36,12 +36,12 @@ public class Ejercicio_24_FixedTo_DoWHILE {
             
             System.out.print("Ingrese nuevamente otro numero entero: ");
             num2 = miTeclado.nextInt();
-        }
+        };
         
         System.out.println("--------------------------------------");
         System.out.println("\n" + "La secuencia de numeros entre " + num1 + " y " + num2 + " incluyendolos, es:" );
         
-        for (i = num1 ; i <= num2 ; i++) {
+        for (i = num1 ; i >= num2 ; i++) {
             System.out.println("--> " + i);
         }
         
