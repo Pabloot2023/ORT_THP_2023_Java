@@ -16,6 +16,9 @@ public class Ejercicio_3_FixedTo_WHILE {
 		// se inicia scanner SIN private static  por estar dentro  del metodo main
 		
         int numero = 0;
+        int y = 1;
+		
+		while (y==1) {
         
         System.out.println("Ingrese un numero entero: ");
         numero = miTeclado.nextInt();
@@ -41,5 +44,5 @@ public class Ejercicio_3_FixedTo_WHILE {
 		
 
 	}
-
+	}
 }

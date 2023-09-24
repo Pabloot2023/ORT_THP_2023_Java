@@ -18,6 +18,9 @@ public class Ejercicio_6_FixedTo_WHILE {
 	int ventasTot = 0;
 	final int SUELDOFIJO = 44000;
 	final double COMISION = 16;
+	int y = 1;
+	
+	while (y==1) {
 	
 	System.out.println(CARTEL);
 	System.out.println("Ingrese el monto total de las ventas realizadas");
@@ -27,5 +30,6 @@ public class Ejercicio_6_FixedTo_WHILE {
 	miTeclado.close();
 	
 	
+	}
 	}
 }

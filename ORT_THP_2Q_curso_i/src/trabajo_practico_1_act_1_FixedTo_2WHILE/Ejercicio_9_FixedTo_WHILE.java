@@ -16,6 +16,9 @@ public class Ejercicio_9_FixedTo_WHILE {
 		
 		int angulo1 = 0;
 		int angulo2 = 0;
+		int y = 1;
+		
+		while (y==1) {
 		
 		 System.out.println("Ingrese el valor del primer angulo");
 		 angulo1 = miTeclado.nextInt();
@@ -32,5 +35,5 @@ public class Ejercicio_9_FixedTo_WHILE {
 		
 
 	}
-
+	}
 }

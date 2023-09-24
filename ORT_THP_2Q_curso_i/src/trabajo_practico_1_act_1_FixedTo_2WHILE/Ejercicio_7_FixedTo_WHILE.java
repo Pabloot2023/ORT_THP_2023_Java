@@ -14,6 +14,9 @@ public class Ejercicio_7_FixedTo_WHILE {
 		int ancho;
 		int largo;
 		int valorM2;
+		int y = 1;
+		
+		while (y==1) {
 		
 		Scanner miTeclado = new Scanner(System.in);
 		
@@ -35,5 +38,5 @@ public class Ejercicio_7_FixedTo_WHILE {
 		miTeclado.close();
 		
 	}
-
+	}
 }

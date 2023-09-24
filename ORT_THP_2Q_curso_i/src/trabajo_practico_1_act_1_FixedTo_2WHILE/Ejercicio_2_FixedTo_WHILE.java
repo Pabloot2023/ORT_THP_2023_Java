@@ -17,6 +17,7 @@ public class Ejercicio_2_FixedTo_WHILE {
 
 		Scanner miTeclado = new Scanner(System.in);
 		// se inicia scanner SIN private static  por estar dentro  del metodo main
+		
 
 		
 		int notaparcial1 = 6;
@@ -29,7 +30,9 @@ public class Ejercicio_2_FixedTo_WHILE {
 		// variable para el promedio
 		String nombre = "Juan";
 		// variable para el nombre del alumno
-	
+		int y = 1;
+		
+		while (y==1) {	
 		
 		System.out.println("Ingrese el Nombre del Alumno: ");
 		nombre = miTeclado.nextLine();
@@ -74,5 +77,5 @@ public class Ejercicio_2_FixedTo_WHILE {
 	    // por buena practica siempre cerrar el scanner que se abre
 
 	}
-
+	}
 }

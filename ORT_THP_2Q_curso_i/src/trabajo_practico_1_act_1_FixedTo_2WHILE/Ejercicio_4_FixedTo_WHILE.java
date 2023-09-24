@@ -20,6 +20,9 @@ public class Ejercicio_4_FixedTo_WHILE {
         int pagoDia = valorHora*cantHora;
         int pagoSem = pagoDia*5;
         int horaSab = ((cantHora/2)*valorHora);
+        int y = 1;
+		
+		while (y==1) {
         
         
         System.out.println("Ingrese un numero el valor monetario de una hora de trabajo: ");
@@ -44,5 +47,5 @@ public class Ejercicio_4_FixedTo_WHILE {
        
 		
 	}
-
+	}
 }

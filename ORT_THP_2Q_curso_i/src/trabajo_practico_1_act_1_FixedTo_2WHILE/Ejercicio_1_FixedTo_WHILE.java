@@ -11,7 +11,9 @@ public class Ejercicio_1_FixedTo_WHILE {
 	
 	public static void main(String[] args) {
 		String x = "X";
+		int y = 1;
 		
+		while (y==1) {
 		System.out.println("Bienvenidos a THP!!!!!!" + "\n");
 		System.out.println("Aprenderemos a programar muchas cosas!!!!!" + "\n");
 		
@@ -25,5 +27,5 @@ public class Ejercicio_1_FixedTo_WHILE {
 		
 		miTeclado.close();
 	}
-
+	}
 }

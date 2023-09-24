@@ -29,6 +29,9 @@ public class Ejercicio_10_FixedTo_WHILE {
 		double p1 = 0;
 		double p2 = 0;
 		double p3 = 0;
+		int y = 1;
+		
+		while (y==1) {
 		
 		 System.out.println("\n" + CARTEL_NOMBRE);
 		 user1 =miTeclado1.nextLine();
@@ -66,5 +69,5 @@ public class Ejercicio_10_FixedTo_WHILE {
 		  miTeclado1.close();
 	
 	}
-
+	}
 }
