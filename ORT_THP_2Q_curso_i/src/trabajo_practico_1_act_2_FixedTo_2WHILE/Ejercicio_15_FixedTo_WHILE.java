@@ -35,6 +35,9 @@ public class Ejercicio_15_FixedTo_WHILE {
 	        String Luis;
 	        String Ana;
 	        String flag;
+	        int y = 1;
+			
+			while (y==1) {
 
 	        // Juan
 	        nombre = "Juan";
@@ -112,5 +115,5 @@ public class Ejercicio_15_FixedTo_WHILE {
 	        miTeclado.close();
 
 	}
-
+	}
 }

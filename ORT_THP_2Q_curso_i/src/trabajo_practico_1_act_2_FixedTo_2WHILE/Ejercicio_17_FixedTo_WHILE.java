@@ -22,6 +22,9 @@ public class Ejercicio_17_FixedTo_WHILE {
 		boolean edadFlag;
         String genero;
         boolean generoFlag;
+        int y = 1;
+		
+		while (y==1) {	
         
         System.out.print("Ingrese la edad: ");
         edadNum = miTeclado.nextInt();
@@ -77,5 +80,5 @@ public class Ejercicio_17_FixedTo_WHILE {
         		}
         miTeclado.close();
 	}
-	
+	}
   }

@@ -17,6 +17,9 @@ public class Ejercicio_16_FixedTo_WHILE {
 		int inscriptos;
         int asientosDisponibles;
         int faltantes;
+        int y = 1;
+		
+		while (y==1) {
         
         System.out.print("Ingrese la cantidad de inscriptos: ");
         inscriptos = miTeclado.nextInt();
@@ -33,5 +36,5 @@ public class Ejercicio_16_FixedTo_WHILE {
 
         miTeclado.close();
 	}
-
+	}
 }

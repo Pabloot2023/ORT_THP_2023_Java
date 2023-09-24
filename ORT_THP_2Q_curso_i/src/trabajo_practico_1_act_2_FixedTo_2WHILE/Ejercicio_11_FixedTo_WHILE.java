@@ -12,6 +12,9 @@ public class Ejercicio_11_FixedTo_WHILE {
 	
 		Scanner miTeclado = new Scanner(System.in);
 		int num = 0;
+		int y = 1;
+		
+		while (y==1) {
 //		boolean esPar = false;
 		
 		System.out.println("Ingrese un numero entero, le dire si es par o impar");
@@ -27,7 +30,7 @@ public class Ejercicio_11_FixedTo_WHILE {
 
 
 		}
-
+	}
 	}
 	
 /* otra forma de hacer lo mismo

@@ -18,6 +18,9 @@ public class Ejercicio_18_FixedTo_WHILE {
         int num2;
         int mayor;
         int menor;
+        int y = 1;
+		
+		while (y==1) {
         
         System.out.print("Ingrese el primer numero: ");
         num1 = miTeclado.nextInt();
@@ -37,5 +40,5 @@ public class Ejercicio_18_FixedTo_WHILE {
         miTeclado.close();
 
 	}
-
+	}
 }

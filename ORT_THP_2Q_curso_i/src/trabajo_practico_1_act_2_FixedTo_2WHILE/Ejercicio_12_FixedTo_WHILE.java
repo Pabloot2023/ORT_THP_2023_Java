@@ -15,6 +15,9 @@ public class Ejercicio_12_FixedTo_WHILE {
 		
 		int num1 = 0;
 		int num2 = 0;
+		int y = 1;
+		
+		while (y==1) {
 		
 		System.out.println("Ingrese un numero entero");
 		num1 = miTeclado.nextInt();
@@ -38,4 +41,5 @@ public class Ejercicio_12_FixedTo_WHILE {
 
 	}
 	}
+}
 }
