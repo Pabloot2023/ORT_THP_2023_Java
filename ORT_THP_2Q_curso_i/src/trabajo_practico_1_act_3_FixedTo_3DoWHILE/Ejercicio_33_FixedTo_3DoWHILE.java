@@ -16,6 +16,9 @@ public class Ejercicio_33_FixedTo_3DoWHILE {
 		int num_max = 0;
 		int num_min = 100000;
 		int num;
+		int y = 1;
+		
+		do {
 		
 		
 		
@@ -42,7 +45,7 @@ public class Ejercicio_33_FixedTo_3DoWHILE {
 		
 		System.out.println("\n" + "La nota mas baja fue: " + num_min);	
 		System.out.println("------------------------------------");	
-		
+	} while (y == 1);
 		miTeclado.close();
 	}
 

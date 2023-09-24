@@ -18,6 +18,9 @@ public class Ejercicio_38_FixedTo_3DoWHILE {
         String usuarioCorrecto = "admin";
         String contrasenaCorrecta = "123456";
         int intentos = 3;
+        int y = 1;
+		
+		do {
 
         while (intentos > 0) {
             System.out.print("Ingrese su nombre de usuario: ");
@@ -37,7 +40,7 @@ public class Ejercicio_38_FixedTo_3DoWHILE {
                 }
             }
         }
-
+    } while (y == 1);
         scanner.close();
     }
 }

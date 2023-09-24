@@ -15,6 +15,9 @@ public class Ejercicio_26_FixedTo_3DoWHILE {
         int n;
         int contador = 0;
         int i;
+	int y = 1;
+		
+		do {
 
         System.out.print("Ingrese un numero natural: ");
         n = miTeclado.nextInt();
@@ -26,7 +29,7 @@ public class Ejercicio_26_FixedTo_3DoWHILE {
                 contador++;
             }
         }
-
+		} while (y == 1);
         miTeclado.close();
     }
 }

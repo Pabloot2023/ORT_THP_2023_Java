@@ -15,6 +15,9 @@ public class Ejercicio_29_FixedTo_3DoWHILE {
 		Scanner miTeclado = new Scanner(System.in);
 		int i;
 		int nota;
+		int y = 1;
+		
+		do {
 		
 		System.out.println("Ingrese la nota del examen:");
 		nota = miTeclado.nextInt();
@@ -28,6 +31,8 @@ public class Ejercicio_29_FixedTo_3DoWHILE {
 		 	System.out.println("\n" + "-----------------EXITO!!-------------------");
 			System.out.println("\n" + "             Nota almacenada");
 			System.out.println("\n" + "------------PROGRAMA FINALIZADO------------");
+	} while (y == 1);
+		miTeclado.close();
 	}
 
 }

@@ -20,6 +20,9 @@ Scanner miTeclado = new Scanner(System.in);
 		double acumulador_altura = 0;
 		int contador_altura = 0;
 		double promedio_altura = 0;
+		int y = 1;
+		
+		do {
 		
 		
 		
@@ -45,7 +48,7 @@ Scanner miTeclado = new Scanner(System.in);
 		System.out.println("\n" + "------------------------------------");		
 		System.out.println("El promedio de altura es: " + promedio_altura);		
 		System.out.println("------------------------------------");	
-		
+		} while (y == 1);
 		miTeclado.close();
 
 	}

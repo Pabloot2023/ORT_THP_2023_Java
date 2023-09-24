@@ -10,6 +10,11 @@ public class Ejercicio_22_FixedTo_3DoWHILE {
     public static void main(String[] args) {
 
         int i;
+	int y = 1;
+		
+		do {
+			
+		
         System.out.println("--------------------------------------");
         for (i = 1; i < 6; i++) {
             System.out.println(i);
@@ -19,6 +24,7 @@ public class Ejercicio_22_FixedTo_3DoWHILE {
             System.out.println(i);
         }
         System.out.println("--------------------------------------");
+		} while (y == 1);
     }
 }
 

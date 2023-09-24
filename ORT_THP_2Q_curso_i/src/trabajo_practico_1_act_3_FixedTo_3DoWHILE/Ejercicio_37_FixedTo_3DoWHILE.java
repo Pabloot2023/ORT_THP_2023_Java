@@ -22,6 +22,9 @@ public class Ejercicio_37_FixedTo_3DoWHILE {
         double totalSueldos = 0;
         int i = 0;
         boolean continuar = true;
+        int y = 1;
+		
+		do {
 
         while (i < 12 && continuar) {
             System.out.println("Ingrese el sueldo del mes " + (i + 1));
@@ -36,7 +39,7 @@ public class Ejercicio_37_FixedTo_3DoWHILE {
         }
 
         System.out.println("El monto percibido por el empleado hasta el momento es: $" + totalSueldos);
-        
+		} while (y == 1);
         scanner.close();
     }
 }

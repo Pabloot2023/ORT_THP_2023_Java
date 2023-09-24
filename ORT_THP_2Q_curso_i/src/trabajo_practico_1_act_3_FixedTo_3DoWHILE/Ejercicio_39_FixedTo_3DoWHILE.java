@@ -40,6 +40,9 @@ public class Ejercicio_39_FixedTo_3DoWHILE {
             int i,j;
             int distancia;
             int puntaje = 0;
+        	int y = 1;
+    		
+    		do {
 
 	        System.out.print("Ingrese la cantidad de jugadores: ");
 	        cantidadJugadores = miTeclado.nextInt();
@@ -87,7 +90,7 @@ public class Ejercicio_39_FixedTo_3DoWHILE {
 	        System.out.println("\n" + "El ganador del torneo es: " + ganador);
 	        System.out.println("Puntaje total: " + puntajeMaximo);
 	        System.out.println("Cantidad total de tiros al centro: " + tirosAlCentro);
-
+    		} while (y == 1);
 	        
 	        miTeclado.close();
 	    }

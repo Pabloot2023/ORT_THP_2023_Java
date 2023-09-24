@@ -17,6 +17,9 @@ public class Ejercicio_36_FixedTo_3DoWHILE {
 		double promedio = 0;
 		int divisor = 0 ; 
 		int vueltas = 0 ; //cantidad de valores leídos
+		int y = 1;
+		
+		do {
  
 		while ( promedio < 20 )   {
 			divisor ++ ;
@@ -29,7 +32,9 @@ public class Ejercicio_36_FixedTo_3DoWHILE {
  
 		System.out.println("El promedio final es " + promedio);
 		System.out.println("la cantidad de valores leidos fue " + vueltas);
+	} while (y == 1);
 		miTeclado.close();
+		
 	}
  
 }

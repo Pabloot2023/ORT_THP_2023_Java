@@ -20,6 +20,9 @@ public class Ejercicio_35_FixedTo_3DoWHILE {
         int younger = 100000;
         String dato_nombre = "a";
         int dato_edad = 0;
+        int y = 1;
+		
+		do {
 
         System.out.print("Ingrese el nombre de la persona: ");
         nombre = miTeclado1.nextLine();
@@ -45,5 +48,6 @@ public class Ejercicio_35_FixedTo_3DoWHILE {
         System.out.println("El nombre de la persona mas Joven es: " + dato_nombre);
         miTeclado1.close();
         miTeclado2.close();
+    } while (y == 1);
     }
 }

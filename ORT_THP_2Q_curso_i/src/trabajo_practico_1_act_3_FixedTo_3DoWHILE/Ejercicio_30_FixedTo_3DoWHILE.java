@@ -24,6 +24,10 @@ public class Ejercicio_30_FixedTo_3DoWHILE {
 		 int resultado;
 	     String operacion;
 	     boolean flag = true;
+
+	 	int y = 1;
+	 		
+	 		do {
  
 	     do {
 	    	 	System.out.print("\n" + "Ingrese la operacion a realizar (+, -, *, /, F): ");
@@ -96,6 +100,8 @@ public class Ejercicio_30_FixedTo_3DoWHILE {
  
 	    			System.out.println("CALCULADORA FINALIZADA");
 	    			miTeclado.close();
+	    			
+	 		} while (y == 1);
 	    			}
 	    }	
  

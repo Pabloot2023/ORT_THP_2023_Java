@@ -22,6 +22,9 @@ public class Ejercicio_27_FixedTo_3DoWHILE {
 		int i;
 		int edad_mas_alta = 0;
 		int posicion = 0;
+		int y = 1;
+		
+		do {
 		
 		 for ( i = 0; i < 5; i++) {
 		        System.out.print("Ingrese una edad ");
@@ -45,7 +48,8 @@ public class Ejercicio_27_FixedTo_3DoWHILE {
 		 System.out.println("\n" + "en la posicion: "  + posicion);
 		 System.out.println("--------------------------------------");
 		
-
+		} while (y == 1);
+		miTeclado.close();
 	}
 
 }

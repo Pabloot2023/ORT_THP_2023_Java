@@ -15,6 +15,9 @@ public class Ejercicio_28_FixedTo_3DoWHILE {
 	        
 	        int cant,posicion,numero,i;
 	        int mayor = 0;
+	    	int y = 1;
+			
+			do {
 
 	        System.out.print("Ingrese la cantidad de numeros a ingresar: ");
 	        cant = miTeclado.nextInt();
@@ -36,7 +39,7 @@ public class Ejercicio_28_FixedTo_3DoWHILE {
 	        System.out.println("\n" + "El mayor numero ingresado es: " + mayor);
 	        System.out.println("Se encontro en la posicion: " + posicion);
 	        System.out.println("\n" + "--------------------------------------");
-
+	 } while (y == 1);
 	        miTeclado.close();
 	    }
 	}

@@ -14,7 +14,10 @@ public class Ejercicio_23_FixedTo_3DoWHILE {
 		int n;
 		int multiplo;
 		int i;
+	int y = 1;
 		
+		do {
+
 		System.out.println("Ingrese un numero entero: ");
          n = miTeclado.nextInt();
          
@@ -25,7 +28,7 @@ public class Ejercicio_23_FixedTo_3DoWHILE {
              
          miTeclado.close();    
          }
-
+	} while (y == 1);
 	}
 
 }

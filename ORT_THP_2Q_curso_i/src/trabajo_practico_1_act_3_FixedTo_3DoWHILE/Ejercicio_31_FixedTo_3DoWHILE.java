@@ -21,6 +21,9 @@ public class Ejercicio_31_FixedTo_3DoWHILE {
 		String x = "X";
 		boolean flag = true;
 		char operacion;
+		int y = 1;
+		
+		do {
  
  
 		while (flag)  {	
@@ -43,6 +46,7 @@ public class Ejercicio_31_FixedTo_3DoWHILE {
 		}
 		//corchete previo cierra el while
 		System.out.println("PROGRAMA FINALIZADO");
+	} while (y == 1);
 		miTeclado.close();
 	}
  
