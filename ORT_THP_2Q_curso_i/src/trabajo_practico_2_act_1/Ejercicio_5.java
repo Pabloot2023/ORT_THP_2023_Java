@@ -4,7 +4,7 @@ public class Ejercicio_5 {
 
 	public static void main(String[] args) {
 		
-		
+		/*
 		public class Domicilio {
 			private String calle ;
 			private int numero ;
@@ -37,7 +37,7 @@ public class Ejercicio_5 {
 			}
 			
 			
-			
+			*/
 		    
 		    
 			
@@ -46,4 +46,4 @@ public class Ejercicio_5 {
 
 	}
 
-}
+
