@@ -21,8 +21,64 @@ package trabajo_practico_2_act_1;
 public class Ejercicio_2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/*
+		 
+		 public class Persona {
+    // Atributos
+    private String nombre;
+
+    // Métodos
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getPonerApellido() {
+        return nombre;
+    }
+
+    public void setPonerApellido(String apellido) {
+        this.nombre = apellido;
+    }
+}
+
+
+
+
+-------------------------------------
+|           Persona                 |
+-------------------------------------
+| - nombre: String                  |
+-------------------------------------
+| + getNombre(): String            |
+| + setNombre(nombre: String): void |
+| + getPonerApellido(): String     |
+| + setPonerApellido(apellido: String): void |
+-------------------------------------
+
+
+@startuml Persona
+
+class Persona {
+  - nombre: String
+  + getNombre(): String
+  + setNombre(nombre: String): void
+  + getPonerApellido(): String
+  + setPonerApellido(apellido: String): void
+}
+
+@enduml
+
+
+
+		 
+		 */
 
 	}
 
 }
+
+

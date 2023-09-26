@@ -27,7 +27,38 @@ package trabajo_practico_2_act_1;
 public class Ejercicio_4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	/*
+	 
+	 public class Test {
+    public static void main(String[] args) {
+        // Crear una instancia de la clase Persona
+        Persona persona1 = new Persona();
+
+        // Asignar el nombre "Fulano" a la primera persona
+        persona1.ponerNombre("Fulano");
+
+        // Asignar el apellido "Gomez" a la primera persona
+        persona1.ponerApellido("Gomez");
+
+        // Mostrar el nombre completo de la primera persona
+        System.out.println("Nombre completo de la primera persona: " + persona1.obtenerNombreCompleto());
+
+        // Crear otra instancia de la clase Persona
+        Persona persona2 = new Persona();
+
+        // Asignar el nombre "Sutano" a la segunda persona
+        persona2.ponerNombre("Sutano");
+
+        // Asignar el apellido "Perez" a la segunda persona
+        persona2.ponerApellido("Perez");
+
+        // Mostrar el nombre completo de la segunda persona
+        System.out.println("Nombre completo de la segunda persona: " + persona2.obtenerNombreCompleto());
+    }
+}
+
+	 
+	 */
 
 	}
 

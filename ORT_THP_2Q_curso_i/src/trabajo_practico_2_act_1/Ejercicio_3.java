@@ -27,7 +27,35 @@ package trabajo_practico_2_act_1;
 public class Ejercicio_3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/*
+		 
+		 public class Persona {
+    private String nombre;
+    private String apellido;
+
+    // Constructor por defecto
+    public Persona() {
+        this.nombre = "";
+        this.apellido = "";
+    }
+
+    // Método para establecer el nombre
+    public void ponerNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    // Método para establecer el apellido
+    public void ponerApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    // Método para obtener el nombre completo
+    public String obtenerNombreCompleto() {
+        return this.nombre + " " + this.apellido;
+    }
+}
+		 
+		 */
 
 	}
 
