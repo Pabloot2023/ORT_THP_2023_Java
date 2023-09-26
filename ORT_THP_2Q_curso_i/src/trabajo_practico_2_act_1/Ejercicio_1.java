@@ -15,15 +15,14 @@ package trabajo_practico_2_act_1;
 
 import java.util.Scanner;
 
-
 public class Ejercicio_1 {
 
 	public static Scanner Teclado = new Scanner(System.in);	
 	
 	public static void main(String[] args) {
-	        Scanner scanner = new Scanner(System.in);
-	        int num1 = 10;
-	        int num2 = 20;
+	        
+	        int num1;
+	        int num2;
 	        int resultado;
 	        int limiteMinimo = 1;
 	        int limiteMaximo = 10;
@@ -36,6 +35,7 @@ public class Ejercicio_1 {
 	        num2 = Teclado.nextInt();
 	        
 	        resultado = sumar(num1, num2);
+	        
 	        System.out.println("La suma de " + num1 + " y " + num2 + " es: " + resultado);		        
 	        
 	        System.out.println(" ");
@@ -47,19 +47,21 @@ public class Ejercicio_1 {
 	        System.out.println(" ");
 	        System.out.println("Número elegido: " + numeroElegido);
 
-	        scanner.close();
+	        Teclado.close();
 	    }
 
 	    // Método para sumar dos números
-	    public static int sumar(int numero1, int numero2) {
+	    public static int sumar(int num1, int num2) {
 	    	int resultado;
-	    	resultado = numero1 + numero2;
+		     
+	    	resultado = num1 + num2;
+	    	
 	        return resultado;
 	    }
 
 	    // Método para pedir un número dentro de un rango
 	    public static int pedirNumero(String mensaje, int limiteMinimo, int limiteMaximo) {
-	        int numero;
+	        int numeroIngresado;
 
 	        do {
 	            System.out.println(mensaje);
@@ -68,16 +70,16 @@ public class Ejercicio_1 {
 					                System.out.println("Por favor, ingrese un número valido: ");
 					                Teclado.next();
 					            								}
-	            numero = Teclado.nextInt();
+					    numeroIngresado = Teclado.nextInt();
 
-						            if (numero < limiteMinimo || numero > limiteMaximo) {
+						            if (numeroIngresado < limiteMinimo || numeroIngresado > limiteMaximo) {
 						            	System.out.println(" ");
 						            	System.out.println("Por favor, ingrese un número valido: ");
 						                System.out.println("El numero debe estar entre " + limiteMinimo + " y " + limiteMaximo + ".");
 						                System.out.println(" ");
 						            											}
-	        	} while (numero < limiteMinimo || numero > limiteMaximo);
+	        	} while (numeroIngresado < limiteMinimo || numeroIngresado > limiteMaximo);
 
-	        return numero;
+	        return numeroIngresado;
 	    }
 	}
