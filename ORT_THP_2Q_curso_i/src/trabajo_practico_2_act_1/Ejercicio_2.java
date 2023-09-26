@@ -25,20 +25,16 @@ public class Ejercicio_2 {
 		 
 		 public class Persona {
     // Atributos
+     * 
     private String nombre;
+    private String apellido;
 
     // Métodos
-    public String getNombre() {
-        return nombre;
-    }
-
+     * 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getPonerApellido() {
-        return nombre;
-    }
 
     public void setPonerApellido(String apellido) {
         this.nombre = apellido;
@@ -49,14 +45,13 @@ public class Ejercicio_2 {
 
 
 -------------------------------------
-|           Persona                 |
+|           Persona              			   |
 -------------------------------------
-| - nombre: String                  |
+| - nombre: String                 				 |
+| - apellido: String                 			 |
 -------------------------------------
-| + getNombre(): String            |
-| + setNombre(nombre: String): void |
-| + getPonerApellido(): String     |
-| + setPonerApellido(apellido: String): void |
+| + setNombre(nombre: String): void 			|
+| + setPonerApellido(apellido: String): void 	|
 -------------------------------------
 
 
@@ -64,9 +59,8 @@ public class Ejercicio_2 {
 
 class Persona {
   - nombre: String
-  + getNombre(): String
+  - apellido: String
   + setNombre(nombre: String): void
-  + getPonerApellido(): String
   + setPonerApellido(apellido: String): void
 }
 

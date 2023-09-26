@@ -35,18 +35,18 @@ public class Ejercicio_3 {
 
     // Constructor por defecto
     public Persona() {
-        this.nombre = "";
-        this.apellido = "";
+        this.setnombre = "";
+        this.setapellido = "";
     }
 
     // Método para establecer el nombre
     public void ponerNombre(String nombre) {
-        this.nombre = nombre;
+        this.setnombre = nombre;
     }
 
     // Método para establecer el apellido
     public void ponerApellido(String apellido) {
-        this.apellido = apellido;
+        this.setapellido = apellido;
     }
 
     // Método para obtener el nombre completo
