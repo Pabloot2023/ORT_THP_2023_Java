@@ -26,17 +26,27 @@ public class Test {
         System.out.println("Nombre completo de la segunda persona: " + persona2.obtenerNombreCompleto());
         
         // Crear  domicilio para la persona1
-        	Domicilio domic1 = new Domicilio();
-        	domic1.setCalle(null);
-        	domic1.setNumero(0);
-        	domic1.setCiudad(null);
+        	Domicilio domicilio1 = new Domicilio();
+        	domicilio1.setCalle("Yatay");
+        	domicilio1.setNumero(240);
+        	domicilio1.setCiudad("CABA");
         	
         // asignar  domicilio1 para la persona1	
-        persona1.setDireccionParticular(domic1);
+        persona1.setDireccionParticular(domicilio1);
      // mostrar el domicilio asociado a personal	
         persona1.mostrarDomicilio();
         
+        // Crear  domicilio para la persona2
+    	Domicilio domic2 = new Domicilio();
+    	domic2.setCalle("Yatay");
+    	domic2.setNumero(240);
+    	domic2.setCiudad("CABA");
+    	
+    	  // asignar  domicilio2 para la persona2	
+        persona2.setDireccionParticular(domicilio1);
         
+        
+        domic2.setCalle("Rivadavia");
         
         
         
