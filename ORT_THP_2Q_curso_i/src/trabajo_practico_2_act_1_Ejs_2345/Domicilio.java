@@ -5,6 +5,18 @@ public class Domicilio {
 	private int numero ;
 	private String ciudad;
 	
+	// Constructor por defecto
+    public Domicilio() {
+        this.calle = " ";
+        this.numero = 0;
+        this.ciudad = " ";
+    }
+	
+	@Override
+	public String toString() {
+		return "Domicilio [calle=" + calle + ", numero=" + numero + ", ciudad=" + ciudad + "]";
+	}
+
 	// Método para establecer  la calle
 	public void setCalle(String calle) {
 		this.calle = calle;
