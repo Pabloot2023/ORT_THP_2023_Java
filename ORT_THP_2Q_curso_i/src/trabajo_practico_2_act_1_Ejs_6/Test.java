@@ -18,14 +18,9 @@ valor = (int) (Math.random() * 6);
 
 Para más información podés consultar el siguiente link:
 
-https://www.w3schools.com/java/java math.asp
-
- 
  */
 
 /*
-@startuml
-
 class Dado {
   - valor: int
 
@@ -33,55 +28,100 @@ class Dado {
   + lanzar() : void
   + getValor() : int
 }
-
-@enduml
  */
-
 
 package trabajo_practico_2_act_1_Ejs_6;
 
 public class Test {
+    static int vd1;
+    static int vd2;
+    static String validacionResultados;
+    static String impresionResultados;
+    static String promedio100;
+    static Dado dado1 = new Dado();
+    static Dado dado2 = new Dado();
+
     public static void main(String[] args) {
-    	int valorDado1;
+        int valorDado1;
         int valorDado2;
         int total = 0;
         int numLanzamientos = 100;
-        int i;
-    	
-        Dado dado1 = new Dado();
-        Dado dado2 = new Dado();
+        int i;     
 
-        // Lanzar los dos dados
-        dado1.lanzar();
-        dado2.lanzar();
+        // tirar los dos dados
+        dado1.tirarDado();
+        dado2.tirarDado();
 
+        // asignar valores a los dados y llevar a capa 1  los datos con vd1 y v2
         valorDado1 = dado1.getValor();
         valorDado2 = dado2.getValor();
+        vd1 = valorDado1;
+        vd2 = valorDado2;
 
-        System.out.println("------IMPRIMIENDO RESULTADOS----------");
-        System.out.println(" ");
-        System.out.println("Resultado del primer dado: " + valorDado1);
-        System.out.println("Resultado del segundo dado: " + valorDado2);
-        System.out.println(" ");
+        System.out.println(imprimirResultadosPrimarios());
 
-        if (valorDado1 == valorDado2) {
-            System.out.println("Los resultados son iguales: " + valorDado1);
-            System.out.println(" ");
+        System.out.println(validarResultados());
+        
+        System.out.println(promedio100()); // tirar 100 veces, contando la primera ya hecho y saca promedios
+
+    }
+    
+    public static String imprimirResultadosPrimarios() {
+        String impresionResultados;
+        impresionResultados = "------IMPRIMIENDO RESULTADOS----------" + "\n" + "\n" +"Resultado del primer dado: " + vd1
+                + "\n" + "Resultado del segundo dado: " + vd2 + "\n";
+
+        return impresionResultados;
+    } 
+    
+
+    public static String validarResultados() {
+        String validacionResultados;
+
+        if (vd1 == vd2) {
+            validacionResultados = ("Los resultados son iguales: " + vd1);
         } else {
-            System.out.println("El resultado mayor es: " + (valorDado1 > valorDado2 ? valorDado1 : valorDado2));
-            System.out.println(" ");
+            if (vd1 > vd2) {
+                validacionResultados = ("El resultado mayor es: " + vd1);
+            } else {
+                validacionResultados = ("El resultado mayor es: " + vd2);
+            }
         }
 
-        // Calcular el promedio de 100 lanzamientos
-     
+        return validacionResultados;
+    }
 
-        for ( i = 0; i < numLanzamientos; i++) {
-            Dado dado = new Dado();
-            dado.lanzar();
-            total += dado.getValor();
+  
+
+    public static String promedio100() {
+        int numLanzamientos = 99;
+        int totalDado1 = 0;
+        int totalDado2 = 0;
+        double promedioDado1;
+        double promedioDado2;
+        totalDado1 += vd1;
+        totalDado2 += vd2;
+        
+        
+        for (int i = 0; i < numLanzamientos; i++) {            
+            dado1.tirarDado();
+            dado2.tirarDado();
+            
+            totalDado1 += dado1.getValor();
+            totalDado2 += dado2.getValor();
         }
 
-        double promedio = (double) total / numLanzamientos;
-        System.out.println("Promedio de los resultados de " + numLanzamientos + " lanzamientos: " + promedio);
+         promedioDado1 = (double) totalDado1 / numLanzamientos;
+         promedioDado2 = (double) totalDado2 / numLanzamientos;
+         promedioDado1 = (int) (promedioDado1 * 100) / 100.0;
+         promedioDado2 = (int) (promedioDado2 * 100) / 100.0;
+
+        
+        System.out.println("\n" + "Promedio del primer dado en " + (numLanzamientos+1) + " lanzamientos: " + promedioDado1);
+        System.out.println("\n" + "Promedio del segundo dado en " + (numLanzamientos+1) + " lanzamientos: " + promedioDado2);
+        
+        promedio100 = "\n" + "Promedio entre ambos dados: " + ((promedioDado1 + promedioDado2) / 2);
+        
+        return promedio100;
     }
 }

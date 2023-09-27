@@ -1,17 +1,14 @@
 package trabajo_practico_2_act_1_Ejs_6;
 
-
-public class Dado {
+class Dado {
     private int valor;
 
-    public Dado() {
-        // Inicializar el dado con un valor aleatorio entre 1 y 6
-        lanzar();
+    public Dado() {       
     }
 
-    public void lanzar() {
+    public void tirarDado() {
         // Generar un valor aleatorio entre 1 y 6 (ambos inclusive)
-        valor = (int) (Math.random() * 6);
+        valor = (int) (Math.random() * 6) + 1;
     }
 
     public int getValor() {
