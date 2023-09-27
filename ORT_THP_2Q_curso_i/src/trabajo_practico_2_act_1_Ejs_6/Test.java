@@ -58,13 +58,18 @@ public class Test {
         valorDado1 = dado1.getValor();
         valorDado2 = dado2.getValor();
 
+        System.out.println("------IMPRIMIENDO RESULTADOS----------");
+        System.out.println(" ");
         System.out.println("Resultado del primer dado: " + valorDado1);
         System.out.println("Resultado del segundo dado: " + valorDado2);
+        System.out.println(" ");
 
         if (valorDado1 == valorDado2) {
             System.out.println("Los resultados son iguales: " + valorDado1);
+            System.out.println(" ");
         } else {
             System.out.println("El resultado mayor es: " + (valorDado1 > valorDado2 ? valorDado1 : valorDado2));
+            System.out.println(" ");
         }
 
         // Calcular el promedio de 100 lanzamientos
