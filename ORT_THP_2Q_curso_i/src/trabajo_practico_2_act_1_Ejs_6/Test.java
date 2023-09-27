@@ -47,22 +47,18 @@ public class Test {
         int total = 0;
         int numLanzamientos = 100;
         int i;     
+      
+        dado1.tirarDado();  // tirar dado 1
+        dado2.tirarDado();  // tirar dado 2
 
-        // tirar los dos dados
-        dado1.tirarDado();
-        dado2.tirarDado();
-
-        // asignar valores a los dados y llevar a capa 1  los datos con vd1 y v2
-        valorDado1 = dado1.getValor();
-        valorDado2 = dado2.getValor();
-        vd1 = valorDado1;
-        vd2 = valorDado2;
+        valorDado1 = dado1.getValor(); // asignar valor a dado 1
+        valorDado2 = dado2.getValor(); // asignar valor a dado 2
+        vd1 = valorDado1; 			   // llevar a capa 1  los datos de dado 1
+        vd2 = valorDado2; 			   // llevar a capa 1  los datos de dado 2
 
         System.out.println(imprimirResultadosPrimarios());
-
-        System.out.println(validarResultados());
-        
-        System.out.println(promedio100()); // tirar 100 veces, contando la primera ya hecho y saca promedios
+        System.out.println(validarResultados());       
+        System.out.println(tirar100veces_e_ImprimirResultadosFinales()); // tirar 100 veces, contando la primera ya hecho y saca promedios
 
     }
     
@@ -74,7 +70,6 @@ public class Test {
         return impresionResultados;
     } 
     
-
     public static String validarResultados() {
         String validacionResultados;
 
@@ -88,17 +83,17 @@ public class Test {
             }
         }
 
+        
         return validacionResultados;
     }
 
-  
-
-    public static String promedio100() {
+    public static String tirar100veces_e_ImprimirResultadosFinales() {
         int numLanzamientos = 99;
         int totalDado1 = 0;
         int totalDado2 = 0;
         double promedioDado1;
         double promedioDado2;
+        double promedioFinal;
         totalDado1 += vd1;
         totalDado2 += vd2;
         
@@ -115,12 +110,17 @@ public class Test {
          promedioDado2 = (double) totalDado2 / numLanzamientos;
          promedioDado1 = (int) (promedioDado1 * 100) / 100.0;
          promedioDado2 = (int) (promedioDado2 * 100) / 100.0;
+         
+         promedioFinal = ((promedioDado1 + promedioDado2) / 2);
+         promedioFinal = (int) (promedioFinal * 100) / 100.0;
 
-        
+        System.out.println("\n" + "------CALCULANDO PROMEDIOS----------");
         System.out.println("\n" + "Promedio del primer dado en " + (numLanzamientos+1) + " lanzamientos: " + promedioDado1);
         System.out.println("\n" + "Promedio del segundo dado en " + (numLanzamientos+1) + " lanzamientos: " + promedioDado2);
         
-        promedio100 = "\n" + "Promedio entre ambos dados: " + ((promedioDado1 + promedioDado2) / 2);
+        
+        
+        promedio100 = "\n" + "Promedio entre ambos dados: " + promedioFinal;
         
         return promedio100;
     }
