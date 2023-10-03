@@ -51,12 +51,8 @@ public class Ejercicio_1 {
 	    }
 
 	    // Método para sumar dos números
-	    public static int sumar(int num1, int num2) {
-	    	int resultado;
-		     
-	    	resultado = num1 + num2;
-	    	
-	        return resultado;
+	    public static int sumar(int num1, int num2) {		
+	        return num1 + num2;
 	    }
 
 	    // Método para pedir un número dentro de un rango
