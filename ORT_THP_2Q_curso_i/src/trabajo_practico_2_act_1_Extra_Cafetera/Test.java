@@ -50,6 +50,8 @@ public class Test {
     }
 
     public static void testearCafetera(Cafetera cafetera) {
+    	int sobrante;
+    	
         System.out.println(cafetera);
 
         System.out.println("\nLlenar la cafetera:");
@@ -65,7 +67,7 @@ public class Test {
         System.out.println(cafetera);
 
         System.out.println("\nAgregar 600 ml de café:");
-        int sobrante = cafetera.agregarCafe(600);
+        sobrante = cafetera.agregarCafe(600);
         System.out.println("Sobrante: " + sobrante + " ml");
         System.out.println(cafetera);
     }

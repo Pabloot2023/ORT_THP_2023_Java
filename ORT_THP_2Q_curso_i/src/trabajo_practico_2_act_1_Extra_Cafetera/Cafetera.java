@@ -26,7 +26,7 @@ public class Cafetera {
         }
     }
 
-    // Getters y setters
+   
     public int getCapacidadMaxima() {
         return capacidadMaxima;
     }
@@ -49,7 +49,7 @@ public class Cafetera {
         }
     }
 
-    // Métodos
+    
     public void llenar() {
         cantidadActual = capacidadMaxima;
     }
