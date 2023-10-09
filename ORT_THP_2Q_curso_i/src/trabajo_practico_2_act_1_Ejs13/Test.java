@@ -23,8 +23,8 @@ public class Test {
         System.out.println("Super Heroe 1: " + superHeroe1);
         System.out.println("Super Heroe 2: " + superHeroe2);
 
-        String resultado1 = superHeroe1.competir(superHeroe2);
-        String resultado2 = superHeroe2.competir(superHeroe1);
+        Resultado resultado1 = superHeroe1.competir(superHeroe2);
+        Resultado resultado2 = superHeroe2.competir(superHeroe1);
 
         System.out.println("\n" + "Resultado de superHeroe1 contra superHeroe2: " + resultado1);
         System.out.println("Resultado de superHeroe2 contra superHeroe1: " + resultado2);

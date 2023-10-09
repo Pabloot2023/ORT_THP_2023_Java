@@ -48,29 +48,23 @@ public class SuperHeroe {
     private int validarPoder(int poder) {
         if (poder < 0) {
             return 0;
-            
         } else if (poder > 100) {
             return 100;
-            
         } else {
             return poder;
         }
     }
 
-    public String competir(SuperHeroe otroSuperHeroe) {
-        int propioPoder;
-        int otroPoder;
-        
-        propioPoder = (fuerza + resistencia + superpoderes) / 3;
-        
-        otroPoder = (otroSuperHeroe.getFuerza() + otroSuperHeroe.getResistencia() + otroSuperHeroe.getSuperpoderes()) / 3;
-        
+    public Resultado competir(SuperHeroe otroSuperHeroe) {
+        int propioPoder = (fuerza + resistencia + superpoderes) / 3;
+        int otroPoder = (otroSuperHeroe.getFuerza() + otroSuperHeroe.getResistencia() + otroSuperHeroe.getSuperpoderes()) / 3;
+
         if (propioPoder - otroPoder >= 2) {
-            return "TRIUNFO";
+            return Resultado.VICTORIA;
         } else if (otroPoder - propioPoder >= 2) {
-            return "DERROTA";
+            return Resultado.DERROTA;
         } else {
-            return "EMPATE";
+            return Resultado.EMPATE;
         }
     }
 
