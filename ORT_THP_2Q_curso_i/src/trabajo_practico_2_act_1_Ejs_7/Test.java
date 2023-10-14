@@ -37,6 +37,11 @@ public class Test {
         // Descansar, reiniciar, apagar, trabajar, encender, validar temperatura, validar grabadora, apagar.
         System.out.println("\nCaso 7:");
         caso7();
+        
+        // Caso 8
+        // 
+        System.out.println("\nCaso 8:");
+        caso8();
     }
 
     
