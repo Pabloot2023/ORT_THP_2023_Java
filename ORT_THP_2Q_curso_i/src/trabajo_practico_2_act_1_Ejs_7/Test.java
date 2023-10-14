@@ -254,8 +254,7 @@ public class Test {
         Computadora7.apagar();
     }
 
-
-private static void caso8() {
+    private static void caso8() {
     Persona Persona8 = new Persona("Lionel", "Messi", 12345678);
     Computadora Computadora8 = new Computadora("HP", TipoComputadora.Desktop);
     Procesador unProcesador = new Procesador("Intel", "i7");
@@ -290,3 +289,52 @@ private static void caso8() {
     Persona8.descansar();
 }
 }
+
+/*
+ @startuml
+class Persona [[java:trabajo_practico_2_act_1_Ejs_7.Persona]] {
+    -nombre: String
+    -apellido: String
+    -dni: int
+    -computadora: Computadora
+    -descansando: boolean
+    +Persona(nombre: String, apellido: String, dni: int)
+    +getNombre(): String
+    +trabajar(): void
+    +descansar(): void
+    +despertar(): void
+    +asignarComputadora(computadora: Computadora): void
+    +isDescansando(): boolean
+}
+
+class Computadora [[java:trabajo_practico_2_act_1_Ejs_7.Computadora]] {
+    -marca: String
+    -tipo: String
+    -procesador: String
+    -lectoraDVD: boolean
+    -encendida: boolean
+    +Computadora(marca: String, tipo: String, procesador: String, lectoraDVD: boolean)
+    +Computadora(marca: String, tipo: TipoComputadora)
+    +getMarca(): String
+    +encender(persona: Persona): void
+    +apagar(): void
+    +reiniciar(persona: Persona): void
+}
+
+class Procesador [[java:trabajo_practico_2_act_1_Ejs_7.Procesador]] {
+    -marca: String
+    -modelo: String
+    -temperatura: int
+    +Procesador(marca: String, modelo: String)
+    +validarTemperatura(): void
+}
+
+class LectoraDVD [[java:trabajo_practico_2_act_1_Ejs_7.LectoraDVD]] {
+    -marca: String
+    -puedeGrabar: boolean
+    +LectoraDVD(marca: String, puedeGrabar: boolean)
+    +validarGrabadora(): void
+}
+@enduml
+
+*/
