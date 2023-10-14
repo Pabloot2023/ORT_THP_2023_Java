@@ -35,4 +35,9 @@ public class Oficina {
     public String toString() {
         return "Oficina: " + numero;
     }
+
+	public boolean agregarEmpleado(Empleado empleado) {
+	
+		return false;
+	}
 }

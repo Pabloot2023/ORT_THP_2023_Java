@@ -5,7 +5,7 @@ public class Test {
     public static void main(String[] args) {
     	//casoDePrueba1(); 		// Agregar Área
         //casoDePrueba2(); 		// Agregar Oficina a Área
-        casoDePrueba3(); 		// Agregar Empleado a Oficina o Área
+        casoDePrueba3(); 		// Agregar Empleado a Área
         //casoDePrueba4();
         //casoDePrueba5();
         //casoDePrueba6();
@@ -39,15 +39,14 @@ public class Test {
     }
 
     private static void casoDePrueba3() {
-        System.out.println("Caso de Prueba 3: Agregar Empleado a Oficina o Área");
+        System.out.println("Caso de Prueba 3: Agregar Empleado a Área");
         Compania Compania3 = new Compania("Mi Compañía");
         Compania3.agregarArea(1);
-        Compania3.agregarOficina(1,102);
-        boolean empleadoAgregado = Compania3.agregarEmpleado("Juan", "Perez", 123456); // Oficina 101
+        boolean empleadoAgregado = Compania3.agregarEmpleado("Juan", "Perez", 123456, 1); 
         if (empleadoAgregado) {
-            System.out.println("Empleado agregado con éxito a la oficina.");
+            System.out.println("Empleado agregado con éxito al área.");
         } else {
-            System.out.println("No se pudo agregar el empleado a la oficina.");
+            System.out.println("No se pudo agregar el empleado al área.");
         }
     }
 
@@ -64,7 +63,7 @@ public class Test {
         Compania Compania5 = new Compania("Mi Compañía");
         Compania5.agregarArea(1);
         Compania5.agregarOficina(1,103);
-        Compania5.agregarEmpleado("Juan", "Perez", 123456);
+        Compania5.agregarEmpleado("Juan", "Perez", 123456,1);
         Compania5.listarEmpleados();
     }
     
@@ -73,7 +72,7 @@ public class Test {
         Compania Compania6 = new Compania("Mi Compañía");
         Compania6.agregarArea(1);
         Compania6.agregarOficina(1,104);
-        Compania6.agregarEmpleado("Juan", "Perez", 123456);
+        Compania6.agregarEmpleado("Juan", "Perez", 123456,1);
         
         boolean existeEmpleado1 = Compania6.existeEmpleado(123456); // DNI existente
         boolean existeEmpleado2 = Compania6.existeEmpleado(789012); // DNI inexistente
@@ -96,8 +95,8 @@ public class Test {
         Compania miCompania = new Compania("Mi Compañía");
         miCompania.agregarArea(1);
         miCompania.agregarOficina(1,105);
-        miCompania.agregarEmpleado("Juan", "Perez", 123456);
-        miCompania.agregarEmpleado("Maria", "Lopez", 789012);
+        miCompania.agregarEmpleado("Juan", "Perez", 123456,1);
+        miCompania.agregarEmpleado("Maria", "Lopez", 789012,1);
         miCompania.listarEmpleados();
     }
 
@@ -106,7 +105,7 @@ public class Test {
         Compania miCompania = new Compania("Mi Compañía");
         miCompania.agregarArea(1);
         miCompania.agregarOficina(1,106);
-        miCompania.agregarEmpleado("Juan", "Perez", 123456);
+        miCompania.agregarEmpleado("Juan", "Perez", 123456,1);
         
         boolean existeEmpleado1 = miCompania.existeEmpleado(123456); // DNI existente
         boolean existeEmpleado2 = miCompania.existeEmpleado(789012); // DNI inexistente
@@ -120,7 +119,7 @@ public class Test {
         Compania miCompania = new Compania("Mi Compañía");
         miCompania.agregarArea(1);
         miCompania.agregarOficina(1,107);
-        miCompania.agregarEmpleado("Juan", "Perez", 123456);
+        miCompania.agregarEmpleado("Juan", "Perez", 123456,1);
         
         boolean existeEmpleado1 = miCompania.existeEmpleado(123456); // DNI existente
         boolean existeEmpleado2 = miCompania.existeEmpleado(789012); // DNI inexistente

@@ -21,9 +21,17 @@ public class Area {
     }
 
     public boolean agregarEmpleado(String nombre, String apellido, int dni) {
-        // Implementa la lógica para agregar un empleado a esta área
-        return false;
+    	boolean empleadoAgregado = false;
+        Empleado empleado = new Empleado(nombre, apellido, dni);
+        for (Oficina oficina : oficinas) {
+            if (oficina.agregarEmpleado(empleado)) {
+                return empleadoAgregado = true; // Empleado agregado con éxito en al menos una oficina
+            }
+        }
+        return empleadoAgregado = false; // No se pudo agregar el empleado en ninguna oficina
     }
+
+
 
     public void listarOficinas() {
         for (Oficina oficina : oficinas) {
@@ -44,4 +52,14 @@ public class Area {
     public String toString() {
         return "Área: " + id;
     }
+
+	public void listarEmpleados() {
+		
+		
+	}
+
+	public Oficina buscarOficina(int numeroOficina) {
+		
+		return null;
+	}
 }

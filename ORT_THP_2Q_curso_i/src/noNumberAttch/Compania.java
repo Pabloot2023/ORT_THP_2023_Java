@@ -17,21 +17,40 @@ public class Compania {
     }
 
     public boolean agregarOficina(int numeroArea, int numeroOficina) {
-        for (Area area : areas) {
-            if (area.obtenerNumero() == numeroArea) {
-                if (area.agregarOficina(numeroOficina)) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
+        Area area = buscarArea(numeroArea);
+        if (area != null) {
+            return area.agregarOficina(numeroOficina);
         }
         return false;
     }
 
-    public boolean agregarEmpleado(String nombre, String apellido, int dni) {
-        // Implementa la lógica para agregar un empleado a una oficina existente
+    public boolean agregarEmpleado(String nombre, String apellido, int dni, int numeroArea) {
+        Area area = buscarArea(numeroArea);
+        if (area != null) {
+            return area.agregarEmpleado(nombre, apellido, dni);
+        }
         return false;
+    }
+    
+    
+
+    private Area buscarArea(int numeroArea) {
+        for (Area area : areas) {
+            if (area.obtenerNumero() == numeroArea) {
+                return area;
+            }
+        }
+        return null; // Área no encontrada
+    }
+
+    private Oficina buscarOficina(int numeroOficina) {
+        for (Area area : areas) {
+            Oficina oficina = area.buscarOficina(numeroOficina);
+            if (oficina != null) {
+                return oficina;
+            }
+        }
+        return null; // Oficina no encontrada
     }
 
     public void listarAreas() {
@@ -42,7 +61,7 @@ public class Compania {
 
     public void listarEmpleados() {
         for (Area area : areas) {
-            area.listarOficinas();
+            area.listarEmpleados();
         }
     }
 
