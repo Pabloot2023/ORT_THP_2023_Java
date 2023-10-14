@@ -24,7 +24,7 @@ public class Oficina {
 
     public boolean existeEmpleado(int dni) {
         for (Empleado empleado : empleados) {
-            if (empleado.obtenerDni() == dni) {
+            if (empleado.getDni() == dni) {
                 return true;
             }
         }
