@@ -4,20 +4,20 @@ public class Test {
 
     public static void main(String[] args) {
         casoDePrueba1();
-        casoDePrueba2();
-        casoDePrueba3();
-        casoDePrueba4();
-        casoDePrueba5();
-        casoDePrueba6();
-        casoDePrueba7();
-        casoDePrueba8();
-        casoDePrueba9();
-        casoDePrueba10();
+        //casoDePrueba2();
+        //casoDePrueba3();
+        //casoDePrueba4();
+        //casoDePrueba5();
+        //casoDePrueba6();
+        //casoDePrueba7();
+        //casoDePrueba8();
+        //casoDePrueba9();
+        //casoDePrueba10();
     }
 
     private static void casoDePrueba1() {
         System.out.println("Caso de Prueba 1: Agregar Área");
-        Compania Compania1 = new Compania("Mi Compañía");
+        Compania Compania1 = new Compania("Mi Compañía 1");
         boolean areaAgregada = Compania1.agregarArea(1);
         if (areaAgregada) {
             System.out.println("Área agregada con éxito.");
@@ -68,7 +68,6 @@ public class Test {
         Compania5.listarEmpleados();
     }
     
-
     private static void casoDePrueba6() {
         System.out.println("Caso de Prueba 6: Existe Empleado");
         Compania Compania6 = new Compania("Mi Compañía");
