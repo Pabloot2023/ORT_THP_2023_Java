@@ -52,7 +52,7 @@ public class Test {
         Persona1.trabajar();
 
         // Encender la computadora
-        Computadora1.encender();
+        Computadora1.encender(Persona1);
 
         // Validar temperatura del procesador
         unProcesador.validarTemperatura();
@@ -66,12 +66,12 @@ public class Test {
         Computadora1.apagar();
 
         // Reiniciar la computadora
-        Computadora1.reiniciar();
+        Computadora1.reiniciar(Persona1);
 
         // Descansar
         Persona1.descansar();
     }
-   
+
     private static void caso2() {
         Persona Persona2 = new Persona("Cristiano", "Ronaldo", 98765432);
         Computadora Computadora2 = new Computadora("Dell", TipoComputadora.Laptop);
@@ -84,7 +84,7 @@ public class Test {
         Persona2.trabajar();
 
         // Encender la computadora
-        Computadora2.encender();
+        Computadora2.encender(Persona2);
 
         // Validar temperatura del procesador
         unProcesador.validarTemperatura();
@@ -95,7 +95,7 @@ public class Test {
         }
 
         // Reiniciar la computadora
-        Computadora2.reiniciar();
+        Computadora2.reiniciar(Persona2);
 
         // Apagar la computadora
         Computadora2.apagar();
@@ -115,7 +115,7 @@ public class Test {
         Persona3.trabajar();
 
         // Reiniciar la computadora
-        Computadora3.reiniciar();
+        Computadora3.reiniciar(Persona3);
 
         // Apagar la computadora
         Computadora3.apagar();
@@ -124,7 +124,7 @@ public class Test {
         Persona3.descansar();
 
         // Reiniciar la computadora
-        Computadora3.reiniciar();
+        Computadora3.reiniciar(Persona3);
     }
 
     private static void caso4() {
@@ -142,7 +142,7 @@ public class Test {
         Computadora4.apagar();
 
         // Encender la computadora
-        Computadora4.encender();
+        Computadora4.encender(Persona4);
 
         // Validar temperatura del procesador
         unProcesador.validarTemperatura();
@@ -153,7 +153,7 @@ public class Test {
         }
 
         // Reiniciar la computadora
-        Computadora4.reiniciar();
+        Computadora4.reiniciar(Persona4);
     }
 
     private static void caso5() {
@@ -168,7 +168,7 @@ public class Test {
         Persona5.descansar();
 
         // Encender la computadora
-        Computadora5.encender();
+        Computadora5.encender(Persona5);
 
         // Trabajar
         Persona5.trabajar();
@@ -226,7 +226,7 @@ public class Test {
         Persona7.descansar();
 
         // Reiniciar la computadora
-        Computadora7.reiniciar();
+        Computadora7.reiniciar(Persona7);
 
         // Apagar la computadora
         Computadora7.apagar();
@@ -235,7 +235,7 @@ public class Test {
         Persona7.trabajar();
 
         // Encender la computadora
-        Computadora7.encender();
+        Computadora7.encender(Persona7);
 
         // Validar temperatura del procesador
         unProcesador.validarTemperatura();
@@ -248,4 +248,40 @@ public class Test {
         // Apagar la computadora
         Computadora7.apagar();
     }
+
+
+private static void caso8() {
+    Persona Persona8 = new Persona("Lionel", "Messi", 12345678);
+    Computadora Computadora8 = new Computadora("HP", TipoComputadora.Desktop);
+    Procesador unProcesador = new Procesador("Intel", "i7");
+    LectoraDVD lectora = new LectoraDVD("Samsung", true);
+    
+    // Trabajar
+    Persona8.trabajar();
+
+    Persona8.asignarComputadora(Computadora8);
+
+    // Trabajar
+    Persona8.trabajar();
+
+    // Encender la computadora
+    Computadora8.encender(Persona8);
+
+    // Validar temperatura del procesador
+    unProcesador.validarTemperatura();
+
+    // Validar si hay lectora de DVD y si puede grabar
+    if (lectora != null) {
+        lectora.validarGrabadora();
+    }
+
+    // Apagar la computadora
+    Computadora8.apagar();
+
+    // Reiniciar la computadora
+    Computadora8.reiniciar(Persona8);
+
+    // Descansar
+    Persona8.descansar();
+}
 }
