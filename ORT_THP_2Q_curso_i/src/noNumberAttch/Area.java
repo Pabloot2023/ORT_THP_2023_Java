@@ -11,6 +11,10 @@ public class Area {
         this.id = id;
     }
 
+    public int obtenerNumero() {
+        return id;
+    }
+
     public boolean agregarOficina(int numero) {
         Oficina oficina = new Oficina(numero);
         return oficinas.add(oficina);

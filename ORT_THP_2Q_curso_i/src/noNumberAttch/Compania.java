@@ -16,8 +16,16 @@ public class Compania {
         return areas.add(area);
     }
 
-    public boolean agregarOficina(int numero) {
-        // Implementa la lógica para agregar una oficina a un área existente
+    public boolean agregarOficina(int numeroArea, int numeroOficina) {
+        for (Area area : areas) {
+            if (area.obtenerNumero() == numeroArea) {
+                if (area.agregarOficina(numeroOficina)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
         return false;
     }
 
