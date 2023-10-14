@@ -8,4 +8,12 @@ public class LectoraDVD {
         this.marca = marca;
         this.puedeGrabar = puedeGrabar;
     }
+
+    public void validarGrabadora() {
+        if (puedeGrabar) {
+            System.out.println("La lectora de DVD puede grabar.");
+        } else {
+            System.out.println("La lectora de DVD no puede grabar.");
+        }
+    }
 }

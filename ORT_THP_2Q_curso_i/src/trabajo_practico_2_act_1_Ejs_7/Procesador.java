@@ -3,24 +3,19 @@ package trabajo_practico_2_act_1_Ejs_7;
 public class Procesador {
     private String marca;
     private String modelo;
-    private int temperaturaActual;
-    private int temperaturaCritica;
-    private boolean notificarTemperaturaCritica;
+    private int temperatura;
 
-    public Procesador(String marca, String modelo, int temperaturaCritica) {
+    public Procesador(String marca, String modelo) {
         this.marca = marca;
         this.modelo = modelo;
-        this.temperaturaActual = 0;
-        this.temperaturaCritica = temperaturaCritica;
-        this.notificarTemperaturaCritica = false;
+        this.temperatura = 0;
     }
 
-    public void aumentarTemperatura(int incremento) {
-        // Pendiente agregar logica  para aumentar la temperatura y verificar si es crítica
-    }
-
-    public void notificarTemperaturaCritica() {
-        notificarTemperaturaCritica = true;
-        // Pendiente agregar logica  para notificar temperatura crítica
+    public void validarTemperatura() {
+        if (temperatura >= 90) {
+            System.out.println("Temperatura crítica alcanzada. Notificando al usuario.");
+        } else {
+            System.out.println("Temperatura actual: " + temperatura + "°C");
+        }
     }
 }

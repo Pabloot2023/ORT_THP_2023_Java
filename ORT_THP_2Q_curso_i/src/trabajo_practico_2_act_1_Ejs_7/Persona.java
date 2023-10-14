@@ -12,15 +12,28 @@ public class Persona {
         this.dni = dni;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
     public void trabajar() {
-        // Pendiente agregar logica para trabajar
+        if (computadora != null) {
+        	System.out.println(" ");
+            System.out.println(nombre + " está trabajando en su computadora.");
+        } else {
+        	System.out.println(" ");
+            System.out.println("No se ha asignado una computadora a " + nombre + ". No puede trabajar.");
+        }
     }
 
     public void descansar() {
-        // Pendiente agregar logica para descansar
+    	System.out.println(" ");
+        System.out.println(nombre + " está descansando.");
     }
 
     public void asignarComputadora(Computadora computadora) {
         this.computadora = computadora;
+        System.out.println(nombre + " ha recibido una computadora de marca " + computadora.getMarca() + ".");
     }
+
 }
