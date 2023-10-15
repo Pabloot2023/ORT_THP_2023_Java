@@ -6,8 +6,14 @@ import java.util.List;
 public class Oficina {
     private int numero;
     private List<Empleado> empleados = new ArrayList<>();
+    private Area area;
 
-    public Oficina(int numero) {
+    public Oficina(int numero) { 
+        this.numero = numero;
+    }
+    
+    public Oficina(Area area, int numero) {
+        this.area = area;
         this.numero = numero;
     }
 
@@ -17,10 +23,12 @@ public class Oficina {
     }
 
     public void listarEmpleados() {
+        System.out.println("Oficina " + getNumero() + ":");
         for (Empleado empleado : empleados) {
             System.out.println(empleado.toString());
         }
     }
+
 
     public boolean existeEmpleado(int dni) {
         for (Empleado empleado : empleados) {
@@ -36,8 +44,15 @@ public class Oficina {
         return "Oficina: " + numero;
     }
 
-	public boolean agregarEmpleado(Empleado empleado) {
-	
-		return false;
-	}
+    public boolean agregarEmpleado(Empleado empleado) {
+        return empleados.add(empleado);
+    }
+
+    public int obtenerNumero() {
+        return numero;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
 }

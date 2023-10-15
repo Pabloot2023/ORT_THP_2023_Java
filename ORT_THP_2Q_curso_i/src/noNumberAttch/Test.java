@@ -5,9 +5,9 @@ public class Test {
     public static void main(String[] args) {
     	//casoDePrueba1(); 		// Agregar Área
         //casoDePrueba2(); 		// Agregar Oficina a Área
-        casoDePrueba3(); 		// Agregar Empleado a Área
-        //casoDePrueba4();
-        //casoDePrueba5();
+        //casoDePrueba3(); 		// Agregar Empleado a Área ERROR 
+        //casoDePrueba4(); 		// Listar Áreas Cambiar a Sring, solo toma numero no permite RRHH
+        casoDePrueba5(); 		// Listar Empleados de Área 
         //casoDePrueba6();
         //casoDePrueba7();
         //casoDePrueba8();
@@ -52,7 +52,7 @@ public class Test {
 
     private static void casoDePrueba4() {
         System.out.println("Caso de Prueba 4: Listar Áreas");
-        Compania Compania4 = new Compania("Mi Compañía");
+        Compania Compania4 = new Compania("Mi Compañía 4");
         Compania4.agregarArea(1);
         Compania4.agregarArea(2);
         Compania4.listarAreas();
@@ -60,12 +60,24 @@ public class Test {
 
     private static void casoDePrueba5() {
         System.out.println("Caso de Prueba 5: Listar Empleados de Área");
-        Compania Compania5 = new Compania("Mi Compañía");
+        Compania Compania5 = new Compania("Mi Compañía 5");
         Compania5.agregarArea(1);
-        Compania5.agregarOficina(1,103);
-        Compania5.agregarEmpleado("Juan", "Perez", 123456,1);
+        Compania5.agregarOficina(1, 103);
+        Compania5.agregarEmpleado("Juan", "Perez", 123456, 1);
+        Compania5.listarEmpleados();
+        System.out.println(" ");
+        Compania5.agregarEmpleado("Alberto", "Perez", 654321, 1);
+        Compania5.listarEmpleados();
+        System.out.println(" ");
+        Compania5.agregarArea(2);
+        Compania5.agregarOficina(2, 109);
+        Compania5.agregarEmpleado("Ana", "Perez", 987654, 2); 
+        Compania5.listarEmpleados();
+        System.out.println(" ");
+        Compania5.agregarEmpleado("Laura", "Perez", 456789, 2); 
         Compania5.listarEmpleados();
     }
+
     
     private static void casoDePrueba6() {
         System.out.println("Caso de Prueba 6: Existe Empleado");

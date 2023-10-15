@@ -6,10 +6,17 @@ import java.util.List;
 public class Area {
     private int id;
     private List<Oficina> oficinas = new ArrayList<>();
+    private Compania compania;
 
+    public Area(Compania compania, int id) {
+        this.compania = compania;
+        this.id = id;
+    }
+    
     public Area(int id) {
         this.id = id;
     }
+
 
     public int obtenerNumero() {
         return id;
@@ -33,10 +40,8 @@ public class Area {
 
 
 
-    public void listarOficinas() {
-        for (Oficina oficina : oficinas) {
-            System.out.println(oficina.toString());
-        }
+    public List<Oficina> listarOficinas() {
+        return oficinas;
     }
 
     public boolean existeEmpleado(int dni) {
@@ -53,13 +58,20 @@ public class Area {
         return "Área: " + id;
     }
 
-	public void listarEmpleados() {
-		
-		
-	}
+    public void listarEmpleados() {
+        System.out.println("Área " + obtenerNumero() + ":");
+        for (Oficina oficina : oficinas) {
+            oficina.listarEmpleados();
+        }
+    }
+
 
 	public Oficina buscarOficina(int numeroOficina) {
 		
 		return null;
+	}
+	
+	public int getNumero() {
+	    return id;
 	}
 }

@@ -31,7 +31,7 @@ public class Compania {
         }
         return false;
     }
-    
+
     
 
     private Area buscarArea(int numeroArea) {
@@ -60,10 +60,13 @@ public class Compania {
     }
 
     public void listarEmpleados() {
+        System.out.println("Empleados en " + this.toString() + ":");
         for (Area area : areas) {
             area.listarEmpleados();
         }
     }
+
+
 
     public boolean existeEmpleado(int dni) {
         for (Area area : areas) {
