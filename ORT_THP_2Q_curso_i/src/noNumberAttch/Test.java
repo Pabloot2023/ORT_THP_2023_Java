@@ -4,15 +4,15 @@ public class Test {
 
     public static void main(String[] args) {
     	//casoDePrueba1(); 		// OK --> Agregar Área
-        //casoDePrueba2(); 		// OK -->Agregar Oficina a Área
-        //casoDePrueba3(); 		// OK -->Agregar Empleado a Área ERROR 
-        //casoDePrueba4(); 		// ERROR -->Listar Áreas Cambiar a Sring, solo toma numero no permite RRHH
-        //casoDePrueba5(); 		// OK -->Listar Empleados de Área 
+        //casoDePrueba2(); 		// OK --> Agregar Oficina a Área
+        //casoDePrueba3(); 		// OK --> Agregar Empleado a Área ERROR 
+        //casoDePrueba4(); 		// OK --> Listar Áreas 
+        //casoDePrueba5(); 		// OK --> Listar Empleados de Área 
         //casoDePrueba6(); 		// OK --> Validar si existe Empleado mediante DNI
-        //casoDePrueba7(); 		// OK -->   Modificar datos de Empleado (accesos a métodos privados)
+        //casoDePrueba7(); 		// OK --> Modificar datos de Empleado (accesos a métodos privados)
         //casoDePrueba8();  	// OK --> Listar Empleados de Oficina
-        //casoDePrueba9(); 		// OK ---> Existe Empleado en Oficina
-        //casoDePrueba10();		// OK ---> Existe Empleado en Area
+        //casoDePrueba9(); 		// OK --> Existe Empleado en Oficina
+        //casoDePrueba10();		// OK --> Existe Empleado en Area
     }
 
     private static void casoDePrueba1() {
