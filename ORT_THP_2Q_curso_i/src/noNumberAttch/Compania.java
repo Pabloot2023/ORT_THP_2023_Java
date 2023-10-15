@@ -68,14 +68,28 @@ public class Compania {
 
 
 
-    public boolean existeEmpleado(int dni) {
+    public void existeEmpleado(int dni) {
+        boolean encontrado = false;
+        String mensaje = "";
         for (Area area : areas) {
             if (area.existeEmpleado(dni)) {
-                return true;
+                encontrado = true;
+            } else {
+                	encontrado = false;
+                }
             }
+        	if(encontrado) {
+        		mensaje = "Existente en el Sistema";
+        	} else {
+        		mensaje = "No existe en el Sistema";
+        	}
+        
+        
+        System.out.println("Empleado con DNI " + dni + ": " + mensaje);
         }
-        return false;
-    }
+       
+    
+
 
     @Override
     public String toString() {

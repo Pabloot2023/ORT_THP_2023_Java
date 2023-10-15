@@ -3,12 +3,12 @@ package noNumberAttch;
 public class Test {
 
     public static void main(String[] args) {
-    	//casoDePrueba1(); 		// Agregar Área
-        //casoDePrueba2(); 		// Agregar Oficina a Área
-        //casoDePrueba3(); 		// Agregar Empleado a Área ERROR 
-        //casoDePrueba4(); 		// Listar Áreas Cambiar a Sring, solo toma numero no permite RRHH
-        casoDePrueba5(); 		// Listar Empleados de Área 
-        //casoDePrueba6();
+    	//casoDePrueba1(); 		// OK --> Agregar Área
+        //casoDePrueba2(); 		// OK -->Agregar Oficina a Área
+        //casoDePrueba3(); 		// OK -->Agregar Empleado a Área ERROR 
+        //casoDePrueba4(); 		// ERROR -->Listar Áreas Cambiar a Sring, solo toma numero no permite RRHH
+        //casoDePrueba5(); 		// OK -->Listar Empleados de Área 
+        casoDePrueba6();
         //casoDePrueba7();
         //casoDePrueba8();
         //casoDePrueba9();
@@ -77,20 +77,21 @@ public class Test {
         Compania5.agregarEmpleado("Laura", "Perez", 456789, 2); 
         Compania5.listarEmpleados();
     }
-
-    
+   
     private static void casoDePrueba6() {
         System.out.println("Caso de Prueba 6: Existe Empleado");
         Compania Compania6 = new Compania("Mi Compañía");
         Compania6.agregarArea(1);
-        Compania6.agregarOficina(1,104);
-        Compania6.agregarEmpleado("Juan", "Perez", 123456,1);
+        Compania6.agregarOficina(1, 104);
+        Compania6.agregarEmpleado("Juan", "Perez", 123456, 1);
+            
+        Compania6.existeEmpleado(123456); // DNI existente
+        Compania6.existeEmpleado(789012); // DNI inexistente
         
-        boolean existeEmpleado1 = Compania6.existeEmpleado(123456); // DNI existente
-        boolean existeEmpleado2 = Compania6.existeEmpleado(789012); // DNI inexistente
-        
-        System.out.println("Existe empleado con DNI 123456: " + existeEmpleado1);
-        System.out.println("Existe empleado con DNI 789012: " + existeEmpleado2);
+        Compania6.agregarEmpleado("Alberto", "Perez", 789012, 1);
+        System.out.println(" ");
+        Compania6.existeEmpleado(123456); // DNI existente
+        Compania6.existeEmpleado(789012); // DNI ahora siexistente
     }
 
     private static void casoDePrueba7() {
@@ -119,11 +120,9 @@ public class Test {
         miCompania.agregarOficina(1,106);
         miCompania.agregarEmpleado("Juan", "Perez", 123456,1);
         
-        boolean existeEmpleado1 = miCompania.existeEmpleado(123456); // DNI existente
-        boolean existeEmpleado2 = miCompania.existeEmpleado(789012); // DNI inexistente
+        miCompania.existeEmpleado(123456); // DNI existente
+        miCompania.existeEmpleado(789012); // DNI inexistente
         
-        System.out.println("Existe empleado con DNI 123456 en Oficina 101: " + existeEmpleado1);
-        System.out.println("Existe empleado con DNI 789012 en Oficina 101: " + existeEmpleado2);
     }
 
     private static void casoDePrueba10() {
@@ -133,11 +132,10 @@ public class Test {
         miCompania.agregarOficina(1,107);
         miCompania.agregarEmpleado("Juan", "Perez", 123456,1);
         
-        boolean existeEmpleado1 = miCompania.existeEmpleado(123456); // DNI existente
-        boolean existeEmpleado2 = miCompania.existeEmpleado(789012); // DNI inexistente
+        miCompania.existeEmpleado(123456); // DNI existente
+        miCompania.existeEmpleado(789012); // DNI inexistente
         
-        System.out.println("Existe empleado con DNI 123456 en Área 1: " + existeEmpleado1);
-        System.out.println("Existe empleado con DNI 789012 en Área 1: " + existeEmpleado2);
+        
     }
 
 }
