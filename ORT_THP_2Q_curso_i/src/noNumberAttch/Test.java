@@ -9,8 +9,8 @@ public class Test {
         //casoDePrueba4(); 		// ERROR -->Listar Áreas Cambiar a Sring, solo toma numero no permite RRHH
         //casoDePrueba5(); 		// OK -->Listar Empleados de Área 
         //casoDePrueba6(); 		// OK --> Validar si existe Empleado mediante DNI
-        casoDePrueba7(); 		//    Modificar datos de Empleado (accesos a métodos privados)
-        //casoDePrueba8();  
+        //casoDePrueba7(); 		// OK -->   Modificar datos de Empleado (accesos a métodos privados)
+        casoDePrueba8();  
         //casoDePrueba9();
         //casoDePrueba10();
     }
@@ -123,8 +123,6 @@ public class Test {
 
     }
    
-
-
     private static void casoDePrueba8() {
         System.out.println("Caso de Prueba 8: Listar Empleados de Oficina");
         Compania miCompania = new Compania("Mi Compañía");
