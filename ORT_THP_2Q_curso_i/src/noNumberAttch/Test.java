@@ -9,7 +9,7 @@ public class Test {
     public static void main(String[] args) {
     	//casoDePrueba1(); 		// OK --> Agregar Área
         //casoDePrueba2(); 		// OK --> Agregar Oficina a Área
-        casoDePrueba3(); 		// OK --> Agregar Empleado a Área
+        //casoDePrueba3(); 		// OK --> Agregar Empleado a Área
         //casoDePrueba4(); 		// OK --> Listar Áreas 
         //casoDePrueba5(); 		// OK --> Listar Empleados
         //casoDePrueba6(); 		// OK --> Validar si existe Empleado mediante DNI
@@ -66,7 +66,6 @@ public class Test {
         separador2();
         barraSeparadora();
     }
-
 
     private static void casoDePrueba4() {
         System.out.println("Caso de Prueba 4: Listar Áreas");
