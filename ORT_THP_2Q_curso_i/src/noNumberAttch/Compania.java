@@ -79,6 +79,6 @@ public class Compania {
 
     @Override
     public String toString() {
-        return "Compania: " + nombre;
+        return nombre;
     }
 }
