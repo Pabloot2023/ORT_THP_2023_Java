@@ -5,9 +5,9 @@ public class Test {
     public static void main(String[] args) {
     	//casoDePrueba1(); 		// OK --> Agregar Área
         //casoDePrueba2(); 		// OK --> Agregar Oficina a Área
-        //casoDePrueba3(); 		// OK --> Agregar Empleado a Área ERROR 
+        //casoDePrueba3(); 		// OK --> Agregar Empleado a Área
         //casoDePrueba4(); 		// OK --> Listar Áreas 
-        //casoDePrueba5(); 		// OK --> Listar Empleados de Área 
+        //casoDePrueba5(); 		// OK --> Listar Empleados
         //casoDePrueba6(); 		// OK --> Validar si existe Empleado mediante DNI
         //casoDePrueba7(); 		// OK --> Modificar datos de Empleado (accesos a métodos privados)
         //casoDePrueba8();  	// OK --> Listar Empleados de Oficina
