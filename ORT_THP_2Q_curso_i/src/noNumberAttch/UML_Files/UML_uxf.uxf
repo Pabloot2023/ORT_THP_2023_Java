@@ -1,0 +1,48 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>56</x><y>120</y><w>488</w><h>160</h></coordinates><panel_attributes>Compania
+--
+- nombre: String
+--
+- areas: List&lt;Area&gt;
++ Compania(nombre: String)
++ agregarArea(id: int): boolean
++ agregarOficina(idArea: int, numero: int): boolean
++ agregarEmpleado(nombre: String, apellido: String, dni: int, idArea: int): boolean
++ listarAreas()
++ existeEmpleado(dni: int): boolean
++ modificarEmpleado(dni: int, nuevoNombre: String, nuevoApellido: String, nuevoDNI: int): boolean
+- obtenerEmpleado(dni: int): Empleado
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>504</x><y>304</y><w>328</w><h>152</h></coordinates><panel_attributes>Area
+--
+- id: int
+--
+- oficinas: List&lt;Oficina&gt;
++ Area(id: int)
++ obtenerNumero(): int
++ agregarOficina(numero: int): boolean
++ agregarEmpleado(nombre: String, apellido: String, dni: int): boolean
++ listarOficinas(): List&lt;Oficina&gt;
++ existeEmpleado(dni: int): boolean
++ toString: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>56</x><y>440</y><w>336</w><h>192</h></coordinates><panel_attributes>Oficina
+--
+- numero: int
+--
+- empleados: List&lt;Empleado&gt;
++ Oficina(numero: int)
++ listarEmpleados(): List&lt;Empleado&gt;
++ agregarEmpleado(nombre: String, apellido: String, dni: int): boolean
++ existeEmpleado(dni: int): boolean
++ toString: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>536</x><y>504</y><w>272</w><h>120</h></coordinates><panel_attributes>Empleado
+--
+- nombre: String
+- apellido: String
+- dni: int
+--
++ Empleado(nombre: String, apellido: String, dni: int)
++ toString: String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>536</x><y>168</y><w>184</w><h>152</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Areas
+0.n</panel_attributes><additional_attributes>210;170;210;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>368</y><w>360</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Oficinas
+0.n</panel_attributes><additional_attributes>10;90;40;20;430;20</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>560</y><w>160</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Empleados
+0.n</panel_attributes><additional_attributes>180;10;10;50</additional_attributes></element></diagram>
