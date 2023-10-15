@@ -9,7 +9,7 @@ public class Test {
     public static void main(String[] args) {
     	//casoDePrueba1(); 		// OK --> Agregar Área
         //casoDePrueba2(); 		// OK --> Agregar Oficina a Área
-        //casoDePrueba3(); 		// OK --> Agregar Empleado a Área
+        casoDePrueba3(); 		// OK --> Agregar Empleado a Área
         //casoDePrueba4(); 		// OK --> Listar Áreas 
         //casoDePrueba5(); 		// OK --> Listar Empleados
         //casoDePrueba6(); 		// OK --> Validar si existe Empleado mediante DNI
@@ -30,6 +30,7 @@ public class Test {
         } else {
             System.out.println("No se pudo agregar el área.");
         }
+        separador2();
         barraSeparadora();
     }
 
@@ -45,6 +46,7 @@ public class Test {
         } else {
             System.out.println("No se pudo agregar la oficina al área.");
         }
+        separador2();
         barraSeparadora();
     }
 
@@ -52,16 +54,19 @@ public class Test {
         System.out.println("Caso de Prueba 3: Agregar Empleado a Área");
         barraSeparadora();
         separador2();
-        Compania Compania3 = new Compania("Mi Compañía");
+        Compania Compania3 = new Compania("Mi Compañía 3");
         Compania3.agregarArea(1);
+        Compania3.agregarOficina(1,105);
         boolean empleadoAgregado = Compania3.agregarEmpleado("Juan", "Perez", 123456, 1); 
         if (empleadoAgregado) {
             System.out.println("Empleado agregado con éxito al área.");
         } else {
-            System.out.println("No se pudo agregar el empleado al área.");
+            System.out.println("No se pudo agregar el empleado al área. Posible motivo: el área está llena.");
         }
+        separador2();
         barraSeparadora();
     }
+
 
     private static void casoDePrueba4() {
         System.out.println("Caso de Prueba 4: Listar Áreas");
@@ -71,6 +76,7 @@ public class Test {
         Compania4.agregarArea(1);
         Compania4.agregarArea(2);
         Compania4.listarAreas();
+        separador2();
         barraSeparadora();
     }
 
@@ -94,6 +100,7 @@ public class Test {
         separador1();
         Compania5.agregarEmpleado("Laura", "Perez", 456789, 2); 
         Compania5.listarEmpleados();
+        separador2();
         barraSeparadora();
     }
    
@@ -114,7 +121,7 @@ public class Test {
         Compania6.existeEmpleado(123456); // DNI existente
         separador1();
         Compania6.existeEmpleado(789012); // DNI ahora siexistente
-        separador1();
+        separador2();
         barraSeparadora();
     }
 
@@ -141,7 +148,7 @@ public class Test {
         System.out.println("Buscando el nuevo DNI");
         separador1();
         Compania7.existeEmpleado(789012); // DNI ahora existente
-        separador1();
+        separador2();
         barraSeparadora();
 
     }
@@ -163,7 +170,7 @@ public class Test {
         Compania8.agregarEmpleado("Ana", "Perez", 987654, 2); 
         Compania8.agregarEmpleado("Laura", "Perez", 456789, 2); 
         Compania8.listarEmpleados();
-        separador1();
+        separador2();
         barraSeparadora();
     }
 
@@ -179,7 +186,7 @@ public class Test {
         miCompania.existeEmpleado(123456); // DNI existente
         separador1();
         miCompania.existeEmpleado(789012); // DNI inexistente
-        separador1();
+        separador2();
         barraSeparadora();
         
     }
@@ -196,7 +203,7 @@ public class Test {
         miCompania.existeEmpleado(123456); // DNI existente
         separador1();
         miCompania.existeEmpleado(789012); // DNI inexistente
-        separador1();
+        separador2();
         barraSeparadora();
         
         
