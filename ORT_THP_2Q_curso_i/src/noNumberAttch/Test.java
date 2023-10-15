@@ -10,9 +10,9 @@ public class Test {
         //casoDePrueba5(); 		// OK -->Listar Empleados de Área 
         //casoDePrueba6(); 		// OK --> Validar si existe Empleado mediante DNI
         //casoDePrueba7(); 		// OK -->   Modificar datos de Empleado (accesos a métodos privados)
-        casoDePrueba8();  
-        //casoDePrueba9();
-        //casoDePrueba10();
+        //casoDePrueba8();  	// OK --> Listar Empleados de Oficina
+        //casoDePrueba9(); 		// OK ---> Existe Empleado en Oficina
+        //casoDePrueba10();		// OK ---> Existe Empleado en Area
     }
 
     private static void casoDePrueba1() {
@@ -125,12 +125,19 @@ public class Test {
    
     private static void casoDePrueba8() {
         System.out.println("Caso de Prueba 8: Listar Empleados de Oficina");
-        Compania miCompania = new Compania("Mi Compañía");
-        miCompania.agregarArea(1);
-        miCompania.agregarOficina(1,105);
-        miCompania.agregarEmpleado("Juan", "Perez", 123456,1);
-        miCompania.agregarEmpleado("Maria", "Lopez", 789012,1);
-        miCompania.listarEmpleados();
+        System.out.println(" ");
+        Compania Compania8 = new Compania("Mi Compañía 8");
+        Compania8.agregarArea(1);
+        Compania8.agregarOficina(1,105);
+        Compania8.agregarEmpleado("Juan", "Perez", 123456,1);
+        Compania8.agregarEmpleado("Maria", "Lopez", 789012,1);
+        Compania8.listarEmpleados();
+        System.out.println(" ");
+        Compania8.agregarArea(2);
+        Compania8.agregarOficina(2, 109);
+        Compania8.agregarEmpleado("Ana", "Perez", 987654, 2); 
+        Compania8.agregarEmpleado("Laura", "Perez", 456789, 2); 
+        Compania8.listarEmpleados();
     }
 
     private static void casoDePrueba9() {
