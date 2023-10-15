@@ -16,6 +16,7 @@ public class Compania {
         return areas.add(area);
     }
 
+    
     public boolean agregarOficina(int numeroArea, int numeroOficina) {
         Area area = buscarArea(numeroArea);
         if (area != null) {
