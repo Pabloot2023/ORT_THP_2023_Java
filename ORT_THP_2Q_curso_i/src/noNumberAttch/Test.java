@@ -8,7 +8,7 @@ public class Test {
         //casoDePrueba3(); 		// OK -->Agregar Empleado a Área ERROR 
         //casoDePrueba4(); 		// ERROR -->Listar Áreas Cambiar a Sring, solo toma numero no permite RRHH
         //casoDePrueba5(); 		// OK -->Listar Empleados de Área 
-        casoDePrueba6();
+        casoDePrueba6(); 		// OK --> Validar si existe Empleado mediante DNI
         //casoDePrueba7();
         //casoDePrueba8();
         //casoDePrueba9();
@@ -79,7 +79,7 @@ public class Test {
     }
    
     private static void casoDePrueba6() {
-        System.out.println("Caso de Prueba 6: Existe Empleado");
+        System.out.println("Caso de Prueba 6: Validar si existe Empleado mediante DNI");
         Compania Compania6 = new Compania("Mi Compañía");
         Compania6.agregarArea(1);
         Compania6.agregarOficina(1, 104);
