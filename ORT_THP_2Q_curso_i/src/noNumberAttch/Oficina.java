@@ -22,11 +22,12 @@ public class Oficina {
         return empleados.add(empleado);
     }
 
-    public void listarEmpleados() {
+    public List<Empleado> listarEmpleados() {
         System.out.println("Oficina " + getNumero() + ":");
         for (Empleado empleado : empleados) {
             System.out.println(empleado.toString());
         }
+        return empleados; // Retorna la lista de empleados
     }
 
 
@@ -39,7 +40,27 @@ public class Oficina {
         return false;
     }
 
-    @Override
+    private List<Empleado> getEmpleados() {
+		return empleados;
+	}
+
+	private void setEmpleados(List<Empleado> empleados) {
+		this.empleados = empleados;
+	}
+
+	private Area getArea() {
+		return area;
+	}
+
+	private void setArea(Area area) {
+		this.area = area;
+	}
+
+	private void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	@Override
     public String toString() {
         return "Oficina: " + numero;
     }
@@ -56,3 +77,5 @@ public class Oficina {
         return numero;
     }
 }
+
+

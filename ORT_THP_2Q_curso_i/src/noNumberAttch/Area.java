@@ -53,7 +53,31 @@ public class Area {
         return false;
     }
 
-    @Override
+    private int getId() {
+		return id;
+	}
+
+	private void setId(int id) {
+		this.id = id;
+	}
+
+	private List<Oficina> getOficinas() {
+		return oficinas;
+	}
+
+	private void setOficinas(List<Oficina> oficinas) {
+		this.oficinas = oficinas;
+	}
+
+	private Compania getCompania() {
+		return compania;
+	}
+
+	private void setCompania(Compania compania) {
+		this.compania = compania;
+	}
+
+	@Override
     public String toString() {
         return "Área: " + id;
     }

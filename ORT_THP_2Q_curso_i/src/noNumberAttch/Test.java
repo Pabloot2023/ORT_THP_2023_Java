@@ -8,9 +8,9 @@ public class Test {
         //casoDePrueba3(); 		// OK -->Agregar Empleado a Área ERROR 
         //casoDePrueba4(); 		// ERROR -->Listar Áreas Cambiar a Sring, solo toma numero no permite RRHH
         //casoDePrueba5(); 		// OK -->Listar Empleados de Área 
-        casoDePrueba6(); 		// OK --> Validar si existe Empleado mediante DNI
-        //casoDePrueba7();
-        //casoDePrueba8();
+        //casoDePrueba6(); 		// OK --> Validar si existe Empleado mediante DNI
+        casoDePrueba7(); 		//    Modificar datos de Empleado (accesos a métodos privados)
+        //casoDePrueba8();  
         //casoDePrueba9();
         //casoDePrueba10();
     }
@@ -96,12 +96,34 @@ public class Test {
 
     private static void casoDePrueba7() {
         System.out.println("Caso de Prueba 7: Modificar Empleado (acceso a métodos privados)");
-        Empleado empleado = new Empleado("Juan", "Perez", 123456);
-        empleado.setNombre("Luis");
-        empleado.setApellido("Gomez");
-        empleado.setDni(789012);
-        System.out.println(empleado.toString());
+        System.out.println(" ");
+        Compania Compania7 = new Compania("Mi Compañía");
+        Compania7.agregarArea(1);
+        Compania7.agregarOficina(1, 104);
+        Compania7.agregarEmpleado("Juan", "Perez", 123456, 1);
+
+        Compania7.existeEmpleado(123456); // DNI existente
+
+        System.out.println(" ");
+        System.out.println("Probando modificar datos de");
+        System.out.println(" ");
+        Compania7.modificarEmpleado(123456, "Luis", "Gomez", 789012);
+        
+        System.out.println(" ");
+        System.out.println("Buscando el viejo DNI");
+        System.out.println(" ");
+        
+        Compania7.existeEmpleado(123456); // DNI antiguo
+        
+        System.out.println(" ");
+        System.out.println("Buscando el nuevo DNI");
+        System.out.println(" ");
+
+        Compania7.existeEmpleado(789012); // DNI ahora existente
+
     }
+   
+
 
     private static void casoDePrueba8() {
         System.out.println("Caso de Prueba 8: Listar Empleados de Oficina");

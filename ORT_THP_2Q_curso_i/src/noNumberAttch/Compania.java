@@ -91,8 +91,54 @@ public class Compania {
     
 
 
-    @Override
+    private String getNombre() {
+		return nombre;
+	}
+
+	private void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	private List<Area> getAreas() {
+		return areas;
+	}
+
+	private void setAreas(List<Area> areas) {
+		this.areas = areas;
+	}
+
+	@Override
     public String toString() {
         return nombre;
     }
+
+	public boolean modificarEmpleado(int dni, String nuevoNombre, String nuevoApellido, int nuevoDNI) {
+		String mensaje = "";
+		Boolean bandera;
+	    for (Area area : areas) {
+	        for (Oficina oficina : area.listarOficinas()) {
+	            for (Empleado empleado : oficina.listarEmpleados()) {
+	                if (empleado.getDni() == dni) {
+	                    // Encontramos al empleado, ahora lo modificamos
+	                    empleado.setNombre(nuevoNombre);
+	                    empleado.setApellido(nuevoApellido);
+	                    empleado.setDni(nuevoDNI);
+	                    bandera = true; // Empleado modificado con éxito
+	                    
+	                    if(bandera) {
+	            	    	mensaje = "---------> Datos modificados con exito";
+	            	    } else {
+	            	    	mensaje = "---------> Datos no modificados";
+	            	    }
+	                    System.out.println(mensaje);
+	                }
+	            }
+	        }
+	    }
+	    return false; // Empleado con el DNI especificado no encontrado
+	   
+	    
+	}
+
+
 }
