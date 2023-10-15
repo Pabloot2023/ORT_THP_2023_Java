@@ -30,9 +30,7 @@ public class Compania {
             return area.agregarEmpleado(nombre, apellido, dni);
         }
         return false;
-    }
-
-    
+    }   
 
     private Area buscarArea(int numeroArea) {
         for (Area area : areas) {
@@ -66,8 +64,6 @@ public class Compania {
         }
     }
 
-
-
     public void existeEmpleado(int dni) {
         boolean encontrado = false;
         String mensaje = "";
@@ -89,8 +85,6 @@ public class Compania {
         }
        
     
-
-
     private String getNombre() {
 		return nombre;
 	}
@@ -136,9 +130,7 @@ public class Compania {
 	        }
 	    }
 	    return false; // Empleado con el DNI especificado no encontrado
-	   
-	    
+	       
 	}
-
 
 }

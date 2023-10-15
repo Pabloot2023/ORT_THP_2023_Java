@@ -77,11 +77,6 @@ public class Area {
 		this.compania = compania;
 	}
 
-	@Override
-    public String toString() {
-        return "Área: " + id;
-    }
-
     public void listarEmpleados() {
         System.out.println("Área " + obtenerNumero() + ":");
         for (Oficina oficina : oficinas) {
@@ -89,13 +84,17 @@ public class Area {
         }
     }
 
-
-	public Oficina buscarOficina(int numeroOficina) {
-		
+	public Oficina buscarOficina(int numeroOficina) {		
 		return null;
 	}
 	
 	public int getNumero() {
 	    return id;
 	}
+	
+	@Override
+    public String toString() {
+        return "Área: " + id;
+    }
+
 }

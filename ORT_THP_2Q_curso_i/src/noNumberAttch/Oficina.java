@@ -30,7 +30,6 @@ public class Oficina {
         return empleados; // Retorna la lista de empleados
     }
 
-
     public boolean existeEmpleado(int dni) {
         for (Empleado empleado : empleados) {
             if (empleado.getDni() == dni) {
