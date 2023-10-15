@@ -1,6 +1,6 @@
 package noNumberAttch;
 
-public class plantuml {
+public class Z_Plantuml {
 
 	public static void main(String[] args) {
 		/*
