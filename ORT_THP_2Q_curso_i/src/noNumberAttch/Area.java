@@ -17,7 +17,6 @@ public class Area {
         this.id = id;
     }
 
-
     public int obtenerNumero() {
         return id;
     }
@@ -37,8 +36,6 @@ public class Area {
         }
         return empleadoAgregado = false; // No se pudo agregar el empleado en ninguna oficina
     }
-
-
 
     public List<Oficina> listarOficinas() {
         return oficinas;

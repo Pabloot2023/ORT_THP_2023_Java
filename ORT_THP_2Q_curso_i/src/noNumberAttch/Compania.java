@@ -1,7 +1,7 @@
 package noNumberAttch;
 
 import java.util.ArrayList;
-import java.util.List;
+	import java.util.List;
 
 public class Compania {
     private String nombre;
@@ -15,7 +15,6 @@ public class Compania {
         Area area = new Area(numero);
         return areas.add(area); // array
     }
-
     
     public boolean agregarOficina(int numeroArea, int numeroOficina) {
         Area area = buscarArea(numeroArea);
@@ -84,8 +83,7 @@ public class Compania {
         
         System.out.println("Empleado con DNI " + dni + ": " + mensaje);
         }
-       
-    
+           
     private String getNombre() {
 		return nombre;
 	}
@@ -101,11 +99,6 @@ public class Compania {
 	private void setAreas(List<Area> areas) {
 		this.areas = areas;
 	}
-
-	@Override
-    public String toString() {
-        return nombre;
-    }
 
 	public boolean modificarEmpleado(int dni, String nuevoNombre, String nuevoApellido, int nuevoDNI) {
 		String mensaje = "";
@@ -134,4 +127,8 @@ public class Compania {
 	       
 	}
 
+	@Override
+    public String toString() {
+        return nombre;
+    }
 }
