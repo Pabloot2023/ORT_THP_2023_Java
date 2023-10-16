@@ -12,7 +12,7 @@ public class Robot {
     }
 
     public void saludar(Persona persona) {
-        System.out.println("Hola " + persona.getNombre() + ", mi nombre es " + this.nombre + ". ¿En qué puedo ayudarte?");
+        System.out.println("Hola " + persona.getNombre() + "!, mi nombre es " + this.nombre + ". ¿En qué puedo ayudarte?");
     }
 
 }
