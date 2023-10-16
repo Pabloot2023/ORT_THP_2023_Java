@@ -12,7 +12,7 @@ Hacer jugar al superheroe2 contra el superheroe1 y mostrar el resultado por pant
 Crear más superhéroes con distintos valores y jugar.
  */
 
-package trabajo_practico_2_act_1_Ejs13;
+package trabajo_practico_2_act_1_Ejs_13;
 
 public class Test {
 

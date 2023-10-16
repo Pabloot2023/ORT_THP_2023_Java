@@ -22,7 +22,7 @@ Fulano Gómez.
 
  */
 
-package trabajo_practico_2_act_1;
+package trabajo_practico_2_act_1_Ejs_1;
 
 public class Ejercicio_4 {
 

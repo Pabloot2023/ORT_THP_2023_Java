@@ -1,4 +1,4 @@
-package trabajo_practico_2_act_1_Ejs9;
+package trabajo_practico_2_act_1_Ejs_9;
 
 public class Test {
 
