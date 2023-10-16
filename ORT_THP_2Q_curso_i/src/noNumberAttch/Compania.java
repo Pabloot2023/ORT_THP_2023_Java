@@ -34,7 +34,7 @@ public class Compania {
     }   
 
     private Area buscarArea(int numeroArea) {
-        for (Area area : areas) { // iterar en el array
+        for (Area area : areas) { // iterar en el array via loop 
             if (area.obtenerNumero() == numeroArea) {
                 return area;
             }
