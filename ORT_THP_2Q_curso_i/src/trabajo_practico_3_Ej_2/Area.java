@@ -1,11 +1,10 @@
 package trabajo_practico_3_Ej_2;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Area {
     private int id;
-    private List<Oficina> oficinas = new ArrayList<>();
+    private ArrayList<Oficina> oficinas = new ArrayList<>();
     private Compania compania;
 
     public Area(Compania compania, int id) {
@@ -37,7 +36,7 @@ public class Area {
         return empleadoAgregado = false; // No se pudo agregar el empleado en ninguna oficina
     }
 
-    public List<Oficina> listarOficinas() {
+    public ArrayList<Oficina> listarOficinas() {
         return oficinas;
     }
 
@@ -51,28 +50,28 @@ public class Area {
     }
 
     private int getId() {
-		return id;
-	}
+        return id;
+    }
 
-	private void setId(int id) {
-		this.id = id;
-	}
+    private void setId(int id) {
+        this.id = id;
+    }
 
-	private List<Oficina> getOficinas() {
-		return oficinas;
-	}
+    private ArrayList<Oficina> getOficinas() {
+        return oficinas;
+    }
 
-	private void setOficinas(List<Oficina> oficinas) {
-		this.oficinas = oficinas;
-	}
+    private void setOficinas(ArrayList<Oficina> oficinas) {
+        this.oficinas = oficinas;
+    }
 
-	private Compania getCompania() {
-		return compania;
-	}
+    private Compania getCompania() {
+        return compania;
+    }
 
-	private void setCompania(Compania compania) {
-		this.compania = compania;
-	}
+    private void setCompania(Compania compania) {
+        this.compania = compania;
+    }
 
     public void listarEmpleados() {
         System.out.println("Área " + obtenerNumero() + ":");
@@ -81,17 +80,16 @@ public class Area {
         }
     }
 
-	public Oficina buscarOficina(int numeroOficina) {		
-		return null;
-	}
-	
-	public int getNumero() {
-	    return id;
-	}
-	
-	@Override
+    public Oficina buscarOficina(int numeroOficina) {       
+        return null;
+    }
+    
+    public int getNumero() {
+        return id;
+    }
+    
+    @Override
     public String toString() {
         return "Área: " + id;
     }
-
 }

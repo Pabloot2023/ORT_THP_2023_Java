@@ -1,11 +1,10 @@
 package trabajo_practico_3_Ej_2;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Oficina {
     private int numero;
-    private List<Empleado> empleados = new ArrayList<>();
+    private ArrayList<Empleado> empleados = new ArrayList<>();
     private Area area;
 
     public Oficina(int numero) { 
@@ -22,7 +21,7 @@ public class Oficina {
         return empleados.add(empleado);
     }
 
-    public List<Empleado> listarEmpleados() {
+    public ArrayList<Empleado> listarEmpleados() {
         System.out.println("Oficina " + getNumero() + ":");
         for (Empleado empleado : empleados) {
             System.out.println(empleado.toString());
@@ -39,29 +38,24 @@ public class Oficina {
         return false;
     }
 
-    private List<Empleado> getEmpleados() {
-		return empleados;
-	}
+    private ArrayList<Empleado> getEmpleados() {
+        return empleados;
+    }
 
-	private void setEmpleados(List<Empleado> empleados) {
-		this.empleados = empleados;
-	}
+    private void setEmpleados(ArrayList<Empleado> empleados) {
+        this.empleados = empleados;
+    }
 
-	private Area getArea() {
-		return area;
-	}
+    private Area getArea() {
+        return area;
+    }
 
-	private void setArea(Area area) {
-		this.area = area;
-	}
+    private void setArea(Area area) {
+        this.area = area;
+    }
 
-	private void setNumero(int numero) {
-		this.numero = numero;
-	}
-
-	@Override
-    public String toString() {
-        return "Oficina: " + numero;
+    private void setNumero(int numero) {
+        this.numero = numero;
     }
 
     public boolean agregarEmpleado(Empleado empleado) {
@@ -75,4 +69,10 @@ public class Oficina {
     public int getNumero() {
         return numero;
     }
+    
+    @Override
+    public String toString() {
+        return "Oficina: " + numero;
+    }
+
 }

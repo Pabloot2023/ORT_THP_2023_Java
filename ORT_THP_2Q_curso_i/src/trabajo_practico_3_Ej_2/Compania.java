@@ -1,11 +1,10 @@
 package trabajo_practico_3_Ej_2;
 
 import java.util.ArrayList;
-	import java.util.List;
 
 public class Compania {
     private String nombre;
-    private List<Area> areas = new ArrayList<>(); // array iterable
+    private ArrayList<Area> areas = new ArrayList<>();
 
     public Compania(String nombre) {
         this.nombre = nombre;
@@ -13,7 +12,7 @@ public class Compania {
 
     public boolean agregarArea(int numero) {
         Area area = new Area(numero);
-        return areas.add(area); // array
+        return areas.add(area);
     }
     
     public boolean agregarOficina(int numeroArea, int numeroOficina) {
@@ -33,7 +32,7 @@ public class Compania {
     }   
 
     private Area buscarArea(int numeroArea) {
-        for (Area area : areas) { // iterar en el array via loop 
+        for (Area area : areas) { 
             if (area.obtenerNumero() == numeroArea) {
                 return area;
             }
@@ -42,7 +41,7 @@ public class Compania {
     }
 
     private Oficina buscarOficina(int numeroOficina) {
-        for (Area area : areas) { // iterar en el array
+        for (Area area : areas) {
             Oficina oficina = area.buscarOficina(numeroOficina);
             if (oficina != null) {
                 return oficina;
@@ -52,14 +51,14 @@ public class Compania {
     }
 
     public void listarAreas() {
-        for (Area area : areas) { // iterar en el array
+        for (Area area : areas) { 
             System.out.println(area.toString());
         }
     }
 
     public void listarEmpleados() {
         System.out.println("Empleados en " + this.toString() + ":");
-        for (Area area : areas) { // iterar en el array
+        for (Area area : areas) { 
             area.listarEmpleados();
         }
     }
@@ -67,67 +66,64 @@ public class Compania {
     public void existeEmpleado(int dni) {
         boolean encontrado = false;
         String mensaje = "";
-        for (Area area : areas) { // iterar en el array
+        for (Area area : areas) { 
             if (area.existeEmpleado(dni)) {
                 encontrado = true;
             } else {
-                	encontrado = false;
-                }
+                encontrado = false;
             }
-        	if(encontrado) {
-        		mensaje = "Existente en el Sistema";
-        	} else {
-        		mensaje = "No existe en el Sistema";
-        	}
-        
+        }
+        if(encontrado) {
+            mensaje = "Existente en el Sistema";
+        } else {
+            mensaje = "No existe en el Sistema";
+        }
         
         System.out.println("Empleado con DNI " + dni + ": " + mensaje);
-        }
+    }
            
     private String getNombre() {
-		return nombre;
-	}
+        return nombre;
+    }
 
-	private void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
+    private void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-	private List<Area> getAreas() {
-		return areas;
-	}
+    private ArrayList<Area> getAreas() {
+        return areas;
+    }
 
-	private void setAreas(List<Area> areas) {
-		this.areas = areas;
-	}
+    private void setAreas(ArrayList<Area> areas) {
+        this.areas = areas;
+    }
 
-	public boolean modificarEmpleado(int dni, String nuevoNombre, String nuevoApellido, int nuevoDNI) {
-		String mensaje = "";
-		Boolean bandera;
-	    for (Area area : areas) { // iterar en el array
-	        for (Oficina oficina : area.listarOficinas()) {
-	            for (Empleado empleado : oficina.listarEmpleados()) {
-	                if (empleado.getDni() == dni) {
-	                    // Encontramos al empleado, ahora lo modificamos
-	                    empleado.setNombre(nuevoNombre);
-	                    empleado.setApellido(nuevoApellido);
-	                    empleado.setDni(nuevoDNI);
-	                    bandera = true; // Empleado modificado con éxito
-	                    
-	                    if(bandera) {
-	            	    	mensaje = "---------> Datos modificados con exito";
-	            	    } else {
-	            	    	mensaje = "---------> Datos no modificados";
-	            	    }
-	                    System.out.println(mensaje);
-	                }
-	            }
-	        }
-	    }
-	    return false; // Empleado con el DNI especificado no encontrado
-	       
-	}
+    public boolean modificarEmpleado(int dni, String nuevoNombre, String nuevoApellido, int nuevoDNI) {
+        String mensaje = "";
+        Boolean bandera;
+        for (Area area : areas) { 
+            for (Oficina oficina : area.listarOficinas()) {
+                for (Empleado empleado : oficina.listarEmpleados()) {
+                    if (empleado.getDni() == dni) {
+                        empleado.setNombre(nuevoNombre);
+                        empleado.setApellido(nuevoApellido);
+                        empleado.setDni(nuevoDNI);
+                        bandera = true; // Empleado modificado con éxito
+                        
+                        if(bandera) {
+                            mensaje = "---------> Datos modificados con exito";
+                        } else {
+                            mensaje = "---------> Datos no modificados";
+                        }
+                        System.out.println(mensaje);
+                    }
+                }
+            }
+        }
+        return false; // Empleado con el DNI especificado no encontrado
+    }
 
-	@Override
+    @Override
     public String toString() {
         return nombre;
     }
