@@ -20,11 +20,12 @@ public class Test {
     }
 
     private static void casoDePrueba1() {
+    	boolean areaAgregada;
         System.out.println("Caso de Prueba 1: Agregar Área");
         barraSeparadora();
         separador2();
         Compania Compania1 = new Compania("Mi Compañía 1");
-        boolean areaAgregada = Compania1.agregarArea(1);
+        areaAgregada = Compania1.agregarArea(1);
         if (areaAgregada) {
             System.out.println("Área agregada con éxito.");
         } else {
@@ -35,12 +36,14 @@ public class Test {
     }
 
     private static void casoDePrueba2() {
+    	boolean areaAgregada;
+    	boolean oficinaAgregada;
         System.out.println("Caso de Prueba 2: Agregar Oficina a Área");
         barraSeparadora();
         separador2();
         Compania Compania2 = new Compania("Mi Compañía 2");
-        boolean areaAgregada = Compania2.agregarArea(1);
-        boolean oficinaAgregada = Compania2.agregarOficina(1,101); // Oficina 101
+        areaAgregada = Compania2.agregarArea(1);
+        oficinaAgregada = Compania2.agregarOficina(1,101); // Oficina 101
         if (oficinaAgregada) {
             System.out.println("Oficina agregada con éxito al área.");
         } else {
@@ -51,13 +54,14 @@ public class Test {
     }
 
     private static void casoDePrueba3() {
+    	 boolean empleadoAgregado;
         System.out.println("Caso de Prueba 3: Agregar Empleado a Área");
         barraSeparadora();
         separador2();
         Compania Compania3 = new Compania("Mi Compañía 3");
         Compania3.agregarArea(1);
         Compania3.agregarOficina(1,105);
-        boolean empleadoAgregado = Compania3.agregarEmpleado("Juan", "Perez", 123456, 1); 
+        empleadoAgregado = Compania3.agregarEmpleado("Juan", "Perez", 123456, 1); 
         if (empleadoAgregado) {
             System.out.println("Empleado agregado con éxito al área.");
         } else {
