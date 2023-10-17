@@ -48,17 +48,7 @@ public class Test {
         // Eliminar todos los elementos a mano
         
     }
-    
-    public static void intro() {
-    	separador1();
-        barraSeparadora();
-    }
-    
-    public static void outro() {
-		barraSeparadora();
-		separador1();
-    }
-    
+
     private static void casoDePrueba1() {
     	Agenda agenda = new Agenda();
     	
@@ -160,6 +150,16 @@ public class Test {
         System.out.println("Agenda vacía.");
        
 
+    } 
+    
+    public static void intro() {
+    	separador1();
+        barraSeparadora();
+    }
+    
+    public static void outro() {
+		barraSeparadora();
+		separador1();
     }
     
     public static void separador1() {
