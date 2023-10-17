@@ -1,40 +1,50 @@
 package trabajo_practico_3_Ej_1;
 
-public class Persona {
+import java.util.ArrayList;
+
+class Persona {
+    private final int dni;
     private String nombre;
     private String apellido;
-    private Domicilio direccionParticular; 
+    private String domicilio;
 
-    // Constructor por defecto
-    public Persona() {
-        this.nombre = "";
-        this.apellido = "";
+    public Persona(int dni, String nombre, String apellido, String domicilio) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.domicilio = domicilio;
     }
 
-    // Método para establecer el nombre
+    public int getDni() {
+        return dni;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public String getDomicilio() {
+        return domicilio;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    // Método para establecer el apellido
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
 
-    // Método para obtener el nombre completo
-    public String obtenerNombreCompleto() {
-        return this.nombre + " " + this.apellido;
+    public void setDomicilio(String domicilio) {
+        this.domicilio = domicilio;
     }
 
-	public void setDireccionParticular(Domicilio direccionParticular) {
-		this.direccionParticular = direccionParticular;
-	}
-	
-	public void mostrarDomicilio() {
-		if (this.direccionParticular == null){
-			System.out.println("El domicilio aun no fue cargado");
-		} else {		
-				System.out.println("El domicilio de la persona es " + direccionParticular.toString());
-				}
-	}
+    @Override
+    public String toString() {
+        return "DNI: " + dni + ", Nombre: " + nombre + ", Apellido: " + apellido + ", Domicilio: " + domicilio;
+    }
 }
