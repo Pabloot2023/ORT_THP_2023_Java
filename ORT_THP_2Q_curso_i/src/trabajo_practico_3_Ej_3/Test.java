@@ -45,8 +45,7 @@ public class Test {
 		
 	    outro();
 		}
-	
-	
+		
 	public static void casoDePrueba2() {
 		intro();
 		
@@ -69,8 +68,7 @@ public class Test {
 		
 	    outro();
 		}
-	
-	
+		
 	public static void casoDePrueba3() {
 		intro();
 		
@@ -97,8 +95,7 @@ public class Test {
 		
 	    outro();
 		}
-	
-	
+		
 	public static void casoDePrueba4() {
 		intro();
 		
@@ -157,25 +154,21 @@ public class Test {
     barraSeparadora();
 	}
 	
-
 	public static void outro() {
 	barraSeparadora();
 	separador1();
 	}
 	
-
 	public static void separador1() {
 	separador1 = " ";
     System.out.println(separador1);
 	}
 	
-
 	public static void separador2() {
 	separador2 = " ";
 	System.out.println(separador2);
 	System.out.println(separador2);
 	}
-	
 
 	public static void barraSeparadora() {
 	barraSeparadora = "-------------------------------------";

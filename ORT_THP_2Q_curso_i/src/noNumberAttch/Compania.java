@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Compania {
     private String nombre;
-    private List<Area> areas = new ArrayList<>(); // array iterable
+    private List<Area> areas = new ArrayList<>(); 
 
     public Compania(String nombre) {
         this.nombre = nombre;
@@ -13,7 +13,7 @@ public class Compania {
 
     public boolean agregarArea(int numero) {
         Area area = new Area(numero);
-        return areas.add(area); // array
+        return areas.add(area); 
     }
     
     public boolean agregarOficina(int numeroArea, int numeroOficina) {
@@ -33,33 +33,33 @@ public class Compania {
     }   
 
     private Area buscarArea(int numeroArea) {
-        for (Area area : areas) { // iterar en el array via loop 
+        for (Area area : areas) { 
             if (area.obtenerNumero() == numeroArea) {
                 return area;
             }
         }
-        return null; // Área no encontrada
+        return null; 
     }
 
     private Oficina buscarOficina(int numeroOficina) {
-        for (Area area : areas) { // iterar en el array
+        for (Area area : areas) { 
             Oficina oficina = area.buscarOficina(numeroOficina);
             if (oficina != null) {
                 return oficina;
             }
         }
-        return null; // Oficina no encontrada
+        return null; 
     }
 
     public void listarAreas() {
-        for (Area area : areas) { // iterar en el array
+        for (Area area : areas) { 
             System.out.println(area.toString());
         }
     }
 
     public void listarEmpleados() {
         System.out.println("Empleados en " + this.toString() + ":");
-        for (Area area : areas) { // iterar en el array
+        for (Area area : areas) { 
             area.listarEmpleados();
         }
     }
@@ -67,7 +67,7 @@ public class Compania {
     public void existeEmpleado(int dni) {
         boolean encontrado = false;
         String mensaje = "";
-        for (Area area : areas) { // iterar en el array
+        for (Area area : areas) { 
             if (area.existeEmpleado(dni)) {
                 encontrado = true;
             } else {
@@ -103,7 +103,7 @@ public class Compania {
 	public boolean modificarEmpleado(int dni, String nuevoNombre, String nuevoApellido, int nuevoDNI) {
 		String mensaje = "";
 		Boolean bandera;
-	    for (Area area : areas) { // iterar en el array
+	    for (Area area : areas) { 
 	        for (Oficina oficina : area.listarOficinas()) {
 	            for (Empleado empleado : oficina.listarEmpleados()) {
 	                if (empleado.getDni() == dni) {
