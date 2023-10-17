@@ -15,8 +15,7 @@ public class Test {
 		// casoDePrueba4(); // OK --> Listar Áreas
 		// casoDePrueba5(); // OK --> Listar Empleados
 		// casoDePrueba6(); // OK --> Validar si existe Empleado mediante DNI
-		// casoDePrueba7(); // OK --> Modificar datos de Empleado (accesos a métodos
-		// privados)
+		// casoDePrueba7(); // OK --> Modificar datos de Empleado (accesos a métodos privados)
 		// casoDePrueba8(); // OK --> Listar Empleados de Oficina
 		// casoDePrueba9(); // OK --> Existe Empleado en Oficina
 		// casoDePrueba10(); // OK --> Existe Empleado en Area
