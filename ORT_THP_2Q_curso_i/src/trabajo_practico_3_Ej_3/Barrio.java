@@ -27,7 +27,7 @@ class Barrio {
         return pudo;
     }
     
-    private Propiedad buscarPropiedad(String domicilio, double precio, tipoPropiedad tipo) {
+    public Propiedad buscarPropiedad(String domicilio, double precio, tipoPropiedad tipo) {
         Propiedad propiedadBuscada = null;
         int i = 0;
         while (i < this.propiedades.size() && propiedadBuscada == null) {

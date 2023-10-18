@@ -61,16 +61,34 @@ class Inmobiliaria {
         }
     }
     
+    
     public boolean agregarPropiedad(Propiedad propiedad) {
-    	
-    	
+        boolean pudoAgregar = false;
+
+        for (Barrio barrio : barrios) {
+            if (!pudoAgregar) {
+                if (barrio.buscarPropiedad(null, 0, null) == null) {
+                    pudoAgregar = barrio.agregarPropiedad(propiedad);
+                }
+            }
+        }
+
+        return pudoAgregar;
     }
     
-    public boolean buscarPropiedad(Propiedad propiedad) {
-    	
-    	
-    }
+    public boolean buscarPropiedad(String domicilio, double precio, tipoPropiedad tipo) {
+        boolean propiedadEncontrada = false;
 
+        for (Barrio barrio : barrios) {
+            if (!propiedadEncontrada && barrio.buscarPropiedad(domicilio,precio,tipo) != null) {
+                propiedadEncontrada = true;
+            }
+        }
+
+        return propiedadEncontrada;
+    }
+    
+    
     public void borrarPropiedad(String domicilio) {
         for (Barrio barrio : barrios) {
             ArrayList<Propiedad> propiedadesABorrar = new ArrayList<>();
@@ -105,11 +123,4 @@ class Inmobiliaria {
         return barrioBuscado;
     }
     
-    
-    
- 
-        
-
-   
-
 }
