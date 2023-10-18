@@ -51,7 +51,7 @@ class Inmobiliaria {
         for (Barrio barrio : barrios) {
             for (Propiedad propiedad : barrio.Propiedades()) {
                 if (propiedad.obtenerDomicilio().equals(domicilio)) {
-                    Barrio destino = obtenerBarrio(nuevoBarrio);
+                    Barrio destino = buscarBarrio(nuevoBarrio);
                     if (destino != null) {
                         destino.agregarPropiedad(propiedad);
                         barrio.Propiedades().remove(propiedad);
@@ -59,6 +59,16 @@ class Inmobiliaria {
                 }
             }
         }
+    }
+    
+    public boolean agregarPropiedad(Propiedad propiedad) {
+    	
+    	
+    }
+    
+    public boolean buscarPropiedad(Propiedad propiedad) {
+    	
+    	
     }
 
     public void borrarPropiedad(String domicilio) {
@@ -74,17 +84,32 @@ class Inmobiliaria {
     }
 
     public void agregarBarrio(String nombre) {
-        barrios.add(new Barrio(nombre));
+        boolean pudo = false;
+        Barrio barrioNuevo = buscarBarrio(nombre);
+        if (barrioNuevo == null) { // No lo encontró, entonces podemos crearlo
+            this.barrios.add(new Barrio(nombre));
+            pudo = true;
+        }
     }
 
-    public Barrio obtenerBarrio(String nombre) {
-        Barrio barrioEncontrado = null;
-        for (Barrio barrio : barrios) {
-            if (barrio.getNombre().equals(nombre)) {
-                barrioEncontrado = barrio;
+    private Barrio buscarBarrio(String nombre) {
+        Barrio barrioBuscado = null;
+        int i = 0;
+        while (i < this.barrios.size() && barrioBuscado == null) {
+            if (this.barrios.get(i).getNombre().equals(nombre)) {
+                barrioBuscado = this.barrios.get(i);
+            } else {
+                i++;
             }
         }
-        return barrioEncontrado;
+        return barrioBuscado;
     }
+    
+    
+    
+ 
+        
+
+   
 
 }
