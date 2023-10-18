@@ -5,12 +5,24 @@ import java.util.ArrayList;
 class Propiedad {
     private String domicilio;
     private double precio;
-    private String tipo;
+    private tipoPropiedad tipo;
 
-    public Propiedad(String domicilio, double precio, String tipo) {
+    public Propiedad(String domicilio, double precio, tipoPropiedad tipo) {
         this.domicilio = domicilio;
         this.precio = precio;
         this.tipo = tipo;
+    }
+    
+    public String obtenerDomicilio() {
+        return domicilio;
+    }
+
+    public double obtenerPrecio() {
+        return precio;
+    }
+
+    public tipoPropiedad obtenerTipo() {
+        return tipo;
     }
 
     private void setDomicilio(String domicilio) {
@@ -21,21 +33,9 @@ class Propiedad {
 		this.precio = precio;
 	}
 
-	private void setTipo(String tipo) {
+	private void setTipo(tipoPropiedad tipo) {
 		this.tipo = tipo;
-	}
-
-	public String getDomicilio() {
-        return domicilio;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
+	}	
 
     @Override
     public String toString() {

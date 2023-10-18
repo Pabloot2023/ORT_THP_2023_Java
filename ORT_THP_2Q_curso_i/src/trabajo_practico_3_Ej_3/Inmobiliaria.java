@@ -19,7 +19,7 @@ class Inmobiliaria {
     }
 
     public void mostrarBarrioMaxProp() {
-        ArrayList<Barrio> maxPropBarrios = obtenerMaxPropBarrios();
+        ArrayList<Barrio> maxPropBarrios = obtenerBarrioMaxProp();
         if (!maxPropBarrios.isEmpty()) {
             System.out.println("Barrio(s) con la mayor cantidad de propiedades:");
             for (Barrio barrio : maxPropBarrios) {
@@ -30,7 +30,7 @@ class Inmobiliaria {
         }
     }
 
-    public ArrayList<Barrio> obtenerMaxPropBarrios() {
+    public ArrayList<Barrio> obtenerBarrioMaxProp() {
         ArrayList<Barrio> maxPropBarrios = new ArrayList<>();
         int maxPropCount = 0;
 
@@ -50,7 +50,7 @@ class Inmobiliaria {
     public void cambiarPropiedadDeBarrio(String domicilio, String nuevoBarrio) {
         for (Barrio barrio : barrios) {
             for (Propiedad propiedad : barrio.Propiedades()) {
-                if (propiedad.getDomicilio().equals(domicilio)) {
+                if (propiedad.obtenerDomicilio().equals(domicilio)) {
                     Barrio destino = obtenerBarrio(nuevoBarrio);
                     if (destino != null) {
                         destino.agregarPropiedad(propiedad);
@@ -63,12 +63,13 @@ class Inmobiliaria {
 
     public void borrarPropiedad(String domicilio) {
         for (Barrio barrio : barrios) {
+            ArrayList<Propiedad> propiedadesABorrar = new ArrayList<>();
             for (Propiedad propiedad : barrio.Propiedades()) {
-                if (propiedad.getDomicilio().equals(domicilio)) {
-                    barrio.Propiedades().remove(propiedad);
-                    break;
+                if (propiedad.obtenerDomicilio().equals(domicilio)) {
+                    propiedadesABorrar.add(propiedad);
                 }
             }
+            barrio.Propiedades().removeAll(propiedadesABorrar);
         }
     }
 
@@ -77,11 +78,13 @@ class Inmobiliaria {
     }
 
     public Barrio obtenerBarrio(String nombre) {
+        Barrio barrioEncontrado = null;
         for (Barrio barrio : barrios) {
             if (barrio.getNombre().equals(nombre)) {
-                return barrio;
+                barrioEncontrado = barrio;
             }
         }
-        return null;
+        return barrioEncontrado;
     }
+
 }

@@ -22,7 +22,7 @@ class Barrio {
     public void mostrarPropiedades(String tipo) {
         System.out.println("Propiedades en el barrio " + nombre + " de tipo " + tipo + ":");
         for (Propiedad propiedad : propiedades) {
-            if (propiedad.getTipo().equals(tipo)) {
+            if (propiedad.obtenerTipo().equals(tipo)) {
                 System.out.println(propiedad.toString());
             }
         }
