@@ -3,93 +3,67 @@ package trabajo_practico_3_Ej_2;
 import java.util.ArrayList;
 
 public class Area {
-    private int id;
-    private ArrayList<Oficina> oficinas = new ArrayList<>();
-    private Compania compania;
+    private String nombre;
+    private ArrayList<Oficina> oficinas;
 
-    public Area(Compania compania, int id) {
-        this.compania = compania;
-        this.id = id;
-    }
-    
-    public Area(int id) {
-        this.id = id;
+    public Area(String suNombre) {
+        this.nombre = suNombre;
+        this.oficinas = new ArrayList<Oficina>();
     }
 
-    public int obtenerNumero() {
-        return id;
+    public boolean agregarOficina(int nuevaOficina) {
+        boolean pudo = false;
+        Oficina oficinaNueva = buscarOficina(nuevaOficina);
+        if (oficinaNueva == null) {
+            this.oficinas.add(new Oficina(nuevaOficina));
+            pudo = true;
+        }
+        return pudo;
     }
 
-    public boolean agregarOficina(int numero) {
-        Oficina oficina = new Oficina(numero);
-        return oficinas.add(oficina);
+    private Oficina buscarOficina(int oficinaBuscada) {
+        Oficina oficinaEncontrada = null;
+        int i = 0;
+        while (i < this.oficinas.size() && oficinaEncontrada == null) {
+            Oficina oficina = this.oficinas.get(i);
+            if (oficina.obtenerNumero() == oficinaBuscada) {
+                oficinaEncontrada = oficina;
+            }
+            i++;
+        }
+        return oficinaEncontrada;
     }
 
-    public boolean agregarEmpleado(String nombre, String apellido, int dni) {
-    	boolean empleadoAgregado = false;
-        Empleado empleado = new Empleado(nombre, apellido, dni);
-        for (Oficina oficina : oficinas) {
-            if (oficina.agregarEmpleado(empleado)) {
-                return empleadoAgregado = true; // Empleado agregado con éxito en al menos una oficina
+    public boolean agregarEmpleado(int oficina, String nombre, String apellido) {
+        boolean empleadoAgregado = false;
+        for (Oficina oficinaActual : this.oficinas) {
+            if (oficinaActual.obtenerNumero() == oficina) {
+                empleadoAgregado = oficinaActual.agregarEmpleado(nombre, apellido);
             }
         }
-        return empleadoAgregado = false; // No se pudo agregar el empleado en ninguna oficina
+        return empleadoAgregado;
     }
 
-    public ArrayList<Oficina> listarOficinas() {
-        return oficinas;
-    }
-
-    public boolean existeEmpleado(int dni) {
-        for (Oficina oficina : oficinas) {
-            if (oficina.existeEmpleado(dni)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private int getId() {
-        return id;
-    }
-
-    private void setId(int id) {
-        this.id = id;
-    }
-
-    private ArrayList<Oficina> getOficinas() {
-        return oficinas;
-    }
-
-    private void setOficinas(ArrayList<Oficina> oficinas) {
-        this.oficinas = oficinas;
-    }
-
-    private Compania getCompania() {
-        return compania;
-    }
-
-    private void setCompania(Compania compania) {
-        this.compania = compania;
-    }
-
-    public void listarEmpleados() {
-        System.out.println("Área " + obtenerNumero() + ":");
-        for (Oficina oficina : oficinas) {
-            oficina.listarEmpleados();
+    private void recorrerOficinas() {
+        for (Oficina oficina : this.oficinas) {
+            oficina.mostrarDatos();
         }
     }
 
-    public Oficina buscarOficina(int numeroOficina) {       
-        return null;
+    public void mostrarDatos() {
+        System.out.println("Área " + this.nombre);
+        this.recorrerOficinas();
     }
     
-    public int getNumero() {
-        return id;
-    }
+    public String obtenerNombre() {
+		return this.nombre;
+	}
     
-    @Override
-    public String toString() {
-        return "Área: " + id;
-    }
+
+	private String getNombre() {
+		return nombre;
+	}
+
+    
+    
 }
