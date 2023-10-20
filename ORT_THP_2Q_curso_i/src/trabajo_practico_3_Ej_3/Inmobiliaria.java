@@ -110,7 +110,7 @@ class Inmobiliaria {
         }
     }
 
-    private Barrio buscarBarrio(String nombre) {
+    public Barrio buscarBarrio(String nombre) {
         Barrio barrioBuscado = null;
         int i = 0;
         while (i < this.barrios.size() && barrioBuscado == null) {
