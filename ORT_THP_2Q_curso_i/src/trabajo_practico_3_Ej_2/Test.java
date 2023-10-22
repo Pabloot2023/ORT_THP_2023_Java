@@ -15,7 +15,7 @@ public class Test {
 		// casoDePrueba4(); // OK --> Listar Áreas
 		// casoDePrueba5(); // OK --> Listar Empleados
 		// casoDePrueba6(); // OK --> Validar si existe Empleado mediante DNI
-		// casoDePrueba7(); // OK --> Modificar datos de Empleado (accesos a métodos privados)
+		// casoDePrueba7(); // OK --> Modificar datos de Empleado 
 		// casoDePrueba8(); // OK --> Listar Empleados de Oficina
 		// casoDePrueba9(); // OK --> Existe Empleado en Oficina
 		// casoDePrueba10(); // OK --> Existe Empleado en Area
@@ -95,13 +95,19 @@ public class Test {
 		Compania5.agregarEmpleado("Juan", "Perez", 123456, 1);
 		Compania5.listarEmpleados();
 		separador1();
+		barraSeparadora();
+		separador1();
 		Compania5.agregarEmpleado("Alberto", "Perez", 654321, 1);
 		Compania5.listarEmpleados();
-		System.out.println(" ");
+		separador1();
+		barraSeparadora();
+		separador1();
 		Compania5.agregarArea(2);
 		Compania5.agregarOficina(2, 109);
 		Compania5.agregarEmpleado("Ana", "Perez", 987654, 2);
 		Compania5.listarEmpleados();
+		separador1();
+		barraSeparadora();
 		separador1();
 		Compania5.agregarEmpleado("Laura", "Perez", 456789, 2);
 		Compania5.listarEmpleados();
@@ -112,14 +118,16 @@ public class Test {
 	private static void casoDePrueba6() {
 		System.out.println("Caso de Prueba 6: Validar si existe Empleado mediante DNI");
 		barraSeparadora();
-		separador2();
+		separador1();
 		Compania Compania6 = new Compania("Mi Compañía");
 		Compania6.agregarArea(1);
 		Compania6.agregarOficina(1, 104);
 		Compania6.agregarEmpleado("Juan", "Perez", 123456, 1);
-		separador1();
 		Compania6.existeEmpleado(123456); // DNI existente
+		separador1();
 		Compania6.existeEmpleado(789012); // DNI inexistente
+		separador1();
+		barraSeparadora();
 		separador1();
 		Compania6.agregarEmpleado("Alberto", "Perez", 789012, 1);
 		separador1();
@@ -133,7 +141,7 @@ public class Test {
 	private static void casoDePrueba7() {
 		System.out.println("Caso de Prueba 7: Modificar Empleado (acceso a métodos privados)");
 		barraSeparadora();
-		separador2();
+		
 		System.out.println(" ");
 		Compania Compania7 = new Compania("Mi Compañía");
 		Compania7.agregarArea(1);
@@ -142,7 +150,7 @@ public class Test {
 
 		Compania7.existeEmpleado(123456); // DNI existente
 		separador1();
-		System.out.println("Probando modificar datos de");
+		System.out.println("Probando modificar datos del DNI a 789012");
 		separador1();
 		Compania7.modificarEmpleado(123456, "Luis", "Gomez", 789012);
 		separador1();
