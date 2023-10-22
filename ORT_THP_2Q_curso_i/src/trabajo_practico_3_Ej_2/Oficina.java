@@ -15,7 +15,7 @@ public class Oficina {
 	public boolean agregarEmpleado(String nombre, String apellido) {
 		boolean pudo = false;
 		Empleado empleadoNuevo = buscarEmpleado(nombre,apellido);
-		if (empleadoNuevo==null) {	// no lo encontr�. Entonces podemos crearlo
+		if (empleadoNuevo==null) {	// no lo encontro. Entonces podemos crearlo
 			this.empleados.add(new Empleado(nombre,apellido));
 			pudo = true;
 		}
@@ -26,7 +26,7 @@ public class Oficina {
 		Empleado empleadoBuscado = null;
 		int i=0;
 		while (i<this.empleados.size() && empleadoBuscado==null) {
-/*	si la expresi�n es verdadera significa que lo encontramos*/			
+/*	si la expresion es verdadera significa que lo encontramos*/			
 			if (this.empleados.get(i).verificadorNombreApellido(apellidoBuscado, nombreBuscado)) {
 				empleadoBuscado = this.empleados.get(i);
 			} else {
