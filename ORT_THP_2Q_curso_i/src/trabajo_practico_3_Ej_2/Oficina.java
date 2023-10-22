@@ -26,7 +26,7 @@ public class Oficina {
 		Empleado empleadoBuscado = null;
 		int i=0;
 		while (i<this.empleados.size() && empleadoBuscado==null) {
-/*	si la expresion es verdadera significa que lo encontramos*/			
+			/*	si la expresion es verdadera significa que lo encontramos*/			
 			if (this.empleados.get(i).verificadorNombreApellido(apellidoBuscado, nombreBuscado)) {
 				empleadoBuscado = this.empleados.get(i);
 			} else {
@@ -36,7 +36,7 @@ public class Oficina {
 		return empleadoBuscado;
 	}
 	
-/*	muestra TODOS los datos de la Oficina: su nombre y sus empleados*/	
+		/*	muestra TODOS los datos de la Oficina: su nombre y sus empleados*/	
 	public void mostrarDatos() {
 		System.out.println("Oficina "+this.numero);
 		this.recorrerEmpleados();
@@ -52,12 +52,8 @@ public class Oficina {
 		return this.numero;
 	}
 
-
 	private int getNumero() {
 		return numero;
 	}
 
-	
-	
-	
 }
