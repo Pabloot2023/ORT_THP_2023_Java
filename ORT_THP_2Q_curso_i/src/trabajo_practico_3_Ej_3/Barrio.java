@@ -16,17 +16,23 @@ class Barrio {
     public ArrayList<Propiedad> Propiedades() {
         return propiedades;
     }
+    
+//    public boolean agregarPropiedad(Propiedad) {
+//        
+//    }
 
-    public boolean agregarPropiedad(Propiedad propiedad) {
+    public boolean agregarPropiedad(tipoPropiedad tipo, String domicilio, double precio) {
         boolean pudo = false;
-        Propiedad propiedadNueva = buscarPropiedad( propiedad.obtenerTipo(),propiedad.obtenerDomicilio(), propiedad.obtenerPrecio());
-        if (propiedadNueva == null) { // No lo encontró, entonces podemos crearlo
-            this.propiedades.add(propiedad);
+        Propiedad propiedadNueva = buscarPropiedad(tipo, domicilio, precio);
+        if (propiedadNueva == null) {
+            // No lo encontró, entonces podemos crearlo
+            this.propiedades.add(new Propiedad(tipo, domicilio, precio));
             pudo = true;
         }
         return pudo;
     }
     
+  
     public Propiedad buscarPropiedad(tipoPropiedad tipo,String domicilio, double precio) {
         Propiedad propiedadBuscada = null;
         int i = 0;
@@ -39,6 +45,9 @@ class Barrio {
         }
         return propiedadBuscada;
     }
+    
+    
+    
 
     public void mostrarPropiedades(String tipo) {
         System.out.println("Propiedades en el barrio " + nombre + " de tipo " + tipo + ":");

@@ -48,19 +48,48 @@ class Inmobiliaria {
     }
 
     public void cambiarPropiedadDeBarrio(String domicilio, String nuevoBarrio) {
+        Propiedad propiedadARecolocar = null;
+        Barrio origenBarrio = null;
+        boolean propiedadEncontrada = false;
+        boolean barrioDestinoEncontrado = false;
+        boolean agregadaPropiedad;
+
+        // Encontrar la propiedad y su barrio de origen
         for (Barrio barrio : barrios) {
             for (Propiedad propiedad : barrio.Propiedades()) {
-                if (propiedad.obtenerDomicilio().equals(domicilio)) {
-                    Barrio destino = buscarBarrio(nuevoBarrio);
-                    if (destino != null) {
-                        destino.agregarPropiedad(propiedad);
-                        barrio.Propiedades().remove(propiedad);
-                    }
+                if (!propiedadEncontrada && propiedad.obtenerDomicilio().equals(domicilio)) {
+                    propiedadARecolocar = propiedad;
+                    origenBarrio = barrio;
+                    propiedadEncontrada = true;
                 }
+            }
+            if (!barrioDestinoEncontrado && barrio.getNombre().equals(nuevoBarrio)) {
+                barrioDestinoEncontrado = true;
+            }
+        }
+
+        if (!propiedadEncontrada) {
+            System.out.println("La propiedad a cambiar no fue encontrada.");
+        } else if (!barrioDestinoEncontrado) {
+            System.out.println("El barrio de destino no existe.");
+        } else {
+            // Intentar agregar la propiedad al nuevo barrio
+            agregadaPropiedad = origenBarrio.agregarPropiedad(
+                propiedadARecolocar.obtenerTipo(),
+                propiedadARecolocar.obtenerDomicilio(),
+                propiedadARecolocar.obtenerPrecio()
+            );
+
+            if (agregadaPropiedad) {
+                // Remover la propiedad del barrio de origen
+            	origenBarrio.Propiedades().remove(propiedadARecolocar);
+                System.out.println("Propiedad reubicada con éxito.");
+            } else {
+                System.out.println("No se pudo agregar la propiedad al nuevo barrio.");
             }
         }
     }
-    
+
     
     public boolean agregarPropiedad(Propiedad propiedad) {
         boolean pudoAgregar = false;
