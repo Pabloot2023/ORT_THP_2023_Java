@@ -9,27 +9,17 @@ public class Test {
 		public static void main(String[] args) {
 			
 		    Inmobiliaria inmobiliaria = new Inmobiliaria();
-		
-		    intro();
-		    casoDePrueba1();// Agregar barrios
-		    outro();
-		    
-		    //intro();
+				 
+		    //casoDePrueba1();// Agregar barrios
+
 		    //casoDePrueba2();// Agregar propiedades a los barrios
-		    //outro();
-		
-		    //intro();
+
 		    //casoDePrueba3();// Cambiar propiedad de barrio
-		    //outro();
-		    
-		    //intro();
+
 		    //casoDePrueba4();// Borrar propiedad y Mostrar propiedades
-		    //outro();
-		    
-		    // intro();
+
 		    //casoDePrueba5();// Mostrar barrios con la mayor cantidad de propiedades
-		    //outro();
-		    
+
 			}
 
 	public static void casoDePrueba1() {
@@ -59,12 +49,12 @@ public class Test {
 		    
 		    inmobiliaria.buscarBarrio("Barrio2");
 		    
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad("Calle 1", 100000, tipoPropiedad.casa));
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad("Calle 2", 90000, tipoPropiedad.departamento));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad("Calle 3", 120000, tipoPropiedad.casa));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad("Calle 4", 80000, tipoPropiedad.PH));
-		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad("Calle 5", 150000, tipoPropiedad.departamento));
-		    
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle1",100000));
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 2", 90000));
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle 3", 120000));
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.PH,"Calle 4", 80000));
+		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 5", 150000));
+		  
 		    inmobiliaria.mostrarPropiedades();
 		
 	    outro();
@@ -82,12 +72,12 @@ public class Test {
 		    
 		    inmobiliaria.buscarBarrio("Barrio2");
 		    
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad("Calle 1", 100000, tipoPropiedad.casa));
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad("Calle 2", 90000, tipoPropiedad.departamento));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad("Calle 3", 120000, tipoPropiedad.casa));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad("Calle 4", 80000, tipoPropiedad.PH));
-		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad("Calle 5", 150000, tipoPropiedad.departamento));
-		    
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle1",100000));
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 2", 90000));
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle 3", 120000));
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.PH,"Calle 4", 80000));
+		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 5", 150000));
+		  
 		    inmobiliaria.mostrarPropiedades();
 		    
 		    inmobiliaria.cambiarPropiedadDeBarrio("Calle 2", "Barrio2");
@@ -109,12 +99,12 @@ public class Test {
 		    
 		    inmobiliaria.buscarBarrio("Barrio2");
 		    
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad("Calle 1", 100000, tipoPropiedad.casa));
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad("Calle 2", 90000, tipoPropiedad.departamento));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad("Calle 3", 120000, tipoPropiedad.casa));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad("Calle 4", 80000, tipoPropiedad.PH));
-		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad("Calle 5", 150000, tipoPropiedad.departamento));
-		    
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle1",100000));
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 2", 90000));
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle 3", 120000));
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.PH,"Calle 4", 80000));
+		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 5", 150000));
+		  
 		    inmobiliaria.mostrarPropiedades();
 		    
 		    inmobiliaria.cambiarPropiedadDeBarrio("Calle 2", "Barrio2");
@@ -139,12 +129,12 @@ public class Test {
 		    inmobiliaria.agregarBarrio("Barrio2");
 		    inmobiliaria.agregarBarrio("Barrio3");
 		    
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad("Calle 1", 100000, tipoPropiedad.casa));
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad("Calle 2", 90000, tipoPropiedad.departamento));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad("Calle 3", 120000, tipoPropiedad.casa));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad("Calle 4", 80000, tipoPropiedad.PH));
-		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad("Calle 5", 150000, tipoPropiedad.departamento));
-		    
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle1",100000));
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 2", 90000));
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle 3", 120000));
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.PH,"Calle 4", 80000));
+		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 5", 150000));
+		  
 		    inmobiliaria.mostrarBarrioMaxProp();
 		
 	    outro();

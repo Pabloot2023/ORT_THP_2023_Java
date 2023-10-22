@@ -12,7 +12,7 @@ class Inmobiliaria {
     public void mostrarPropiedades() {
         System.out.println("Propiedades en la inmobiliaria:");
         for (Barrio barrio : barrios) {
-            for (Propiedad propiedad : barrio.Propiedades()) { // Utilizamos el método getPropiedades
+            for (Propiedad propiedad : barrio.Propiedades()) { 
                 System.out.println("Barrio: " + barrio.getNombre() + ", " + propiedad.toString());
             }
         }
@@ -67,7 +67,7 @@ class Inmobiliaria {
 
         for (Barrio barrio : barrios) {
             if (!pudoAgregar) {
-                if (barrio.buscarPropiedad(null, 0, null) == null) {
+                if (barrio.buscarPropiedad(null,null, 0) == null) {
                     pudoAgregar = barrio.agregarPropiedad(propiedad);
                 }
             }
@@ -80,7 +80,7 @@ class Inmobiliaria {
         boolean propiedadEncontrada = false;
 
         for (Barrio barrio : barrios) {
-            if (!propiedadEncontrada && barrio.buscarPropiedad(domicilio,precio,tipo) != null) {
+            if (!propiedadEncontrada && barrio.buscarPropiedad(tipo,domicilio,precio) != null) {
                 propiedadEncontrada = true;
             }
         }

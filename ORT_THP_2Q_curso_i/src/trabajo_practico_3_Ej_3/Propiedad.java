@@ -6,11 +6,11 @@ class Propiedad {
     private String domicilio;
     private double precio;
     private tipoPropiedad tipo;
-
-    public Propiedad(String domicilio, double precio, tipoPropiedad tipo) {
+    
+    public Propiedad(tipoPropiedad tipo,String domicilio, double precio) {	
+    	this.tipo = tipo;
         this.domicilio = domicilio;
         this.precio = precio;
-        this.tipo = tipo;
     }
     
     public String obtenerDomicilio() {
@@ -24,7 +24,21 @@ class Propiedad {
     public tipoPropiedad obtenerTipo() {
         return tipo;
     }
+    
+    
+    private String getDomicilio() {
+		return domicilio;
+	}
 
+	private double getPrecio() {
+		return precio;
+	}
+
+	private tipoPropiedad getTipo() {
+		return tipo;
+	}
+
+	
     private void setDomicilio(String domicilio) {
 		this.domicilio = domicilio;
 	}
@@ -37,6 +51,10 @@ class Propiedad {
 		this.tipo = tipo;
 	}	
 
+	public boolean verificadorPropiedad(tipoPropiedad propiedadComp,String domicilioComp,double precioComp) {
+		return this.tipo.equals(propiedadComp) && this.domicilio.equals(domicilioComp) && this.precio == precioComp;
+	}
+	
     @Override
     public String toString() {
         return "Domicilio: " + domicilio + ", Precio: " + precio;
