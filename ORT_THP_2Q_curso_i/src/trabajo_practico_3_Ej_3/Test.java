@@ -14,20 +14,21 @@ public class Test {
 		    casoDePrueba1();// Agregar barrios
 		    outro();
 		    
-		    intro();
-		    casoDePrueba2();// Agregar propiedades a los barrios
-		    outro();
+		    //intro();
+		    //casoDePrueba2();// Agregar propiedades a los barrios
+		    //outro();
 		
-		    intro();
-		    casoDePrueba3();// Cambiar propiedad de barrio
-		
-		    intro();
-		    casoDePrueba4();// Borrar propiedad y Mostrar propiedades
-		    outro();
+		    //intro();
+		    //casoDePrueba3();// Cambiar propiedad de barrio
+		    //outro();
 		    
-		    intro();
-		    casoDePrueba5();// Mostrar barrios con la mayor cantidad de propiedades
-		    outro();
+		    //intro();
+		    //casoDePrueba4();// Borrar propiedad y Mostrar propiedades
+		    //outro();
+		    
+		    // intro();
+		    //casoDePrueba5();// Mostrar barrios con la mayor cantidad de propiedades
+		    //outro();
 		    
 			}
 
