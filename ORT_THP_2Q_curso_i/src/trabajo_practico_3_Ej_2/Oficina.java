@@ -27,7 +27,7 @@ public class Oficina {
 		int i=0;
 		while (i<this.empleados.size() && empleadoBuscado==null) {
 /*	si la expresi�n es verdadera significa que lo encontramos*/			
-			if (this.empleados.get(i).mismoNombreCompleto(apellidoBuscado, nombreBuscado)) {
+			if (this.empleados.get(i).verificadorNombreApellido(apellidoBuscado, nombreBuscado)) {
 				empleadoBuscado = this.empleados.get(i);
 			} else {
 				i++;

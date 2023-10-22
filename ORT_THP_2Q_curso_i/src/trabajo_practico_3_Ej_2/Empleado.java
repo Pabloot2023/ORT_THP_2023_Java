@@ -26,7 +26,7 @@ public class Empleado {
 		this.apellido = apellido;
 	}
 	
-	public boolean mismoNombreCompleto(String apellidoComp,String nombreComp) {
+	public boolean verificadorNombreApellido(String apellidoComp,String nombreComp) {
 		return this.apellido.equals(apellidoComp) && this.nombre.equals(nombreComp);
 	}
 	
