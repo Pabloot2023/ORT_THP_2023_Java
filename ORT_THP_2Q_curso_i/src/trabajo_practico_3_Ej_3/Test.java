@@ -105,9 +105,12 @@ public class Test {
 		    inmobiliaria.mostrarPropiedades();
 
 			 barraSeparadora();
-			 
+			 barraSeparadora();
+			 barraSeparadora();
 		    inmobiliaria.cambiarPropiedadDeBarrio("Calle 2", "Barrio2");
 		    
+			 barraSeparadora();
+			 barraSeparadora();
 			 barraSeparadora();
 			 		    
 		    inmobiliaria.mostrarPropiedades();
