@@ -96,14 +96,16 @@ class Inmobiliaria {
 
         for (Barrio barrio : barrios) {
             if (!pudoAgregar) {
-                if (barrio.buscarPropiedad(null,null, 0) == null) {
-                    pudoAgregar = barrio.agregarPropiedad(propiedad);
+                if (barrio.buscarPropiedad(null, propiedad.obtenerDomicilio(), propiedad.obtenerPrecio()) == null) {
+                    // Aquí asumimos que tipoPropiedad se obtiene de la propiedad.
+                    pudoAgregar = barrio.agregarPropiedad(propiedad.obtenerTipo(), propiedad.obtenerDomicilio(), propiedad.obtenerPrecio());
                 }
             }
         }
 
         return pudoAgregar;
     }
+
     
     public boolean buscarPropiedad(String domicilio, double precio, tipoPropiedad tipo) {
         boolean propiedadEncontrada = false;
@@ -132,24 +134,65 @@ class Inmobiliaria {
 
     public void agregarBarrio(String nombre) {
         boolean pudo = false;
-        Barrio barrioNuevo = buscarBarrio(nombre);
+        Barrio barrioNuevo = buscarBarrioSinPrint(nombre);
         if (barrioNuevo == null) { // No lo encontró, entonces podemos crearlo
             this.barrios.add(new Barrio(nombre));
             pudo = true;
         }
     }
+    
+    
+    public Barrio buscarBarrioSinPrint(String nombre) {
+        Barrio barrioBuscado = null;
+        int i = 0;
+        boolean encontrado = false;
+
+        // Si el nombre de búsqueda no está vacío
+        if (nombre != null && !nombre.isEmpty()) {
+            while (i < this.barrios.size() && !encontrado) {
+                if (this.barrios.get(i).getNombre().equals(nombre)) {
+                    barrioBuscado = this.barrios.get(i);
+                    encontrado = true;
+                } else {
+                    i++;
+                }
+            }
+        }     
+
+        return barrioBuscado;
+    }
 
     public Barrio buscarBarrio(String nombre) {
         Barrio barrioBuscado = null;
         int i = 0;
-        while (i < this.barrios.size() && barrioBuscado == null) {
-            if (this.barrios.get(i).getNombre().equals(nombre)) {
-                barrioBuscado = this.barrios.get(i);
-            } else {
-                i++;
+        boolean encontrado = false;
+
+        // Si el nombre de búsqueda no está vacío
+        if (nombre != null && !nombre.isEmpty()) {
+            while (i < this.barrios.size() && !encontrado) {
+                if (this.barrios.get(i).getNombre().equals(nombre)) {
+                    barrioBuscado = this.barrios.get(i);
+                    encontrado = true;
+                } else {
+                    i++;
+                }
             }
         }
+
+        if (nombre != null && !nombre.isEmpty()) {
+            if (encontrado) {
+                System.out.println("Barrio encontrado: " + barrioBuscado.getNombre());
+            } else {
+                System.out.println("Barrio no encontrado.");
+            }
+        }
+
         return barrioBuscado;
     }
+
+
+
+
+
     
 }

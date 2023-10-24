@@ -57,6 +57,6 @@ class Propiedad {
 	
     @Override
     public String toString() {
-        return "Domicilio: " + domicilio + ", Precio: " + precio;
+        return "Domicilio: " + domicilio + ", Precio: $" + precio;
     }
 }

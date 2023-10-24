@@ -10,11 +10,11 @@ public class Test {
 			
 		    Inmobiliaria inmobiliaria = new Inmobiliaria();
 				 
-		    //casoDePrueba1();// Agregar barrios
+		    //casoDePrueba1();// 	 OK --->  Agregar barrios
 
-		    //casoDePrueba2();// Agregar propiedades a los barrios
+		    //casoDePrueba2();// OK ---> Agregar propiedades a los barrios
 
-		    //casoDePrueba3();// Cambiar propiedad de barrio
+		    casoDePrueba3();// Cambiar propiedad de barrio
 
 		    //casoDePrueba4();// Borrar propiedad y Mostrar propiedades
 
@@ -22,72 +22,103 @@ public class Test {
 
 			}
 
-	public static void casoDePrueba1() {
-		intro();
-		
-		 Inmobiliaria inmobiliaria = new Inmobiliaria();
+		public static void casoDePrueba1() {
+		    Barrio barrioBuscado; 
+		    intro();
 
-		    // Agregar barrios
+		    Inmobiliaria inmobiliaria = new Inmobiliaria();
+
+		    System.out.println("Creando..Barrio1..Barrio2..Barrio3..");
 		    inmobiliaria.agregarBarrio("Barrio1");
 		    inmobiliaria.agregarBarrio("Barrio2");
 		    inmobiliaria.agregarBarrio("Barrio3");
-		    	    
-		    inmobiliaria.buscarBarrio("Barrio2");
-		
-	    outro();
-		}
-		
-	public static void casoDePrueba2() {
-		intro();
-		
-		 Inmobiliaria inmobiliaria = new Inmobiliaria();
-
-	 
-		    inmobiliaria.agregarBarrio("Barrio1");
-		    inmobiliaria.agregarBarrio("Barrio2");
-		    inmobiliaria.agregarBarrio("Barrio3");
+		    separador1();
+		 
+		    System.out.println("Probemos buscar  Barrio2");
+		    barrioBuscado = inmobiliaria.buscarBarrio("Barrio2");
 		    
-		    inmobiliaria.buscarBarrio("Barrio2");
+		    separador1();            
 		    
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle1",100000));
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 2", 90000));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle 3", 120000));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.PH,"Calle 4", 80000));
-		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 5", 150000));
+		    System.out.println("Probemos buscar  Barrio5");
+		    barrioBuscado = inmobiliaria.buscarBarrio("Barrio5");
 		  
-		    inmobiliaria.mostrarPropiedades();
-		
-	    outro();
+		    outro();
 		}
+
+		public static void casoDePrueba2() {
+			
+	    intro();
+
+	    Inmobiliaria inmobiliaria = new Inmobiliaria();
+
+	    inmobiliaria.agregarBarrio("Barrio1");
+	    inmobiliaria.agregarBarrio("Barrio2");
+	    inmobiliaria.agregarBarrio("Barrio3");
+
+	    // Crear
+	    Propiedad propiedad1 = new Propiedad(tipoPropiedad.CASA, "Calle1", 100000);
+	    Propiedad propiedad2 = new Propiedad(tipoPropiedad.DEPARTAMENTO, "Calle 2", 90000);
+	    Propiedad propiedad3 = new Propiedad(tipoPropiedad.CASA, "Calle 3", 120000);
+	    Propiedad propiedad4 = new Propiedad(tipoPropiedad.PH, "Calle 4", 80000);
+	    Propiedad propiedad5 = new Propiedad(tipoPropiedad.DEPARTAMENTO, "Calle 5", 150000);
+	    // Agregar 
+	    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(propiedad1.obtenerTipo(), propiedad1.obtenerDomicilio(), propiedad1.obtenerPrecio());
+	    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(propiedad2.obtenerTipo(), propiedad2.obtenerDomicilio(), propiedad2.obtenerPrecio());
+	    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(propiedad3.obtenerTipo(), propiedad3.obtenerDomicilio(), propiedad3.obtenerPrecio());
+	    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(propiedad4.obtenerTipo(), propiedad4.obtenerDomicilio(), propiedad4.obtenerPrecio());
+	    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(propiedad5.obtenerTipo(), propiedad5.obtenerDomicilio(), propiedad5.obtenerPrecio());
+
+	    inmobiliaria.mostrarPropiedades();
+
+	    outro();
+	}
 		
-	public static void casoDePrueba3() {
+		public static void casoDePrueba3() {
 		intro();
 		
 		 Inmobiliaria inmobiliaria = new Inmobiliaria();
 
-	 
+				 
 		    inmobiliaria.agregarBarrio("Barrio1");
 		    inmobiliaria.agregarBarrio("Barrio2");
 		    inmobiliaria.agregarBarrio("Barrio3");
 		    
 		    inmobiliaria.buscarBarrio("Barrio2");
-		    
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle1",100000));
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 2", 90000));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle 3", 120000));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.PH,"Calle 4", 80000));
-		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 5", 150000));
-		  
+
+			 barraSeparadora();
+			 
+		    // Crear
+		    Propiedad propiedad1 = new Propiedad(tipoPropiedad.CASA, "Calle1", 100000);
+		    Propiedad propiedad2 = new Propiedad(tipoPropiedad.DEPARTAMENTO, "Calle 2", 90000);
+		    Propiedad propiedad3 = new Propiedad(tipoPropiedad.CASA, "Calle 3", 120000);
+		    Propiedad propiedad4 = new Propiedad(tipoPropiedad.PH, "Calle 4", 80000);
+		    Propiedad propiedad5 = new Propiedad(tipoPropiedad.DEPARTAMENTO, "Calle 5", 150000);
+		    // Agregar 
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(propiedad1.obtenerTipo(), propiedad1.obtenerDomicilio(), propiedad1.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(propiedad2.obtenerTipo(), propiedad2.obtenerDomicilio(), propiedad2.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(propiedad3.obtenerTipo(), propiedad3.obtenerDomicilio(), propiedad3.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(propiedad4.obtenerTipo(), propiedad4.obtenerDomicilio(), propiedad4.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(propiedad5.obtenerTipo(), propiedad5.obtenerDomicilio(), propiedad5.obtenerPrecio());
+
+			 barraSeparadora();
+			 
 		    inmobiliaria.mostrarPropiedades();
-		    
+
+			 barraSeparadora();
+			 
 		    inmobiliaria.cambiarPropiedadDeBarrio("Calle 2", "Barrio2");
 		    
+			 barraSeparadora();
+			 		    
 		    inmobiliaria.mostrarPropiedades();
+
+					 
 		
 	    outro();
 		}
 		
-	public static void casoDePrueba4() {
+		
+		public static void casoDePrueba4() {
 		intro();
 		
 		 Inmobiliaria inmobiliaria = new Inmobiliaria();
@@ -99,12 +130,19 @@ public class Test {
 		    
 		    inmobiliaria.buscarBarrio("Barrio2");
 		    
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle1",100000));
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 2", 90000));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle 3", 120000));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.PH,"Calle 4", 80000));
-		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 5", 150000));
-		  
+		    // Crear
+		    Propiedad propiedad1 = new Propiedad(tipoPropiedad.CASA, "Calle1", 100000);
+		    Propiedad propiedad2 = new Propiedad(tipoPropiedad.DEPARTAMENTO, "Calle 2", 90000);
+		    Propiedad propiedad3 = new Propiedad(tipoPropiedad.CASA, "Calle 3", 120000);
+		    Propiedad propiedad4 = new Propiedad(tipoPropiedad.PH, "Calle 4", 80000);
+		    Propiedad propiedad5 = new Propiedad(tipoPropiedad.DEPARTAMENTO, "Calle 5", 150000);
+		    // Agregar 
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(propiedad1.obtenerTipo(), propiedad1.obtenerDomicilio(), propiedad1.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(propiedad2.obtenerTipo(), propiedad2.obtenerDomicilio(), propiedad2.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(propiedad3.obtenerTipo(), propiedad3.obtenerDomicilio(), propiedad3.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(propiedad4.obtenerTipo(), propiedad4.obtenerDomicilio(), propiedad4.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(propiedad5.obtenerTipo(), propiedad5.obtenerDomicilio(), propiedad5.obtenerPrecio());
+
 		    inmobiliaria.mostrarPropiedades();
 		    
 		    inmobiliaria.cambiarPropiedadDeBarrio("Calle 2", "Barrio2");
@@ -119,7 +157,7 @@ public class Test {
 	    outro();
 		}
 	
-	public static void casoDePrueba5() {
+		public static void casoDePrueba5() {
 		intro();
 		
 		 Inmobiliaria inmobiliaria = new Inmobiliaria();
@@ -129,39 +167,46 @@ public class Test {
 		    inmobiliaria.agregarBarrio("Barrio2");
 		    inmobiliaria.agregarBarrio("Barrio3");
 		    
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle1",100000));
-		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 2", 90000));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.CASA,"Calle 3", 120000));
-		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(new Propiedad(tipoPropiedad.PH,"Calle 4", 80000));
-		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(new Propiedad(tipoPropiedad.DEPARTAMENTO,"Calle 5", 150000));
-		  
+		    // Crear
+		    Propiedad propiedad1 = new Propiedad(tipoPropiedad.CASA, "Calle1", 100000);
+		    Propiedad propiedad2 = new Propiedad(tipoPropiedad.DEPARTAMENTO, "Calle 2", 90000);
+		    Propiedad propiedad3 = new Propiedad(tipoPropiedad.CASA, "Calle 3", 120000);
+		    Propiedad propiedad4 = new Propiedad(tipoPropiedad.PH, "Calle 4", 80000);
+		    Propiedad propiedad5 = new Propiedad(tipoPropiedad.DEPARTAMENTO, "Calle 5", 150000);
+		    // Agregar 
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(propiedad1.obtenerTipo(), propiedad1.obtenerDomicilio(), propiedad1.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio1").agregarPropiedad(propiedad2.obtenerTipo(), propiedad2.obtenerDomicilio(), propiedad2.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(propiedad3.obtenerTipo(), propiedad3.obtenerDomicilio(), propiedad3.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio2").agregarPropiedad(propiedad4.obtenerTipo(), propiedad4.obtenerDomicilio(), propiedad4.obtenerPrecio());
+		    inmobiliaria.buscarBarrio("Barrio3").agregarPropiedad(propiedad5.obtenerTipo(), propiedad5.obtenerDomicilio(), propiedad5.obtenerPrecio());
+
 		    inmobiliaria.mostrarBarrioMaxProp();
 		
 	    outro();
 		}
 	
-	public static void intro() {
+		public static void intro() {
 	separador1();
     barraSeparadora();
 	}
 	
-	public static void outro() {
+		public static void outro() {
 	barraSeparadora();
 	separador1();
 	}
 	
-	public static void separador1() {
+		public static void separador1() {
 	separador1 = " ";
     System.out.println(separador1);
 	}
 	
-	public static void separador2() {
+		public static void separador2() {
 	separador2 = " ";
 	System.out.println(separador2);
 	System.out.println(separador2);
 	}
 
-	public static void barraSeparadora() {
+		public static void barraSeparadora() {
 	barraSeparadora = "-------------------------------------";
 	System.out.println(barraSeparadora);
 
