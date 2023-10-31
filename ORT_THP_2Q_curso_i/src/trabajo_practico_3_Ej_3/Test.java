@@ -107,7 +107,8 @@ public class Test {
 			 barraSeparadora();
 			 barraSeparadora();
 			 barraSeparadora();
-		    inmobiliaria.cambiarPropiedadDeBarrio("Calle 2", "Barrio2");
+			 
+		    inmobiliaria.cambiarPropiedadDeBarrio("Calle 2", "Barrio3");
 		    
 			 barraSeparadora();
 			 barraSeparadora();
